@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — Hakiki{% endblock %}
+{% block main_class %}max-w-4xl mx-auto px-6 py-10{% endblock %}
+
+{% block content %}
+
+<!-- Page header -->
+<div class="mb-8 flex items-start justify-between">
+  <div>
+    <h1 class="text-2xl font-bold text-slate-800">Dashboard</h1>
+    <p class="text-slate-500 text-sm mt-0.5">{{ user.email }}</p>
+  </div>
+  <a href="/billing"
+    class="inline-flex items-center gap-1.5 text-sm bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition font-medium">
+    Manage plan
+  </a>
+</div>
+
+<!-- Stats row -->
+<div class="grid grid-cols-3 gap-4 mb-6">
+
+  <div class="bg-white rounded-xl border border-slate-200 p-5">
+    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">Plan</p>
+    <p class="text-xl font-bold capitalize
+      {% if user.tier == 'enterprise' %}text-purple-600
+      {% elif user.tier == 'pro' %}text-blue-600
+      {% else %}text-slate-800{% endif %}">
+      {{ user.tier }}
+    </p>
+    <p class="text-xs text-slate-400 mt-1">
+      {% if user.tier == 'free' %}Free forever
+      {% elif user.tier == 'enterprise' %}Unlimited access
+      {% else %}Full API access{% endif %}
+    </p>
+  </div>
+
+  <div class="bg-white rounded-xl border border-slate-200 p-5">
+    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">Credits left</p>
+    {% if monthly_limit %}
+      <p class="text-xl font-bold text-slate-800">
+        {{ user.credits }}
+        <span class="text-sm font-normal text-slate-400">/ {{ monthly_limit }}</span>
+      </p>
+      <div class="mt-2 w-full bg-slate-100 rounded-full h-1.5">
+        {% set pct = [(user.credits / monthly_limit * 100), 100] | min %}
+        <div class="h-1.5 rounded-full transition-all
+          {% if pct < 20 %}bg-red-400{% elif pct < 50 %}bg-amber-400{% else %}bg-blue-500{% endif %}"
+          style="width: {{ pct }}%"></div>
+      </div>
+    {% else %}
+      <p class="text-xl font-bold text-purple-600">Unlimited</p>
+      <p class="text-xs text-slate-400 mt-1">No quota restrictions</p>
+    {% endif %}
+  </div>
+
+  <div class="bg-white rounded-xl border border-slate-200 p-5">
+    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">Recent calls</p>
+    <p class="text-xl font-bold text-slate-800">{{ logs | length }}</p>
+    <p class="text-xs text-slate-400 mt-1">Last 10 shown</p>
+  </div>
+
+</div>
+
+<!-- API Key -->
+<div class="bg-white rounded-xl border border-slate-200 p-6 mb-6">
+  <div class="flex items-center justify-between mb-3">
+    <div>
+      <h2 class="font-semibold text-slate-800">API Key</h2>
+      <p class="text-xs text-slate-400 mt-0.5">Pass as <code class="bg-slate-100 px-1 py-0.5 rounded text-slate-600 font-mono">X-API-Key</code> on every request</p>
+    </div>
+    <form method="post" action="/dashboard/rotate-key"
+      onsubmit="return confirm('Revoke current key and issue a new one? Update any apps using this key immediately.')">
+      <button type="submit"
+        class="text-xs text-slate-400 hover:text-red-500 border border-slate-200 hover:border-red-200 px-3 py-1.5 rounded-lg transition">
+        Revoke &amp; rotate
+      </button>
+    </form>
+  </div>
+
+  <div class="flex items-center gap-3">
+    <code id="api-key-display"
+      class="flex-1 bg-slate-50 border border-slate-200 rounded-lg px-4 py-2.5 text-sm font-mono text-slate-700 break-all select-all">
+      {{ user.api_key_plain }}
+    </code>
+    <button onclick="copyApiKey()" id="copy-btn"
+      class="shrink-0 bg-slate-800 hover:bg-slate-900 text-white text-sm font-medium px-4 py-2.5 rounded-lg transition">
+      Copy
+    </button>
+  </div>
+
+  <p class="text-xs text-slate-400 mt-3">
+    If your key is compromised, revoke it above — your plan and usage history stay intact.
+  </p>
+</div>
+
+<!-- Recent Activity -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+  <div class="px-6 py-4 border-b border-slate-100 flex items-center justify-between">
+    <h2 class="font-semibold text-slate-800">Recent Activity</h2>
+    <span class="text-xs text-slate-400">Last 10 calls</span>
+  </div>
+  {% if logs %}
+  <table class="w-full text-sm">
+    <thead class="bg-slate-50 text-xs text-slate-400 uppercase tracking-wider">
+      <tr>
+        <th class="px-6 py-3 text-left font-medium">Endpoint</th>
+        <th class="px-6 py-3 text-left font-medium">Credits</th>
+        <th class="px-6 py-3 text-left font-medium">Time</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-100">
+      {% for log in logs %}
+      <tr class="hover:bg-slate-50/70 transition">
+        <td class="px-6 py-3 font-mono text-slate-600 text-xs">{{ log.endpoint }}</td>
+        <td class="px-6 py-3">
+          {% if log.credits_used > 0 %}
+            <span class="inline-flex items-center bg-blue-50 text-blue-700 px-2 py-0.5 rounded text-xs font-semibold">−{{ log.credits_used }}</span>
+          {% else %}
+            <span class="inline-flex items-center bg-slate-100 text-slate-400 px-2 py-0.5 rounded text-xs">0</span>
+          {% endif %}
+        </td>
+        <td class="px-6 py-3 text-slate-400 text-xs">{{ log.created_at.strftime('%d %b %Y, %H:%M') }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <div class="px-6 py-12 text-center">
+    <p class="text-slate-400 text-sm">No API calls yet.</p>
+    <a href="/docs" class="text-blue-500 hover:underline text-sm mt-1 inline-block">Open API docs →</a>
+  </div>
+  {% endif %}
+</div>
+
+<script>
+function copyApiKey() {
+  const key = document.getElementById('api-key-display').textContent.trim();
+  navigator.clipboard.writeText(key).then(() => {
+    const btn = document.getElementById('copy-btn');
+    btn.textContent = 'Copied!';
+    btn.classList.replace('bg-slate-800', 'bg-green-600');
+    btn.classList.replace('hover:bg-slate-900', 'hover:bg-green-700');
+    setTimeout(() => {
+      btn.textContent = 'Copy';
+      btn.classList.replace('bg-green-600', 'bg-slate-800');
+      btn.classList.replace('hover:bg-green-700', 'hover:bg-slate-900');
+    }, 2000);
+  });
+}
+</script>
+{% endblock %}

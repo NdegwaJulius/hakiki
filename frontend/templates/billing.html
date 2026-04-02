@@ -1,0 +1,200 @@
+{% extends "base.html" %}
+{% block title %}Billing — Hakiki{% endblock %}
+{% block main_class %}max-w-4xl mx-auto px-6 py-10{% endblock %}
+
+{% block content %}
+
+<div class="mb-8 flex items-start justify-between">
+  <div>
+    <h1 class="text-2xl font-bold text-slate-800">Billing &amp; Plan</h1>
+    <p class="text-slate-500 text-sm mt-0.5">{{ user.email }}</p>
+  </div>
+  <a href="/dashboard" class="text-sm text-slate-500 hover:text-blue-600 transition">← Dashboard</a>
+</div>
+
+<!-- Current plan card -->
+<div class="bg-white rounded-xl border border-slate-200 p-6 mb-8">
+  <div class="flex items-start justify-between gap-4">
+    <div>
+      <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-1.5">Current plan</p>
+      <div class="flex items-center gap-2 mb-1">
+        <span class="w-2.5 h-2.5 rounded-full
+          {% if user.tier == 'enterprise' %}bg-purple-500
+          {% elif user.tier == 'pro' %}bg-blue-500
+          {% else %}bg-slate-400{% endif %}"></span>
+        <p class="text-2xl font-bold
+          {% if user.tier == 'enterprise' %}text-purple-600
+          {% elif user.tier == 'pro' %}text-blue-600
+          {% else %}text-slate-800{% endif %}">
+          {{ tier_info.label }}
+        </p>
+      </div>
+      <p class="text-slate-500 text-sm">{{ tier_info.calls }} API calls</p>
+    </div>
+    <div class="text-right shrink-0">
+      {% if user.tier == 'free' %}
+        <p class="text-3xl font-bold text-slate-800">Free</p>
+        <p class="text-sm text-slate-400">forever</p>
+      {% else %}
+        <p class="text-3xl font-bold text-slate-800">KES {{ "{:,.0f}".format(tier_info.monthly) }}</p>
+        <p class="text-sm text-slate-400">/ month</p>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if monthly_limit %}
+  <div class="mt-5 pt-5 border-t border-slate-100">
+    <div class="flex justify-between text-xs text-slate-500 mb-1.5">
+      <span>Calls used this month</span>
+      <span class="font-medium">{{ calls_used }} / {{ monthly_limit }}</span>
+    </div>
+    <div class="w-full bg-slate-100 rounded-full h-2">
+      {% set pct = [(calls_used / monthly_limit * 100), 100] | min %}
+      <div class="h-2 rounded-full transition-all
+        {% if pct > 80 %}bg-red-400{% elif pct > 50 %}bg-amber-400{% else %}bg-blue-500{% endif %}"
+        style="width: {{ pct }}%"></div>
+    </div>
+  </div>
+  {% else %}
+  <div class="mt-5 pt-5 border-t border-slate-100 flex items-center gap-2">
+    <span class="w-2 h-2 bg-purple-400 rounded-full"></span>
+    <span class="text-sm text-purple-600 font-medium">Unlimited calls — no restrictions</span>
+  </div>
+  {% endif %}
+</div>
+
+{% if user.tier != 'enterprise' %}
+<!-- Billing period switcher -->
+<div class="mb-6">
+  <h2 class="font-semibold text-slate-800 mb-3">Upgrade your plan</h2>
+  <div class="flex gap-1 bg-slate-100 rounded-xl p-1 w-fit text-sm font-medium mb-6">
+    <button onclick="setPeriod('weekly')"    id="pb-weekly"    class="period-btn px-4 py-1.5 rounded-lg transition">Weekly</button>
+    <button onclick="setPeriod('monthly')"   id="pb-monthly"   class="period-btn px-4 py-1.5 rounded-lg transition active-period">Monthly</button>
+    <button onclick="setPeriod('quarterly')" id="pb-quarterly" class="period-btn px-4 py-1.5 rounded-lg transition">
+      Quarterly <span class="ml-1 text-xs text-green-600 font-semibold">Save</span>
+    </button>
+    <button onclick="setPeriod('annual')"    id="pb-annual"    class="period-btn px-4 py-1.5 rounded-lg transition">
+      Annual <span class="ml-1 text-xs text-green-600 font-semibold">Best</span>
+    </button>
+  </div>
+
+  <div class="grid grid-cols-{% if user.tier == 'free' %}2{% else %}1{% endif %} gap-4">
+    {% for tier_key, info in all_tiers.items() %}
+      {% if tier_key != user.tier and tier_key != 'free' %}
+      <div class="bg-white rounded-xl border-2
+        {% if tier_key == 'enterprise' %}border-purple-200 hover:border-purple-300
+        {% else %}border-blue-200 hover:border-blue-300{% endif %} p-6 transition">
+
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <span class="w-2 h-2 rounded-full inline-block mr-1.5
+              {% if tier_key == 'enterprise' %}bg-purple-500{% else %}bg-blue-500{% endif %}"></span>
+            <span class="font-bold text-lg
+              {% if tier_key == 'enterprise' %}text-purple-600{% else %}text-blue-600{% endif %}">
+              {{ info.label }}
+            </span>
+          </div>
+          <div class="text-right">
+            <p class="text-2xl font-bold text-slate-800">
+              KES <span class="price-display" data-weekly="{{ info.weekly }}" data-monthly="{{ info.monthly }}" data-quarterly="{{ info.quarterly }}" data-annual="{{ info.annual }}">
+                {{ "{:,.0f}".format(info.monthly) }}
+              </span>
+            </p>
+            <p class="text-xs text-slate-400 period-label">/ month</p>
+          </div>
+        </div>
+
+        <p class="text-slate-500 text-sm mb-4">{{ info.calls }} API calls per period</p>
+
+        {% if tier_key == 'pro' %}
+        <ul class="text-sm text-slate-600 space-y-1.5 mb-5">
+          <li class="flex items-center gap-2"><span class="text-blue-500 font-bold">✓</span> Full address &amp; location fields</li>
+          <li class="flex items-center gap-2"><span class="text-blue-500 font-bold">✓</span> /search up to 5 results</li>
+          <li class="flex items-center gap-2"><span class="text-blue-500 font-bold">✓</span> /list up to 10 results</li>
+        </ul>
+        {% else %}
+        <ul class="text-sm text-slate-600 space-y-1.5 mb-5">
+          <li class="flex items-center gap-2"><span class="text-purple-500 font-bold">✓</span> Everything in Pro</li>
+          <li class="flex items-center gap-2"><span class="text-purple-500 font-bold">✓</span> Unlimited /list &amp; /search</li>
+          <li class="flex items-center gap-2"><span class="text-purple-500 font-bold">✓</span> Priority support</li>
+        </ul>
+        {% endif %}
+
+        <button
+          class="w-full py-2.5 rounded-lg text-sm font-semibold text-white transition
+          {% if tier_key == 'enterprise' %}bg-purple-600 hover:bg-purple-700{% else %}bg-blue-600 hover:bg-blue-700{% endif %}"
+          onclick="alert('Payment integration coming soon.\nContact juliusndegwa2@gmail.com to upgrade.')">
+          Upgrade to {{ info.label }}
+        </button>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<!-- Payment History -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+  <div class="px-6 py-4 border-b border-slate-100">
+    <h2 class="font-semibold text-slate-800">Payment History</h2>
+  </div>
+  {% if payments %}
+  <table class="w-full text-sm">
+    <thead class="bg-slate-50 text-xs text-slate-400 uppercase tracking-wider">
+      <tr>
+        <th class="px-6 py-3 text-left font-medium">Date</th>
+        <th class="px-6 py-3 text-left font-medium">Amount</th>
+        <th class="px-6 py-3 text-left font-medium">Credits</th>
+        <th class="px-6 py-3 text-left font-medium">Status</th>
+        <th class="px-6 py-3 text-left font-medium">Provider</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-100">
+      {% for p in payments %}
+      <tr class="hover:bg-slate-50/70 transition">
+        <td class="px-6 py-3 text-slate-600">{{ p.created_at.strftime('%d %b %Y') }}</td>
+        <td class="px-6 py-3 font-semibold text-slate-800">KES {{ "%.2f"|format(p.amount) }}</td>
+        <td class="px-6 py-3 text-slate-600">+{{ p.credits_added }}</td>
+        <td class="px-6 py-3">
+          {% if p.status == 'completed' %}
+            <span class="bg-green-50 text-green-700 text-xs px-2.5 py-1 rounded-full font-medium">Completed</span>
+          {% elif p.status == 'pending' %}
+            <span class="bg-amber-50 text-amber-700 text-xs px-2.5 py-1 rounded-full font-medium">Pending</span>
+          {% else %}
+            <span class="bg-red-50 text-red-600 text-xs px-2.5 py-1 rounded-full font-medium">Failed</span>
+          {% endif %}
+        </td>
+        <td class="px-6 py-3 text-slate-400">{{ p.provider or '—' }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <div class="px-6 py-10 text-center">
+    <p class="text-slate-400 text-sm">No payments yet.</p>
+  </div>
+  {% endif %}
+</div>
+
+<style>
+  .active-period { background: white; color: #1e293b; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  .period-btn:not(.active-period) { color: #64748b; }
+</style>
+
+<script>
+const PERIOD_LABELS = { weekly: '/ week', monthly: '/ month', quarterly: '/ quarter', annual: '/ year' };
+
+function setPeriod(p) {
+  document.querySelectorAll('.period-btn').forEach(b => b.classList.remove('active-period'));
+  document.getElementById('pb-' + p).classList.add('active-period');
+
+  document.querySelectorAll('.price-display').forEach(el => {
+    const raw = parseFloat(el.dataset[p]) || 0;
+    el.textContent = raw.toLocaleString('en-KE', {maximumFractionDigits: 0});
+  });
+  document.querySelectorAll('.period-label').forEach(el => {
+    el.textContent = PERIOD_LABELS[p];
+  });
+}
+</script>
+{% endblock %}

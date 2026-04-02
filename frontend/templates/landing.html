@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hakiki — Kenya Regulatory Data APIs</title>
+  <meta name="description" content="Hakiki turns Kenyan regulator licensing data into clean REST APIs. Verify SACCOs, banks, insurers and more — from anywhere in the world." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif; }
+    .gradient-text {
+      background: linear-gradient(120deg, #60a5fa, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .mono { font-family: 'SF Mono', 'Fira Code', monospace; }
+    .dot-grid {
+      background-image: radial-gradient(circle, rgba(99,102,241,.12) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+<!-- Nav -->
+<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+  <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <span class="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white text-xs font-bold">H</span>
+      <span class="font-semibold text-slate-900 text-sm">Hakiki</span>
+      <span class="ml-1 text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full font-medium">Beta</span>
+    </div>
+    <div class="hidden md:flex items-center gap-1 text-sm text-slate-500">
+      <a href="#apis"    class="px-3 py-1.5 rounded-lg hover:bg-slate-100 hover:text-slate-800 transition">APIs</a>
+      <a href="#how"     class="px-3 py-1.5 rounded-lg hover:bg-slate-100 hover:text-slate-800 transition">How it works</a>
+      <a href="#pricing" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 hover:text-slate-800 transition">Pricing</a>
+    </div>
+    <div class="flex items-center gap-2">
+      <a href="/login"    class="text-sm text-slate-500 hover:text-slate-800 px-3 py-1.5 rounded-lg hover:bg-slate-100 transition font-medium">Sign in</a>
+      <a href="/register" class="text-sm bg-blue-600 hover:bg-blue-700 text-white px-4 py-1.5 rounded-lg font-semibold transition">Get started free</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="bg-slate-900 dot-grid">
+  <div class="max-w-5xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-5 gap-12 items-center">
+
+    <div class="md:col-span-3">
+      <div class="inline-flex items-center gap-2 bg-slate-800 border border-slate-700 rounded-full px-3 py-1 text-xs text-slate-400 mb-7">
+        <span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span>
+        SACCO Verification live &nbsp;·&nbsp; More regulators coming
+      </div>
+
+      <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-5">
+        Kenyan regulator data,<br>
+        <span class="gradient-text">as an API.</span>
+      </h1>
+
+      <p class="text-slate-400 text-base leading-relaxed mb-8 max-w-sm">
+        Kenya's regulators — SASRA, CBK, CMA, IRA and others — publish licensing data
+        across dozens of sectors. Hakiki normalises it into versioned REST endpoints
+        your app can call from anywhere.
+      </p>
+
+      <div class="flex flex-wrap gap-3">
+        <a href="/register"
+          class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-xl transition text-sm">
+          Start for free
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+        <a href="/login"
+          class="inline-flex items-center gap-2 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white font-medium px-6 py-3 rounded-xl transition text-sm">
+          Sign in
+        </a>
+      </div>
+      <p class="text-xs text-slate-600 mt-4">No credit card. API key ready in seconds.</p>
+    </div>
+
+    <!-- Code example — no real URL shown -->
+    <div class="md:col-span-2 rounded-2xl border border-slate-700 bg-slate-800/70 overflow-hidden">
+      <div class="flex items-center gap-1.5 px-4 py-3 border-b border-slate-700/50 bg-slate-800/40">
+        <span class="w-2.5 h-2.5 rounded-full bg-red-500/50"></span>
+        <span class="w-2.5 h-2.5 rounded-full bg-amber-400/50"></span>
+        <span class="w-2.5 h-2.5 rounded-full bg-green-500/50"></span>
+        <span class="ml-2 text-xs text-slate-500 mono">example.sh</span>
+      </div>
+<pre class="p-5 text-xs mono leading-6 overflow-x-auto"><code><span class="text-slate-500"># Check if a SACCO is SASRA-licensed</span>
+<span class="text-green-400">curl</span> <span class="text-slate-300">https://&lt;base-url&gt;/sacco/v1/verify</span> \
+  <span class="text-amber-300">-H</span> <span class="text-blue-300">"X-API-Key: hk_••••••"</span> \
+  <span class="text-amber-300">-G</span> <span class="text-amber-300">-d</span> <span class="text-blue-300">"name=Stima"</span>
+
+<span class="text-slate-400">{</span>
+  <span class="text-blue-300">"is_licensed"</span><span class="text-slate-400">: </span><span class="text-green-400">true</span><span class="text-slate-400">,</span>
+  <span class="text-blue-300">"matches"</span><span class="text-slate-400">: [{</span>
+    <span class="text-blue-300">"name"</span><span class="text-slate-400">: </span><span class="text-green-300">"Stima Sacco Society Ltd"</span><span class="text-slate-400">,</span>
+    <span class="text-blue-300">"county"</span><span class="text-slate-400">: </span><span class="text-green-300">"Nairobi"</span><span class="text-slate-400">,</span>
+    <span class="text-blue-300">"schedule"</span><span class="text-slate-400">: </span><span class="text-green-300">"I"</span>
+  <span class="text-slate-400">}]</span>
+<span class="text-slate-400">}</span></code></pre>
+    </div>
+
+  </div>
+</section>
+
+<!-- Trust bar -->
+<div class="border-b border-slate-100 py-4 bg-slate-50">
+  <div class="max-w-5xl mx-auto px-6 flex flex-wrap justify-center gap-x-8 gap-y-2 text-xs text-slate-400 font-medium">
+    <span>Official regulator publications</span>
+    <span class="hidden sm:block">·</span>
+    <span>Versioned REST API</span>
+    <span class="hidden sm:block">·</span>
+    <span>Any language, any platform</span>
+    <span class="hidden sm:block">·</span>
+    <span>Kenya-sourced · globally consumable</span>
+  </div>
+</div>
+
+<!-- APIs -->
+<section id="apis" class="py-20 max-w-5xl mx-auto px-6">
+  <div class="mb-12">
+    <p class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-2">Covered regulators</p>
+    <h2 class="text-3xl font-bold text-slate-900">Each regulator, its own API</h2>
+    <p class="text-slate-500 mt-2 max-w-lg">
+      We track what each regulator publishes and keep the data fresh. You get a consistent API regardless of how messy the source data is.
+    </p>
+  </div>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+    <!-- SASRA — live -->
+    <div class="rounded-2xl border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-white p-6 relative">
+      <span class="absolute top-4 right-4 inline-flex items-center gap-1 text-xs bg-green-100 text-green-700 px-2.5 py-1 rounded-full font-semibold">
+        <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span> Live
+      </span>
+      <div class="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold text-xs mb-4 mono">SA</div>
+      <h3 class="font-bold text-slate-900 mb-0.5">SACCO Verification</h3>
+      <p class="text-xs text-blue-600 font-semibold mb-3">SASRA</p>
+      <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+        Is this SACCO licensed by SASRA? Lookup by name, county or schedule. 359 licensed SACCOs indexed as of 2026.
+      </p>
+      <div class="space-y-1 mono text-xs text-slate-500">
+        <div class="bg-white rounded-lg px-3 py-1.5 border border-slate-200">/sacco/v1/verify</div>
+        <div class="bg-white rounded-lg px-3 py-1.5 border border-slate-200">/sacco/v1/search</div>
+        <div class="bg-white rounded-lg px-3 py-1.5 border border-slate-200">/sacco/v1/list</div>
+      </div>
+    </div>
+
+    <!-- CBK -->
+    <div class="rounded-2xl border border-slate-200 bg-white p-6 relative">
+      <span class="absolute top-4 right-4 text-xs bg-slate-100 text-slate-400 px-2.5 py-1 rounded-full font-medium">Soon</span>
+      <div class="w-9 h-9 rounded-xl bg-slate-100 flex items-center justify-center text-slate-400 font-bold text-xs mb-4 mono">CB</div>
+      <h3 class="font-bold text-slate-800 mb-0.5">Banks &amp; Payment Providers</h3>
+      <p class="text-xs text-slate-400 font-semibold mb-3">CBK — Central Bank of Kenya</p>
+      <p class="text-sm text-slate-500 leading-relaxed">
+        Licensed commercial banks, microfinance institutions, forex bureaus and payment service providers regulated by CBK.
+      </p>
+    </div>
+
+    <!-- CMA -->
+    <div class="rounded-2xl border border-slate-200 bg-white p-6 relative">
+      <span class="absolute top-4 right-4 text-xs bg-slate-100 text-slate-400 px-2.5 py-1 rounded-full font-medium">Soon</span>
+      <div class="w-9 h-9 rounded-xl bg-slate-100 flex items-center justify-center text-slate-400 font-bold text-xs mb-4 mono">CM</div>
+      <h3 class="font-bold text-slate-800 mb-0.5">Capital Markets</h3>
+      <p class="text-xs text-slate-400 font-semibold mb-3">CMA — Capital Markets Authority</p>
+      <p class="text-sm text-slate-500 leading-relaxed">
+        Fund managers, stockbrokers, investment banks and listed entities regulated by CMA.
+      </p>
+    </div>
+
+    <!-- IRA -->
+    <div class="rounded-2xl border border-slate-200 bg-white p-6 relative">
+      <span class="absolute top-4 right-4 text-xs bg-slate-100 text-slate-400 px-2.5 py-1 rounded-full font-medium">Soon</span>
+      <div class="w-9 h-9 rounded-xl bg-slate-100 flex items-center justify-center text-slate-400 font-bold text-xs mb-4 mono">IR</div>
+      <h3 class="font-bold text-slate-800 mb-0.5">Insurance</h3>
+      <p class="text-xs text-slate-400 font-semibold mb-3">IRA — Insurance Regulatory Authority</p>
+      <p class="text-sm text-slate-500 leading-relaxed">
+        Insurers, reinsurers, brokers and agents licensed to operate in Kenya's insurance market.
+      </p>
+    </div>
+
+    <!-- RBA -->
+    <div class="rounded-2xl border border-slate-200 bg-white p-6 relative">
+      <span class="absolute top-4 right-4 text-xs bg-slate-100 text-slate-400 px-2.5 py-1 rounded-full font-medium">Soon</span>
+      <div class="w-9 h-9 rounded-xl bg-slate-100 flex items-center justify-center text-slate-400 font-bold text-xs mb-4 mono">RB</div>
+      <h3 class="font-bold text-slate-800 mb-0.5">Pensions &amp; Retirement</h3>
+      <p class="text-xs text-slate-400 font-semibold mb-3">RBA — Retirement Benefits Authority</p>
+      <p class="text-sm text-slate-500 leading-relaxed">
+        Registered pension schemes, fund managers and custodians approved by RBA.
+      </p>
+    </div>
+
+    <!-- Request -->
+    <div class="rounded-2xl border border-dashed border-slate-200 p-6 flex flex-col justify-center items-start gap-3">
+      <div class="w-9 h-9 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-400 text-lg font-light">+</div>
+      <div>
+        <p class="font-semibold text-slate-700 text-sm">Don't see what you need?</p>
+        <p class="text-slate-400 text-xs mt-1 leading-relaxed">CA, NCA, PPB and others are on the list. Tell us which regulator matters to you.</p>
+      </div>
+      <a href="mailto:juliusndegwa2@gmail.com?subject=Hakiki%20dataset%20request"
+        class="text-xs font-semibold text-blue-600 hover:underline">
+        Request a dataset →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- How it works -->
+<section id="how" class="bg-slate-50 py-20">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="mb-12">
+      <p class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-2">Getting started</p>
+      <h2 class="text-3xl font-bold text-slate-900">From signup to first API call in minutes</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-5">
+      <div class="bg-white rounded-2xl border border-slate-200 p-6">
+        <div class="w-8 h-8 rounded-lg bg-slate-900 text-white flex items-center justify-center font-bold text-sm mb-4">1</div>
+        <h3 class="font-semibold text-slate-800 mb-2">Create an account</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Register with your email. No approval process, no waiting. Your API key is generated on the spot.</p>
+      </div>
+      <div class="bg-white rounded-2xl border border-slate-200 p-6">
+        <div class="w-8 h-8 rounded-lg bg-slate-900 text-white flex items-center justify-center font-bold text-sm mb-4">2</div>
+        <h3 class="font-semibold text-slate-800 mb-2">Get your API key</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">Your key is on the dashboard. Send it as an <span class="mono text-xs bg-slate-100 px-1 rounded">X-API-Key</span> header — that's all the auth there is.</p>
+      </div>
+      <div class="bg-white rounded-2xl border border-slate-200 p-6">
+        <div class="w-8 h-8 rounded-lg bg-slate-900 text-white flex items-center justify-center font-bold text-sm mb-4">3</div>
+        <h3 class="font-semibold text-slate-800 mb-2">Call the API</h3>
+        <p class="text-slate-500 text-sm leading-relaxed">From curl, Python, JavaScript, Go — whatever your stack is. Sign in to access the full API reference.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Who it's for -->
+<section class="py-20 max-w-5xl mx-auto px-6">
+  <div class="mb-12">
+    <p class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-2">Use cases</p>
+    <h2 class="text-3xl font-bold text-slate-900">Who uses Hakiki</h2>
+    <p class="text-slate-500 mt-2">Anyone building on Kenya's regulated financial market.</p>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    <div class="p-5 rounded-2xl border border-slate-200 hover:border-blue-200 hover:shadow-sm transition">
+      <p class="text-xl mb-3">💳</p>
+      <h3 class="font-semibold text-slate-800 text-sm mb-1">Fintech &amp; Lending</h3>
+      <p class="text-slate-500 text-xs leading-relaxed">Verify a SACCO or bank before processing a disbursement or onboarding a customer.</p>
+    </div>
+    <div class="p-5 rounded-2xl border border-slate-200 hover:border-blue-200 hover:shadow-sm transition">
+      <p class="text-xl mb-3">🔍</p>
+      <h3 class="font-semibold text-slate-800 text-sm mb-1">KYC &amp; Compliance</h3>
+      <p class="text-xs text-slate-500 leading-relaxed">Add regulatory status checks to your KYC pipeline without maintaining your own database.</p>
+    </div>
+    <div class="p-5 rounded-2xl border border-slate-200 hover:border-blue-200 hover:shadow-sm transition">
+      <p class="text-xl mb-3">🏦</p>
+      <h3 class="font-semibold text-slate-800 text-sm mb-1">Banking &amp; Insurance</h3>
+      <p class="text-xs text-slate-500 leading-relaxed">Automate checks on partner institutions and third-party financial entities before engaging them.</p>
+    </div>
+    <div class="p-5 rounded-2xl border border-slate-200 hover:border-blue-200 hover:shadow-sm transition">
+      <p class="text-xl mb-3">📊</p>
+      <h3 class="font-semibold text-slate-800 text-sm mb-1">Research &amp; Analytics</h3>
+      <p class="text-xs text-slate-500 leading-relaxed">Pull structured regulatory data into models, dashboards or compliance reports.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="bg-slate-50 py-20">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="mb-10">
+      <p class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-2">Pricing</p>
+      <h2 class="text-3xl font-bold text-slate-900 mb-1">Pay for what you use</h2>
+      <p class="text-slate-500 text-sm">All prices in KES. Upgrade or cancel anytime.</p>
+    </div>
+
+    <!-- Period switcher -->
+    <div class="flex gap-1 bg-white border border-slate-200 rounded-xl p-1 w-fit text-sm font-medium mb-8">
+      <button onclick="setPeriod('weekly')"    id="pb-weekly"    class="period-btn px-4 py-1.5 rounded-lg transition text-slate-500 hover:text-slate-800">Weekly</button>
+      <button onclick="setPeriod('monthly')"   id="pb-monthly"   class="period-btn px-4 py-1.5 rounded-lg transition bg-slate-900 text-white">Monthly</button>
+      <button onclick="setPeriod('quarterly')" id="pb-quarterly" class="period-btn px-4 py-1.5 rounded-lg transition text-slate-500 hover:text-slate-800">Quarterly</button>
+      <button onclick="setPeriod('annual')"    id="pb-annual"    class="period-btn px-4 py-1.5 rounded-lg transition text-slate-500 hover:text-slate-800">Annual</button>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5">
+      {% for tier_key, info in tiers.items() %}
+      <div class="rounded-2xl border-2 bg-white p-7 flex flex-col relative
+        {% if tier_key == 'pro' %}border-blue-500 shadow-lg shadow-blue-100{% else %}border-slate-200{% endif %}">
+
+        {% if tier_key == 'pro' %}
+        <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full whitespace-nowrap">Most popular</span>
+        {% endif %}
+
+        <div class="flex items-center gap-2 mb-4">
+          <span class="w-2.5 h-2.5 rounded-full
+            {% if tier_key == 'enterprise' %}bg-purple-500
+            {% elif tier_key == 'pro' %}bg-blue-500
+            {% else %}bg-slate-300{% endif %}"></span>
+          <span class="font-bold text-slate-900">{{ info.label }}</span>
+        </div>
+
+        {% if tier_key == 'free' %}
+          <p class="text-4xl font-bold text-slate-900 mb-1">Free</p>
+          <p class="text-slate-400 text-xs mb-5">forever</p>
+        {% else %}
+          <p class="text-4xl font-bold text-slate-900 mb-1">
+            KES <span class="price-val"
+              data-weekly="{{ info.weekly | int }}"
+              data-monthly="{{ info.monthly | int }}"
+              data-quarterly="{{ info.quarterly | int }}"
+              data-annual="{{ info.annual | int }}">{{ info.monthly | int }}</span>
+          </p>
+          <p class="text-slate-400 text-xs mb-5 period-lbl">/ month</p>
+        {% endif %}
+
+        <p class="text-slate-500 text-sm mb-5">{{ info.calls }}</p>
+
+        <ul class="space-y-2 text-sm text-slate-600 mb-7 flex-1">
+          {% if tier_key == 'free' %}
+            <li class="flex gap-2"><span class="text-slate-400 shrink-0">✓</span> /verify endpoint</li>
+            <li class="flex gap-2"><span class="text-slate-400 shrink-0">✓</span> Basic fields</li>
+            <li class="flex gap-2"><span class="text-slate-400 shrink-0">✓</span> /search — 3 results</li>
+            <li class="flex gap-2 opacity-40"><span class="shrink-0">✕</span> /list endpoint</li>
+            <li class="flex gap-2 opacity-40"><span class="shrink-0">✕</span> Address &amp; location fields</li>
+          {% elif tier_key == 'pro' %}
+            <li class="flex gap-2"><span class="text-blue-500 shrink-0 font-bold">✓</span> Everything in Free</li>
+            <li class="flex gap-2"><span class="text-blue-500 shrink-0 font-bold">✓</span> Full address &amp; location fields</li>
+            <li class="flex gap-2"><span class="text-blue-500 shrink-0 font-bold">✓</span> /search — 5 results</li>
+            <li class="flex gap-2"><span class="text-blue-500 shrink-0 font-bold">✓</span> /list — 10 results</li>
+            <li class="flex gap-2"><span class="text-blue-500 shrink-0 font-bold">✓</span> Early access to new APIs</li>
+          {% else %}
+            <li class="flex gap-2"><span class="text-purple-500 shrink-0 font-bold">✓</span> Everything in Pro</li>
+            <li class="flex gap-2"><span class="text-purple-500 shrink-0 font-bold">✓</span> Unlimited /list &amp; /search</li>
+            <li class="flex gap-2"><span class="text-purple-500 shrink-0 font-bold">✓</span> Priority support &amp; SLA</li>
+            <li class="flex gap-2"><span class="text-purple-500 shrink-0 font-bold">✓</span> Custom data integrations</li>
+          {% endif %}
+        </ul>
+
+        <a href="/register"
+          class="block text-center py-2.5 rounded-xl font-semibold text-sm transition
+          {% if tier_key == 'enterprise' %}bg-purple-600 hover:bg-purple-700 text-white
+          {% elif tier_key == 'pro' %}bg-blue-600 hover:bg-blue-700 text-white
+          {% else %}bg-slate-100 hover:bg-slate-200 text-slate-800{% endif %}">
+          {% if tier_key == 'free' %}Get started free
+          {% elif tier_key == 'enterprise' %}Talk to us
+          {% else %}Get {{ info.label }}{% endif %}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="text-slate-400 text-xs mt-6">
+      Need a custom arrangement? <a href="mailto:juliusndegwa2@gmail.com?subject=Hakiki%20enterprise" class="text-blue-500 hover:underline">Get in touch.</a>
+    </p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 max-w-5xl mx-auto px-6 text-center">
+  <h2 class="text-3xl font-bold text-slate-900 mb-3">Start building</h2>
+  <p class="text-slate-500 mb-7 max-w-md mx-auto text-sm">
+    Free account. API key on registration. Kenya's regulatory data is one request away.
+  </p>
+  <a href="/register"
+    class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3 rounded-xl transition text-sm">
+    Create free account
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+  </a>
+</section>
+
+<!-- Footer -->
+<footer class="border-t border-slate-100 bg-slate-50 py-8">
+  <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-5 text-sm text-slate-400">
+    <div class="flex items-center gap-2">
+      <span class="w-6 h-6 rounded-md bg-blue-600 flex items-center justify-center text-white text-xs font-bold">H</span>
+      <span class="text-slate-500 font-medium">Hakiki</span>
+      <span class="text-slate-300">Kenya Regulatory Data APIs</span>
+    </div>
+    <div class="flex items-center gap-6 text-xs">
+      <a href="/login"    class="hover:text-slate-700 transition">Sign in</a>
+      <a href="/register" class="hover:text-slate-700 transition">Register</a>
+      <a href="mailto:juliusndegwa2@gmail.com" class="hover:text-slate-700 transition">Contact</a>
+    </div>
+    <p class="text-xs">Data sourced from official Kenyan regulator publications.</p>
+  </div>
+</footer>
+
+<script>
+const PERIOD_LABELS = { weekly: '/ week', monthly: '/ month', quarterly: '/ quarter', annual: '/ year' };
+
+function setPeriod(p) {
+  document.querySelectorAll('.period-btn').forEach(b => {
+    b.classList.remove('bg-slate-900','text-white');
+    b.classList.add('text-slate-500');
+  });
+  const btn = document.getElementById('pb-' + p);
+  btn.classList.add('bg-slate-900','text-white');
+  btn.classList.remove('text-slate-500');
+
+  document.querySelectorAll('.price-val').forEach(el => {
+    el.textContent = (parseInt(el.dataset[p]) || 0).toLocaleString('en-KE');
+  });
+  document.querySelectorAll('.period-lbl').forEach(el => el.textContent = PERIOD_LABELS[p]);
+}
+</script>
+
+</body>
+</html>

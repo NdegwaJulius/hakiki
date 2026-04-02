@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+{% block title %}Admin — Hakiki{% endblock %}
+{% block main_class %}max-w-5xl mx-auto px-6 py-10{% endblock %}
+
+{% block content %}
+
+<div class="mb-8 flex items-start justify-between">
+  <div>
+    <h1 class="text-2xl font-bold text-slate-800">Admin Panel</h1>
+    <p class="text-slate-500 text-sm mt-0.5">{{ users | length }} total users</p>
+  </div>
+  <div class="flex items-center gap-2">
+    <a href="/admin/finance" class="text-sm text-slate-500 hover:text-blue-600 border border-slate-200 px-3 py-1.5 rounded-lg transition">Finance</a>
+    <a href="/admin/config"  class="text-sm text-slate-500 hover:text-blue-600 border border-slate-200 px-3 py-1.5 rounded-lg transition">Config</a>
+  </div>
+</div>
+
+<!-- Stats row -->
+<div class="grid grid-cols-4 gap-4 mb-8">
+  <div class="bg-white rounded-xl border border-slate-200 p-5">
+    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">Total</p>
+    <p class="text-2xl font-bold text-slate-800">{{ users | length }}</p>
+  </div>
+  <div class="bg-white rounded-xl border border-slate-200 p-5">
+    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">Free</p>
+    <p class="text-2xl font-bold text-slate-700">{{ users | selectattr('tier', 'equalto', 'free') | list | length }}</p>
+  </div>
+  <div class="bg-white rounded-xl border border-slate-200 p-5">
+    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">Pro</p>
+    <p class="text-2xl font-bold text-blue-600">{{ users | selectattr('tier', 'equalto', 'pro') | list | length }}</p>
+  </div>
+  <div class="bg-white rounded-xl border border-slate-200 p-5">
+    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">Enterprise</p>
+    <p class="text-2xl font-bold text-purple-600">{{ users | selectattr('tier', 'equalto', 'enterprise') | list | length }}</p>
+  </div>
+</div>
+
+<!-- Users table -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+  <div class="px-6 py-4 border-b border-slate-100">
+    <h2 class="font-semibold text-slate-800">Users</h2>
+  </div>
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm">
+      <thead class="bg-slate-50 text-xs text-slate-400 uppercase tracking-wider">
+        <tr>
+          <th class="px-6 py-3 text-left font-medium">Email</th>
+          <th class="px-6 py-3 text-left font-medium">Tier</th>
+          <th class="px-6 py-3 text-left font-medium">Credits</th>
+          <th class="px-6 py-3 text-left font-medium">Status</th>
+          <th class="px-6 py-3 text-left font-medium">Joined</th>
+          <th class="px-6 py-3 text-left font-medium">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-slate-100">
+        {% for u in users %}
+        <tr class="hover:bg-slate-50/70 transition {% if not u.is_active %}opacity-50{% endif %}">
+
+          <td class="px-6 py-3">
+            <p class="font-medium text-slate-800">
+              {{ u.email }}
+              {% if u.email == admin.email %}
+              <span class="ml-2 text-xs bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded-md font-semibold">you</span>
+              {% endif %}
+            </p>
+            {% if u.full_name or u.company %}
+            <p class="text-xs text-slate-400 mt-0.5">
+              {{ u.full_name or '' }}{% if u.full_name and u.company %} · {% endif %}{{ u.company or '' }}
+            </p>
+            {% endif %}
+          </td>
+
+          <td class="px-6 py-3">
+            <form method="post" action="/admin/users/{{ u.id }}/tier">
+              <select name="tier" onchange="this.form.submit()"
+                class="text-xs border border-slate-200 rounded-lg px-2.5 py-1.5 focus:outline-none focus:ring-1 focus:ring-blue-500 bg-white cursor-pointer
+                  {% if u.tier == 'enterprise' %}text-purple-600 font-semibold
+                  {% elif u.tier == 'pro' %}text-blue-600 font-semibold
+                  {% else %}text-slate-600{% endif %}">
+                <option value="free"       {% if u.tier == 'free'       %}selected{% endif %}>Free</option>
+                <option value="pro"        {% if u.tier == 'pro'        %}selected{% endif %}>Pro</option>
+                <option value="enterprise" {% if u.tier == 'enterprise' %}selected{% endif %}>Enterprise</option>
+              </select>
+            </form>
+          </td>
+
+          <td class="px-6 py-3 text-slate-600">
+            {% if u.tier == 'enterprise' %}
+              <span class="text-purple-500 text-xs font-semibold">Unlimited</span>
+            {% else %}
+              {{ u.credits }}
+            {% endif %}
+          </td>
+
+          <td class="px-6 py-3">
+            {% if u.is_active %}
+              <span class="inline-flex items-center gap-1 bg-green-50 text-green-700 text-xs px-2.5 py-1 rounded-full font-medium">
+                <span class="w-1.5 h-1.5 rounded-full bg-green-500"></span> Active
+              </span>
+            {% else %}
+              <span class="inline-flex items-center gap-1 bg-red-50 text-red-600 text-xs px-2.5 py-1 rounded-full font-medium">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-400"></span> Suspended
+              </span>
+            {% endif %}
+          </td>
+
+          <td class="px-6 py-3 text-slate-400 text-xs">
+            {{ u.created_at.strftime('%d %b %Y') }}
+          </td>
+
+          <td class="px-6 py-3">
+            {% if u.email != admin.email %}
+            <form method="post" action="/admin/users/{{ u.id }}/toggle">
+              <button type="submit"
+                class="text-xs font-medium px-3 py-1.5 rounded-lg border transition
+                  {% if u.is_active %}text-red-500 border-red-200 hover:bg-red-50
+                  {% else %}text-green-600 border-green-200 hover:bg-green-50{% endif %}">
+                {% if u.is_active %}Suspend{% else %}Restore{% endif %}
+              </button>
+            </form>
+            {% else %}
+            <span class="text-xs text-slate-300">—</span>
+            {% endif %}
+          </td>
+
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}

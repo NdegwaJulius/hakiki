@@ -1,0 +1,26 @@
+# /etc/systemd/system/hakiki.service
+# After copying: sudo systemctl daemon-reload && sudo systemctl enable hakiki
+
+[Unit]
+Description=Hakiki API
+After=network.target
+
+[Service]
+Type=exec
+User=hakiki
+Group=hakiki
+WorkingDirectory=/opt/hakiki
+EnvironmentFile=/opt/hakiki/.env
+ExecStart=/opt/hakiki/venv/bin/uvicorn app.main:app \
+    --host 127.0.0.1 \
+    --port 8000 \
+    --workers 2 \
+    --proxy-headers \
+    --forwarded-allow-ips="127.0.0.1"
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

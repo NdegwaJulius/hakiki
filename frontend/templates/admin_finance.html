@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+{% block title %}Finance — Hakiki Admin{% endblock %}
+{% block main_class %}max-w-5xl mx-auto px-6 py-10{% endblock %}
+
+{% block content %}
+
+<div class="mb-8 flex items-center justify-between">
+  <div>
+    <h1 class="text-2xl font-bold text-slate-800">Finance Overview</h1>
+    <p class="text-slate-500 text-sm mt-0.5">Revenue &amp; subscription summary</p>
+  </div>
+  <a href="/admin" class="text-sm text-slate-500 hover:text-blue-600 transition">← Users</a>
+</div>
+
+<!-- Stat cards -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
+  <div class="bg-white rounded-xl border border-slate-200 p-5">
+    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">Total Revenue</p>
+    <p class="text-2xl font-bold text-green-600">KES {{ "{:,.0f}".format(total_revenue) }}</p>
+  </div>
+  <div class="bg-white rounded-xl border border-slate-200 p-5">
+    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">Free users</p>
+    <p class="text-2xl font-bold text-slate-700">{{ by_tier.free }}</p>
+    <p class="text-xs text-slate-400 mt-1">KES 0 / month</p>
+  </div>
+  <div class="bg-white rounded-xl border border-slate-200 p-5">
+    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">Pro users</p>
+    <p class="text-2xl font-bold text-blue-600">{{ by_tier.pro }}</p>
+    <p class="text-xs text-slate-400 mt-1">KES {{ "{:,.0f}".format(tier_prices.pro.monthly) }} / month</p>
+  </div>
+  <div class="bg-white rounded-xl border border-slate-200 p-5">
+    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-2">Enterprise</p>
+    <p class="text-2xl font-bold text-purple-600">{{ by_tier.enterprise }}</p>
+    <p class="text-xs text-slate-400 mt-1">KES {{ "{:,.0f}".format(tier_prices.enterprise.monthly) }} / month</p>
+  </div>
+</div>
+
+<!-- MRR banner -->
+<div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl p-6 mb-8 text-white">
+  <p class="text-sm opacity-80 mb-1 font-medium">Estimated Monthly Recurring Revenue</p>
+  {% set mrr = by_tier.pro * tier_prices.pro.monthly + by_tier.enterprise * tier_prices.enterprise.monthly %}
+  <p class="text-4xl font-bold">KES {{ "{:,.0f}".format(mrr) }}</p>
+  <p class="text-sm opacity-60 mt-1">Based on current tier distribution at monthly pricing</p>
+</div>
+
+<!-- Breakdown + subscribers -->
+<div class="grid grid-cols-2 gap-6 mb-8">
+  <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+    <div class="px-6 py-4 border-b border-slate-100">
+      <h2 class="font-semibold text-slate-800">Subscription Breakdown</h2>
+    </div>
+    <div class="p-6 space-y-5">
+      {% for tier_key, info in tier_prices.items() %}
+      {% set count = by_tier.get(tier_key, 0) %}
+      {% set total_users = users | length %}
+      <div>
+        <div class="flex justify-between text-sm mb-1.5">
+          <span class="font-medium text-slate-700 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full
+              {% if tier_key == 'enterprise' %}bg-purple-500
+              {% elif tier_key == 'pro' %}bg-blue-500
+              {% else %}bg-slate-300{% endif %}"></span>
+            {{ info.label }}
+          </span>
+          <span class="text-slate-500">{{ count }} user{{ 's' if count != 1 else '' }}</span>
+        </div>
+        <div class="w-full bg-slate-100 rounded-full h-2">
+          <div class="h-2 rounded-full
+            {% if tier_key == 'enterprise' %}bg-purple-500
+            {% elif tier_key == 'pro' %}bg-blue-500
+            {% else %}bg-slate-300{% endif %}"
+            style="width: {{ (count / [total_users, 1] | max * 100) | round }}%"></div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+    <div class="px-6 py-4 border-b border-slate-100">
+      <h2 class="font-semibold text-slate-800">Paying Subscribers</h2>
+    </div>
+    <div class="divide-y divide-slate-100">
+      {% set paying = users | selectattr('tier', 'ne', 'free') | list %}
+      {% if paying %}
+        {% for u in paying[:8] %}
+        <div class="px-6 py-3 flex items-center justify-between">
+          <div>
+            <p class="text-sm font-medium text-slate-800">{{ u.email }}</p>
+            <p class="text-xs text-slate-400">Joined {{ u.created_at.strftime('%d %b %Y') }}</p>
+          </div>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-full
+            {% if u.tier == 'enterprise' %}bg-purple-100 text-purple-700
+            {% else %}bg-blue-100 text-blue-700{% endif %}">
+            {{ u.tier | capitalize }}
+          </span>
+        </div>
+        {% endfor %}
+      {% else %}
+        <div class="px-6 py-10 text-center">
+          <p class="text-slate-400 text-sm">No paying subscribers yet.</p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<!-- All payments -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+  <div class="px-6 py-4 border-b border-slate-100">
+    <h2 class="font-semibold text-slate-800">All Payments</h2>
+  </div>
+  {% if payments %}
+  <table class="w-full text-sm">
+    <thead class="bg-slate-50 text-xs text-slate-400 uppercase tracking-wider">
+      <tr>
+        <th class="px-6 py-3 text-left font-medium">Date</th>
+        <th class="px-6 py-3 text-left font-medium">Amount</th>
+        <th class="px-6 py-3 text-left font-medium">Credits</th>
+        <th class="px-6 py-3 text-left font-medium">Status</th>
+        <th class="px-6 py-3 text-left font-medium">Provider ref</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-100">
+      {% for p in payments %}
+      <tr class="hover:bg-slate-50/70 transition">
+        <td class="px-6 py-3 text-slate-600">{{ p.created_at.strftime('%d %b %Y') }}</td>
+        <td class="px-6 py-3 font-semibold text-slate-800">KES {{ "%.2f"|format(p.amount) }}</td>
+        <td class="px-6 py-3 text-slate-600">+{{ p.credits_added }}</td>
+        <td class="px-6 py-3">
+          <span class="text-xs px-2.5 py-1 rounded-full font-medium
+            {% if p.status == 'completed' %}bg-green-50 text-green-700
+            {% elif p.status == 'pending' %}bg-amber-50 text-amber-700
+            {% else %}bg-red-50 text-red-600{% endif %}">
+            {{ p.status | capitalize }}
+          </span>
+        </td>
+        <td class="px-6 py-3 text-slate-400 font-mono text-xs">{{ p.provider_ref or '—' }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <div class="px-6 py-10 text-center">
+    <p class="text-slate-400 text-sm">No payments recorded yet.</p>
+  </div>
+  {% endif %}
+</div>
+
+{% endblock %}

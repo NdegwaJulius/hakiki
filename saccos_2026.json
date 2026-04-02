@@ -1,0 +1,3233 @@
+[
+  {
+    "name": "2NK Sacco Society Ltd",
+    "postal_address": "P.O Box 12196 – 10109, Nyeri",
+    "physical_location": "Kangaru Building, Gakere Road",
+    "county": "Nyeri",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Acumen DT Sacco Society Limited",
+    "postal_address": "P.O. Box 1325 – 00200, Kajiado",
+    "physical_location": "Great Wide Mall, Magadi Road, Rongai",
+    "county": "Kajiado",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Afya Sacco Society Ltd",
+    "postal_address": "P.O Box 11607 – 00400, Nairobi.",
+    "physical_location": "Afya Centre, Tom Mboya Street, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Agrochem Sacco Society Ltd",
+    "postal_address": "P.O Box 94 – 40107 Muhoroni",
+    "physical_location": "Muhoroni Town",
+    "county": "Kisumu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ainabkoi Sacco Society Ltd",
+    "postal_address": "P.O Box 120-30101, Ainabkoi",
+    "physical_location": "Ainabkoi Farmers’ Cooperative Society Land Eldoret, Naiberi, Tim-boroa Road",
+    "county": "Uasin Gishu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Airports Sacco Society Ltd",
+    "postal_address": "P.O Box 19048 – 00500, Nairobi",
+    "physical_location": "Kenya Airports Authority Head Quarters Building",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Amica Sacco Society Ltd",
+    "postal_address": "P.O Box 816 – 10200, Murang'a",
+    "physical_location": "Mugama Union Building – Uhuru Road, Murang’a",
+    "county": "Murang’a",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ammar Sacco Society Ltd",
+    "postal_address": "P.O Box 6957 – 01000, Thika",
+    "physical_location": "Elica Plaza, Kwame Nkrumah Road, Thika Town",
+    "county": "Murang’a",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Apstar DT Sacco Society Ltd",
+    "postal_address": "P.O Box 44071 – 00100, Nairobi",
+    "physical_location": "Ukulima Cooperative House, Haile Selassie Avenue, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ardhi Sacco Society Ltd",
+    "postal_address": "P.O Box 28782 – 00200, Nairobi",
+    "physical_location": "Survey Kenya Field Headquarters, Off Thika Road",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Asili Sacco Society Ltd",
+    "postal_address": "P.O Box 49064 – 00100 Nairobi",
+    "physical_location": "Asili Co–op Centre, The Lower Ngara Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Azima Sacco Society Ltd",
+    "postal_address": "P.O Box 1124 – 01000, Thika",
+    "physical_location": "Azima Sacco Plaza, Wabera Street, Thika",
+    "county": "Kiambu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Bandari Sacco Society Ltd",
+    "postal_address": "P.O Box 95011 – 80104, Mombasa",
+    "physical_location": "Moi Avenue, Mombasa",
+    "county": "Mombasa",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Baraka Sacco Society Ltd",
+    "postal_address": "P.O Box 1548 – 10101, Karatina",
+    "physical_location": "Station Road, Off Kiaruhiu Street, Karatina",
+    "county": "Nyeri",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Baraton Sacco Society Ltd",
+    "postal_address": "P.O Box 2500 – 30100, Eldoret",
+    "physical_location": "University Of Eastern Africa, Baraton, Off Eldoret – Kapsabet Road, Chepterit Junction",
+    "county": "Nandi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Biashara Sacco Society Ltd",
+    "postal_address": "P.O Box 1895 – 10100 Nyeri",
+    "physical_location": "Biashara Sacco Building, Kimathi Way, Nyeri Town",
+    "county": "Nyeri",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Biashara Tosha Sacco Society Ltd",
+    "postal_address": "P.O. Box 189 – 60101, Embu",
+    "physical_location": "Gakundu F.C.S Building, Embu – Kianjokoma Road, Embu",
+    "county": "Embu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Bingwa Sacco Society Ltd",
+    "postal_address": "P.O Box 434 – 10300, Kerugoya",
+    "physical_location": "Bingwa Sacco Complex, Kutus – Karatina Road, Kerugoya Town",
+    "county": "Kirinyaga",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Boresha Sacco Society Ltd",
+    "postal_address": "P.0 Box 80 – 20103, Eldama Ravine",
+    "physical_location": "Teachers Plaza – Market Road, Eldama Ravine Town",
+    "county": "Baringo",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Capital Sacco Society Ltd",
+    "postal_address": "P.O Box 1479 – 60200, Meru",
+    "physical_location": "Maccu Building, Kenyatta Highway, Meru",
+    "county": "Meru",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Centenary Sacco Society Ltd",
+    "postal_address": "P.O Box 1207 – 60200, Meru",
+    "physical_location": "Intercity Building, Meru – Nanyuki Highway, Meru Town Centre",
+    "county": "Meru",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Chai Sacco Society Ltd",
+    "postal_address": "P.O Box 278 – 00200, Nairobi",
+    "physical_location": "Chai House, Koinange Street, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Chuka University Sacco Society Ltd",
+    "postal_address": "P.O Box 109 – 60400, Chuka",
+    "physical_location": "Chuka University, Students Recreation Centre, Chuka Town",
+    "county": "Tharaka Nithi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Chuna Sacco Society Ltd",
+    "postal_address": "P.O Box 30197 – 00100, Nairobi",
+    "physical_location": "University of Nairobi, Engineering Department Building – Harry Thuku Road",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Cosmopolitan Sacco Society Ltd",
+    "postal_address": "P.O Box 1931 – 20100 Nakuru",
+    "physical_location": "Natec Plaza, Kijabe Row Street, Nakuru",
+    "county": "Nakuru",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "County Sacco Society Ltd",
+    "postal_address": "P.O Box 21 – 60103, Runyenjes",
+    "physical_location": "County Sacco Building, Kanja Shauri Road, Kanja Town",
+    "county": "Embu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Daima Sacco Society Ltd",
+    "postal_address": "P.O Box 2032 – 60100, Embu",
+    "physical_location": "Daima Sacco Building, Mutunduri – Kianjokoma Road, Manyatta Market Centre",
+    "county": "Embu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Defence Sacco Society Ltd",
+    "postal_address": "P.O Box 40668 – 00100 Nairobi",
+    "physical_location": "Ulinzi House, Lenana Road, Hurlingham, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Dhabiti Sacco Society Ltd",
+    "postal_address": "P.O Box 353 – 60600, Maua",
+    "physical_location": "Dhabiti Sacco Building, Maua – Mikinduri Road, Maua Township",
+    "county": "Meru",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Dimkes DT Sacco Society Ltd",
+    "postal_address": "P.O Box 886 – 00900, Kiambu",
+    "physical_location": "Bishop Magua House, Biashara Street, Kiambu Town",
+    "county": "Kiambu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Eco – Pillar Sacco Society Ltd",
+    "postal_address": "P.O Box 48 – 30600 Kapenguria",
+    "physical_location": "Makutano Teachers Plaza, Lotodo Street, Kapenguria Town",
+    "county": "West – Pokot",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Edis Sacco Society Ltd",
+    "postal_address": "P.O. Box 228 – 20400, Bomet",
+    "physical_location": "Ngocho Building, Opposite NCPD, Ngocho, Bomet",
+    "county": "Bomet",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Egerton University Sacco Society Ltd",
+    "postal_address": "P.O Box 178 – 20115 Egerton",
+    "physical_location": "Egerton Sacco Plaza, Egerton University, Njoro Township",
+    "county": "Nakuru",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Elimu Sacco Society Ltd",
+    "postal_address": "P.O Box10073 – 00100, Nairobi",
+    "physical_location": "Mubiru Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Enea Sacco Society Ltd",
+    "postal_address": "P.O Box 1836 – 10101 Karatina",
+    "physical_location": "Kiangararu House, Karatina – Nairobi Highway, Karatina Town",
+    "county": "Nyeri",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Faridi Sacco Society Ltd",
+    "postal_address": "P.O Box 448 – 50400, Busia",
+    "physical_location": "Faridi Housing Plaza, Busia – Kisumu Road",
+    "county": "Busia",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Fariji Sacco Society Ltd",
+    "postal_address": "P.O. Box 589 – 00216, Githunguri",
+    "physical_location": "Diplomat Building, Githunguri Street, Kiambu",
+    "county": "Kiambu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Fortitude Sacco Society Ltd",
+    "postal_address": "P.O Box 237 – 40205, Mbita",
+    "physical_location": "Fortitude Sacco Building, Mbita Township",
+    "county": "Homabay",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Fortune Sacco Society Ltd",
+    "postal_address": "P.O. Box 559 – 10300, Kerugoya",
+    "physical_location": "Fortune Plaza, Main Street, Kerugoya",
+    "county": "Kirinyaga",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Fundilima Sacco Society Ltd",
+    "postal_address": "P.O. Box 62000 – 00200 Nairobi",
+    "physical_location": "Fedha House,JKUAT, Juja Town",
+    "county": "Kiambu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "GDC Sacco Society Ltd",
+    "postal_address": "P.O. Box 896 – 00216, Githunguri",
+    "physical_location": "GDC Sacco Plaza, Market Street, Kiambu",
+    "county": "Kiambu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Golden Pillar Sacco Society Ltd",
+    "postal_address": "P.O Box 3192 – 60200, Meru",
+    "physical_location": "Imenti Complex, Main Stage, Meru Town",
+    "county": "Meru",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Good Faith Sacco Society Ltd",
+    "postal_address": "P.O. Box 224 – 00222, Uplands",
+    "physical_location": "Nyambari Kiambu–Kiwa House, Uplands Githunguri Rd",
+    "county": "Kiambu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Good Hope Sacco",
+    "postal_address": "P.O Box 158-20500, Narok",
+    "physical_location": "Mwalimu Plaza, Narok-Kijabe Road, Narok",
+    "county": "Narok",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Goodway Sacco Society Ltd",
+    "postal_address": "P.O Box 662 – 10300, Kerugoya",
+    "physical_location": "Machere Plaza, Kerugoya Back Street, Kerugoya Town",
+    "county": "Kirinyaga",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Gusii Mwalimu Sacco Society Ltd",
+    "postal_address": "P.O Box 1335 – 40200, Kisii",
+    "physical_location": "Mwalimu House, Kisii – Kericho Road, Kisii",
+    "county": "Kisii",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Harambee DT Sacco Society Ltd",
+    "postal_address": "P.O Box 47815 – 00100, Nairobi",
+    "physical_location": "Harambee Sacco Plaza, Haile Selassie Avenue, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Hazina Sacco Society Ltd",
+    "postal_address": "P.O Box 59877 – 00200, Nairobi",
+    "physical_location": "Hazina Sacco Place, Ngong Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Home Business Sacco Society Ltd",
+    "postal_address": "P.O Box 1073– 20300, Nyahururu",
+    "physical_location": "Tec Biz Centre, Koinange Road, Nyahururu Town",
+    "county": "Laikipia",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ilkisonko Sacco Society",
+    "postal_address": "P.O Box 91 – 00209, Loitokitok",
+    "physical_location": "Musangairo FCS Building, Loitokitok Town",
+    "county": "Kajiado",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Imarika Sacco Society Ltd",
+    "postal_address": "P.O Box 712 – 80108, Kilifi",
+    "physical_location": "Imarika Plaza, Kenyatta Road, Kilifi",
+    "county": "Kilifi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Imarisha Sacco Society Ltd",
+    "postal_address": "P.O. Box 682 – 20200, Kericho",
+    "physical_location": "Kipsigis Teachers Cooperative House, Kisumu – Nakuru Highway",
+    "county": "Kericho",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Invest & Grow (IG) Sacco Society Ltd",
+    "postal_address": "P.O. Box 1150 – 50100, Kakamega",
+    "physical_location": "Invest & Grow Plaza, Khalisia Road 3, Kakamega",
+    "county": "Kakamega",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Jamii Sacco Society Ltd",
+    "postal_address": "P.O. Box 57929 – 00200, Nairobi",
+    "physical_location": "Jamii Sacco Court, Mukenia Road, South B, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Jamii Yetu Sacco Society Ltd",
+    "postal_address": "P.O Box 469 – 60600, Maua",
+    "physical_location": "Amwathi MMH Sacco Plaza, Kanuni Road, Maua",
+    "county": "Meru",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Jitegemee Sacco Society Ltd",
+    "postal_address": "P.O Box 86937–80100,Mombasa",
+    "physical_location": "L.R No. 242, Msa/Block 134/XXVI, Kizingo House No.2, Kaunda Street, Mvita, Mombasa.",
+    "county": "Mombasa",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Jogoo Sacco Society Ltd",
+    "postal_address": "P.O Box 56074 -00200, Nairobi",
+    "physical_location": "Commodore Office Suites, Off Ngong/Ring Road Kindaru-ma Avenue, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Joinas Sacco Society Ltd",
+    "postal_address": "P.O Box 669 – 00219 Karuri",
+    "physical_location": "Kanja House, Limuru – Banana Road, Banana Town",
+    "county": "Kiambu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Jumuika Sacco Society Ltd",
+    "postal_address": "P.O BOX 14 – 40112, Awasi",
+    "physical_location": "Chemelil Sugar Sports Complex",
+    "county": "Kisumu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "K – Pillar Sacco Society Ltd",
+    "postal_address": "P.O Box 83 – 20403, Mogogosiek",
+    "physical_location": "K – Pillar Building, Bomet – Litein Road, Mogogosiek",
+    "county": "Bomet",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "K – Unity Sacco Society Ltd",
+    "postal_address": "P.O Box 268 – 00900, Kiambu",
+    "physical_location": "K – Unity Building, Kiambu Town",
+    "county": "Kiambu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kabiyet Sacco Society Ltd",
+    "postal_address": "P.O. Box 195 – 30303, Kabiyet",
+    "physical_location": "Mosoriot – Kaiboi Road, Kabiyet Trading Centre",
+    "county": "Nandi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kencream Sacco Society Ltd",
+    "postal_address": "P.O Box 30131 – 00100, Nairobi",
+    "physical_location": "Creamary House, Dakar Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kenpipe Sacco Society Ltd",
+    "postal_address": "P.O Box 314 – 00507, Nairobi",
+    "physical_location": "Kenpipe Plaza, Sekoni Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kenversity Sacco Society Ltd",
+    "postal_address": "P.O Box 10263 – 00100, Nairobi",
+    "physical_location": "Kenversity Plaza, Kahawa Sukari Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kenya Achievas Sacco Society Ltd",
+    "postal_address": "P.O Box 3080 – 40200, Kisii",
+    "physical_location": "Achievas Plaza, Kisii – Kilgoris Road, Nyamache Town, Kisii",
+    "county": "Kisii",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kenya Highlands Sacco Society Ltd",
+    "postal_address": "P.O Box 2085 – 20200, Kericho",
+    "physical_location": "Temiik House, Kericho – Kisumu Highway",
+    "county": "Kericho",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kenya National Police DT Sacco Society Ltd",
+    "postal_address": "P.O Box 51042 – 00200, Nairobi",
+    "physical_location": "Kenya Police Sacco Plaza, Ngara Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Keystone DT Sacco Society Ltd",
+    "postal_address": "P.O. Box 2073 – 40100, Kisumu",
+    "physical_location": "Kenya Re – Insurance Plaza, Bank Street, Kisumu",
+    "county": "Kisumu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kimbilio Daima Sacco Society Ltd",
+    "postal_address": "P.O Box 81 – 20225, Kericho",
+    "physical_location": "Chepsol Plaza, Kimulot Road, Kapset",
+    "county": "Bomet",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kimisitu Sacco Society Ltd",
+    "postal_address": "P.O. Box 10454 – 00200, Nairobi",
+    "physical_location": "AEA Plaza, Valley Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kingdom Sacco Society Ltd",
+    "postal_address": "P.O Box 8017–00300, Nairobi",
+    "physical_location": "Empower House, Githurai 45, Thika Road",
+    "county": "Kiambu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kolenge Tea Sacco Society Ltd",
+    "postal_address": "P.O Box 291 – 30301, Nandi Hills",
+    "physical_location": "Nandi Hills Plaza, Nandi Hills Town",
+    "county": "Nandi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Koru DT Sacco Society Ltd",
+    "postal_address": "P.O Box Private Bag–40100, Koru",
+    "physical_location": "Homalime Company Limited, Koru Town",
+    "county": "Kisumu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kumbukumbu SACCO Society Ltd",
+    "postal_address": "P.O Box 22330-00400 Nairobi",
+    "physical_location": "National Museum Headquarters, Museum Hill Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kwetu DT Sacco Society Ltd",
+    "postal_address": "P.O Box 818 – 90100, Machakos",
+    "physical_location": "Mwalimu Centre, Syokimau Road, Machakos Town",
+    "county": "Machakos",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kwikas DT Sacco Society Ltd",
+    "postal_address": "P.O Box 27 – 20306, Ndaragwa",
+    "physical_location": "Ndaragwa Umoja Building, Kimathi Road, Nyandarua",
+    "county": "Nyandarua",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Lainisha Sacco Society Ltd",
+    "postal_address": "P.O Box 272 – 10303, Wang'uru",
+    "physical_location": "Lainisha Sacco Building, Mwea Town, Kirinyaga",
+    "county": "Kirinyaga",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Lamu Teachers Sacco Ltd",
+    "postal_address": "P.O Box 14 – 40112, Lamu",
+    "physical_location": "L.R No 784/1, Lamu Teachers Sacco Building, Galogalo Street, Lamu",
+    "county": "Lamu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Lengo Sacco Society Ltd",
+    "postal_address": "P.O. Box 1005 – 80200, Malindi",
+    "physical_location": "Standard Arcade – Mama Ngina Street, Malindi Town",
+    "county": "Kilifi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Mafanikio Sacco Society Ltd",
+    "postal_address": "P.O Box 86515–80100,Mombasa",
+    "physical_location": "Mombasa Teachers Building, Jomo Kenyatta Avenue, Mombasa",
+    "county": "Mombasa",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Magadi Sacco Society Ltd",
+    "postal_address": "P.O. Box 13 – 00205, Magadi",
+    "physical_location": "Pam View Building, Magadi Road, Magadi Soda, Kajiado",
+    "county": "Kajiado",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Magereza Sacco Society Ltd",
+    "postal_address": "P.O. Box 53131 – 00200, Nairobi",
+    "physical_location": "Mageso Chambers, Moi Avenue, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Maisha Bora Sacco Society Ltd",
+    "postal_address": "P.O. Box 30062 – 00200, Nairobi",
+    "physical_location": "Commercial Street, Industrial Area, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Mentor Sacco Society Ltd",
+    "postal_address": "P.O Box 789 – 10200, Murang’a",
+    "physical_location": "Mentor Plaza, Uhuru Road, Murang’a",
+    "county": "Murang’a",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Mhasibu DT Sacco Society Ltd",
+    "postal_address": "P.O Box 31295 -00600, Nairobi",
+    "physical_location": "Absa Towers, Market Street, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Mudete Sacco Society Ltd.",
+    "postal_address": "P.O. Box 221 – 50104, Kakamega",
+    "physical_location": "Sacco Plaza, Khayega, Kakamega",
+    "county": "Kakamega",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Muki Sacco Society Ltd",
+    "postal_address": "P.O Box 398–20318, North Kinangop",
+    "physical_location": "Muki House, Ndunyu Njeru Road, Kinangop",
+    "county": "Nyandarua",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Mwalimu National Sacco Society Ltd",
+    "postal_address": "P.O. Box 62641 – 00200, Nairobi",
+    "physical_location": "Hill Lane, Nairobi City",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Mwietheri Sacco Society Ltd",
+    "postal_address": "P.O Box 2445 – 60100, Embu",
+    "physical_location": "Rungeto F.C.S, Githure",
+    "county": "Embu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Mwito Sacco Society Ltd",
+    "postal_address": "P.O Box 56763 – 00200, Nairobi",
+    "physical_location": "Mwito Building, Desai Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Nacico Sacco Society Ltd",
+    "postal_address": "P.O Box 34525 – 00100, Nairobi",
+    "physical_location": "NACICO Plaza, Landhies Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Nafasi DT Sacco Society Ltd",
+    "postal_address": "P.O. Box 41426 – 00100 Nairobi",
+    "physical_location": "NCPB Nairobi Silos Complex, Off Outering Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Nandi Farmers Sacco Society Ltd",
+    "postal_address": "P.O Box 333 – 30301, Nandi Hills",
+    "physical_location": "Nandi Hills Plaza, Market Street,",
+    "county": "Nandi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Nation DT Sacco Society Ltd",
+    "postal_address": "P.O. Box 22022 – 00400, Nairobi",
+    "physical_location": "Cambrian Building, Moi Avenue, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Nawiri Sacco Society Ltd",
+    "postal_address": "P.O Box 400 – 60100, Embu",
+    "physical_location": "EMCO House, Taifa Road, Embu",
+    "county": "Embu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ndege Chai Sacco Society Ltd",
+    "postal_address": "P.O Box 857 – 20200, Kericho",
+    "physical_location": "Ndege Chai House, Kericho – Nakuru Highway, Kericho",
+    "county": "Kericho",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ndosha Sacco Society Ltd",
+    "postal_address": "P.O. Box 532–60401,Tharaka Nithi",
+    "physical_location": "L.R No. Plot 1206, Ndosha Sacco Plaza, Chogoria.",
+    "county": "Tharaka Nithi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "New Fortis Sacco Society Ltd",
+    "postal_address": "P.O Box 1939 – 10100, Nyeri",
+    "physical_location": "New Fortis Sacco Plaza, Off Kenyatta Road, Nyeri Town",
+    "county": "Nyeri",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Nexus Sacco Society Ltd",
+    "postal_address": "P.O. Box 251 – 60202, Nkubu",
+    "physical_location": "Kathera House, Kamunara, Nkubu, Meru",
+    "county": "Meru",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ng'arisha Sacco Society Ltd",
+    "postal_address": "P.O. Box 1199 – 50200, Bungoma",
+    "physical_location": "Bungoma Teachers Plaza, Bungoma",
+    "county": "Bungoma",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Njiwa Sacco Sacco Ltd",
+    "postal_address": "P.O Box 10221 -00100, Nairobi",
+    "physical_location": "Golf View Office Suites, Wambui Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "NRS Sacco Society Ltd",
+    "postal_address": "P.O Box 575 – 00902, Kikuyu",
+    "physical_location": "Ondiri Building, Kikuyu Road, Kikuyu",
+    "county": "Kiambu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "NSSF Sacco Society Ltd",
+    "postal_address": "P.O Box 43338 – 00100, Nairobi",
+    "physical_location": "Social Security House, Bishops Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Nyambene Arimi Sacco Society Ltd",
+    "postal_address": "P.O Box 493 – 60600, Maua",
+    "physical_location": "Nyambene Arimi Sacco Plaza, Maua Kanuni Road, Meru Town",
+    "county": "Meru",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Nyati Sacco Society Ltd",
+    "postal_address": "P.O Box 7601 – 00200, Nairobi",
+    "physical_location": "Nyati Sacco Plaza, Nairobi West, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ollin Sacco Society Ltd",
+    "postal_address": "P.O Box 83 – 10300, Kerugoya",
+    "physical_location": "Ollin Sacco Building, Off Karatina – Kutus Road, Kerugoya",
+    "county": "Kirinyaga",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Orient Sacco Society Ltd",
+    "postal_address": "P.O Box 1842 – 0100, Thika",
+    "physical_location": "Wakibe Building, Thika Section 9 OAU Road, Thika Town",
+    "county": "Kiambu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Patnas Sacco Society Ltd.",
+    "postal_address": "P.O. Box 601 – 20210, Litein",
+    "physical_location": "Litein Town, Patnas Plaza, Kericho Sotik Road",
+    "county": "Kericho",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ports DT Sacco Society Ltd",
+    "postal_address": "P.O Box 95372 – 80104, Mom-basa",
+    "physical_location": "Mombasa Port Sacco Plaza, Mwakilingo Road",
+    "county": "Mombasa",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Prime – Time Sacco Society Ltd",
+    "postal_address": "P.O Box 512 – 30700, Iten",
+    "physical_location": "Mwalimu Plaza Building, Eldoret – Kabarnet Road, Iten",
+    "county": "Elgeyo – Marakwet",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Puan Sacco Society Ltd",
+    "postal_address": "P.O Box 404 – 20500, Narok",
+    "physical_location": "Farmers Building, Narok – Nakuru Road, Narok Town",
+    "county": "Narok",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Qona Sacco Society Ltd",
+    "postal_address": "P.O Box 6682 – 00800, Nairobi",
+    "physical_location": "Safaricom Care Centre, Waiyaki Way, Westlands, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Qwetu Sacco Society Ltd",
+    "postal_address": "P.0 Box 1186 – 80304, Voi",
+    "physical_location": "Qwetu Sacco Plaza, Voi Town",
+    "county": "Taita Taveta",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Setyon DT Sacco Society Ltd",
+    "postal_address": "P.O Box 1314, 20200, Kericho",
+    "physical_location": "Brooke Centre. Kericho",
+    "county": "Kericho",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Sheria Sacco Society Ltd",
+    "postal_address": "P.O. Box 34390 –00100, Nairobi",
+    "physical_location": "Matumbato Close, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Shirika DT Sacco Society Ltd",
+    "postal_address": "P.O Box 43429 – 00100, Nairobi",
+    "physical_location": "Shirika Coop House, Ngara Kipande Road, Ngara, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Shoppers Sacco Society Ltd",
+    "postal_address": "P.O BOX 16-00507, Nairobi",
+    "physical_location": "Nature House – Tom Mboya Street",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Simba Chai Sacco Society Ltd",
+    "postal_address": "P.O. Box 977 – 20200, Kericho",
+    "physical_location": "Kericho Nakuru Highway, Kericho",
+    "county": "Kericho",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Siraji Sacco Society Ltd",
+    "postal_address": "P.O Box Private Bag",
+    "physical_location": "Siraji Sacco Plaza, Nanyuki – Meru Highway, Timau Town",
+    "county": "Meru",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Skyline DT Sacco Society Ltd",
+    "postal_address": "P.O Box 660 – 20103, Eldama Ravine",
+    "physical_location": "Skyrise Plaza, Eldama Ravine – Eldoret Road, Eldama Ravine",
+    "county": "Baringo",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Smart Champions Sacco Society",
+    "postal_address": "P.O Box 64 – 60205, Githongo",
+    "physical_location": "Muranene Building, Githongo Trading Centre, Meru",
+    "county": "Meru",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Smartlife Sacco Society Ltd",
+    "postal_address": "P.O Box 118 – 30705, Kapsowar",
+    "physical_location": "Marakwet Teachers Plaza, Kapsowar",
+    "county": "Elgeyo – Marakwet",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Solution Sacco Society Ltd",
+    "postal_address": "P.O. Box 1694 – 60200, Meru Central",
+    "physical_location": "Meru Mwalimu Plaza, Gakoromone Road, Meru",
+    "county": "Meru",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Sotico Sacco Society Ltd",
+    "postal_address": "P.O. Box 959 – 20406, Sotik",
+    "physical_location": "Amotek Estate, Sotik Town",
+    "county": "Bomet",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Southern Star Sacco Society Ltd",
+    "postal_address": "P.O Box 514 – 60400, Chuka",
+    "physical_location": "Mt Building, Chuka Town",
+    "county": "Tharaka Nithi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Stake Kenya Sacco Society Ltd",
+    "postal_address": "P.O Box 208 – 40413, Kehancha",
+    "physical_location": "Stake Kenya Sacco Plaza, Migori – Kehancha – Ntimaru Road, Kehancha Town",
+    "county": "Migori",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Stawisha Sacco Society Ltd",
+    "postal_address": "P.O Box 27 – 50203, Kapsok-wony",
+    "physical_location": "Mwalimu Plaza, Kapsokwony – Kaptama Road, Kapsok-wony",
+    "county": "Bungoma",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Stima DT Sacco Society Ltd",
+    "postal_address": "P.O Box 75629 – 00200, Nairobi",
+    "physical_location": "Stima Sacco Plaza, Mushembi Road, Parklands, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Strategic DT Sacco Society Ltd.",
+    "postal_address": "P.O. Box 78506 – 00507, Nairobi",
+    "physical_location": "Lunga Lunga Square, Industrial Area, Nairobi County.",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Suluhu Sacco Society Ltd",
+    "postal_address": "P.O Box 489 – 90400, Mwingi",
+    "physical_location": "Suluhu Sacco Plaza, Kyuso Road, Mwingi",
+    "county": "Kitui",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Supa Sacco Society Ltd",
+    "postal_address": "P.O. Box 271 – 20600, Maralal",
+    "physical_location": "Supa Plaza, Posta Road, Maralal",
+    "county": "Samburu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Tabasamu Sacco Society Ltd",
+    "postal_address": "P.O Box 123 – 80403, Kwale",
+    "physical_location": "Tunawiri House, Kinango Road, Kwale",
+    "county": "Kwale",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Tabasuri DT Sacco Society Ltd",
+    "postal_address": "P.O Box 80862 – 80100, Mom-basa",
+    "physical_location": "Texas Plaza, Off Fidel Odinga Road, Mombasa",
+    "county": "Mombasa",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Tai Sacco Society Ltd",
+    "postal_address": "P.O Box 718 – 00216, Githunguri",
+    "physical_location": "Tai Plaza, Githunguri Town, Kiambu",
+    "county": "Kiambu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Taifa Sacco Society Ltd",
+    "postal_address": "P.O Box 649 – 10100, Nyeri",
+    "physical_location": "NCU Building, Gakere Road, Nyeri Town",
+    "county": "Nyeri",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Taqwa Sacco Society Ltd",
+    "postal_address": "P.O Box 10180 – 00100, Nairobi",
+    "physical_location": "Jamia Plaza, Kigali Street, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Taraji Sacco Society Ltd",
+    "postal_address": "P.O. Box 605 – 40600, Siaya",
+    "physical_location": "Mwalimu Plaza, Oginga Odinga Street, Siaya",
+    "county": "Siaya",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Telepost Sacco Society Ltd",
+    "postal_address": "P.O Box 49557 – 00100, Nairobi",
+    "physical_location": "City Square Post Office, Haile Selassie Avenue, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Tembo Sacco Society Ltd",
+    "postal_address": "P.O Box 91 – 00618, Ruaraka",
+    "physical_location": "Tembo Sacco Complex, Garden Estate Road, Mukima Drive, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Tenhos Sacco Society Ltd",
+    "postal_address": "P.O Box 391 – 20400, Bomet",
+    "physical_location": "Tenhos Building, Tenwek, Bomet",
+    "county": "Bomet",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Thamani Sacco Society Ltd",
+    "postal_address": "P.O. Box 467 – 60400 Chuka",
+    "physical_location": "Thamani House, Chuka Town",
+    "county": "Tharaka Nithi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "The Apple Sacco Society Ltd",
+    "postal_address": "P.O. Box 153 – 50305, Kaimosi",
+    "physical_location": "Tasccos House, Kapsabet – Chavakali Road, Kapsabet",
+    "county": "Nandi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "The Kenya Bankers Sacco Society Ltd.",
+    "postal_address": "P.O. Box 73236 – 00200, Nairobi",
+    "physical_location": "The Kenya Bankers Sacco Centre, 3rd Ngong Ave., Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "The Noble Sacco Society Ltd",
+    "postal_address": "P.O Box 3466 – 30100, Eldoret",
+    "physical_location": "The Noble Sacco Building, Ronald Ngala Road, Eldoret Town",
+    "county": "Uasin Gishu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Times U Sacco Society Ltd",
+    "postal_address": "P.O Box 310 – 60202, Nkubu",
+    "physical_location": "Nkubu, KCB Road, Nkubu",
+    "county": "Meru",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Topkrim DT Sacco Society Ltd",
+    "postal_address": "P.O Box 127 – 40222, Oyugis",
+    "physical_location": "Kisumu – Kisii Road, Oyugis Town, Homabay",
+    "county": "Homabay",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Tower Sacco Society Ltd",
+    "postal_address": "P.O Box 259 – 20303, Ol’Kalou",
+    "physical_location": "Tower Sacco Fosa Building, Ol’kalou Township",
+    "county": "Nyandarua",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Trans – Counties Sacco Society Ltd",
+    "postal_address": "P.O Box 2965 – 30200, Kitale",
+    "physical_location": "Kapsara, Trans – Counties Sacco Office, Kapsara",
+    "county": "Trans Nzoia",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Trans – National Times Sacco Soci-ety Ltd",
+    "postal_address": "P.O.Box 2274 – 30200, Kitale",
+    "physical_location": "Kitale Teachers Plaza, KANU Street, Kitale",
+    "county": "Trans Nzoia",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Trans Elite County Sacco Society Ltd",
+    "postal_address": "P.O Box 547 – 30300, Kapsabet",
+    "physical_location": "Former Barclays Bank Building, Kapsabet – Chavakali Road, Kapsabet Town",
+    "county": "Nandi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Trans Nation Sacco Society Ltd",
+    "postal_address": "P.O Box 15 – 60400, Chuka",
+    "physical_location": "Mwalimu Centre, DC Road, Chuka Town",
+    "county": "Tharaka – Nithi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ufanisi DT Sacco Society Ltd",
+    "postal_address": "P.O. Box 2973 – 00200, Nairobi",
+    "physical_location": "Development House, Moi Avenue, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ukristo Na Ufanisi DT Sacco Society Ltd",
+    "postal_address": "P.O Box 872 – 00605 Nairobi",
+    "physical_location": "ACK Emmanuel Church Riruta, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Unaitas Sacco Society Ltd",
+    "postal_address": "P.O Box 38721 – 00100, Nairobi",
+    "physical_location": "Cardinal Otunga Plaza, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Uni – County Sacco Society Ltd",
+    "postal_address": "P.O. Box 10132 – 20100, Nakuru",
+    "physical_location": "Nakuru Municipality Block, 9/37, Generation House, Ki-jabe Row, Nakuru",
+    "county": "Nakuru",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Unison Sacco Society Ltd",
+    "postal_address": "P. O. Box 414 – 10400, Nanyuki",
+    "physical_location": "Unison Plaza, Nyeri – Nanyuki Road, Nanyuki Munici-pality",
+    "county": "Nanyuki",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "United Nations DT Sacco Society Ltd",
+    "postal_address": "P.O Box 2210 – 00621, Nairobi",
+    "physical_location": "United Nations Complex, United Nations Avenue, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "United Winners Sacco Society",
+    "postal_address": "P.O Box 1390 -00515, Westlands",
+    "physical_location": "UWS Plaza, 1st Floor, Spine Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Universal Traders Sacco Society Ltd",
+    "postal_address": "P.O Box 2119 – 90100, Machakos",
+    "physical_location": "Traders House, Syokimau Road, Machakos",
+    "county": "Machakos",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Univision Sacco Society Ltd",
+    "postal_address": "P.O. Box 254 – 90200, Kitui",
+    "physical_location": "Teachers Plaza, Kitui Town",
+    "county": "Kitui",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ushuru Sacco Society Ltd",
+    "postal_address": "P.O Box 52072 – 00200, Nairobi",
+    "physical_location": "Ushuru Sacco Centre, Wood Avenue, Kilimani",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Vihiga County Farmers Sacco Soci-ety Ltd",
+    "postal_address": "P.O Box 309 – 50317, Chavakali",
+    "physical_location": "Mudete Town, Vihiga County",
+    "county": "Vihiga",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Viktas Sacco Society Ltd",
+    "postal_address": "P.O. Box 2183, Nyahururu",
+    "physical_location": "Glanin Centre, Nyahururu – Nyeri Road, Mairo Inya, Nyan-darua",
+    "county": "Laikipia",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Vision Afrika Sacco Society Ltd",
+    "postal_address": "P.O Box 18263 – 20100, Nakuru",
+    "physical_location": "Rajdeep House – Kenyatta Avenue, Nakuru",
+    "county": "Nakuru",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Vision Point Sacco Society Ltd",
+    "postal_address": "P.O. Box 42 – 40502, Nyansiongo",
+    "physical_location": "Borabu Farmers Union Building, Keroka – Sotik Highway, Borabu",
+    "county": "Kisii",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Wakenya Pamoja Sacco Society Ltd.",
+    "postal_address": "P.O. Box 829 – 40200, Kisii",
+    "physical_location": "Kahawa House, Kisii – Keroka Road, Kisii",
+    "county": "Kisii",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Wakulima Commercial Sacco Soci-ety Ltd",
+    "postal_address": "P.O. Box 232 – 10103, Mukuruk-weini",
+    "physical_location": "MWD Limited Complex, Mukurweini – Nyeri Road, Mukurweini Town",
+    "county": "Nyeri",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Wanaanga Sacco Society Ltd",
+    "postal_address": "P.O Box 34680 – 00100, Nairobi",
+    "physical_location": "Kenya Meteorological Department, Ngong Road, Dag-oretti",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Wananchi Sacco Society Ltd",
+    "postal_address": "P.O Box 910 – 10106, Othaya",
+    "physical_location": "Wananchi Building, Othaya",
+    "county": "Nyeri",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Wanandege Sacco Society Ltd",
+    "postal_address": "P.O Box 19074 – 00501, Nairobi",
+    "physical_location": "Wanandege Plaza, Old North Airport Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Washa Sacco Society Ltd",
+    "postal_address": "P.O. Box 83256 – 80100, Mom-basa",
+    "physical_location": "Ralli House, Nyerere Avenue, Mombasa",
+    "county": "Mombasa",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Waumini Sacco Society Ltd",
+    "postal_address": "P.O Box 66121 – 00800, Nairobi",
+    "physical_location": "Applewood Adams 2nd Floor, Ngong Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Wevarsity Sacco Society Ltd.",
+    "postal_address": "P.O. Box 873 – 50100, Kakamega",
+    "physical_location": "Wevarsity Plaza, Kakamega – Webuye Road, Kakamega",
+    "county": "Kakamega",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Winas Sacco Society Ltd",
+    "postal_address": "P.O. Box 696 – 60100, Embu",
+    "physical_location": "Winas House, Embu Township",
+    "county": "Embu",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Yetu Sacco Society Ltd",
+    "postal_address": "P.O Box 511 – 60202, Nkubu",
+    "physical_location": "Yetu Sacco Building, Nkubu Town, Meru",
+    "county": "Meru",
+    "schedule": "I",
+    "business_type": "deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "3N Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 1875 -20117, Naivasha",
+    "physical_location": "Sera Center, Naivasha",
+    "county": "Nakuru",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "ABC Empowerment Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 32 -90100, Machakos",
+    "physical_location": "ABC Imani Plaza II, Machakos",
+    "county": "Machakos",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Accel Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 64900 -00620, Nairobi",
+    "physical_location": "Ola Energy Plaza, Muthaiga, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "ACK Imani Talent Regulated Non-WDT Sacco",
+    "postal_address": "P.O Box 75-20100Nakuru",
+    "physical_location": "Mothers Union Plaza, Moi Road, Nakuru",
+    "county": "Nakuru",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "ACK Kihara Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 34253 -00100, Gachie",
+    "physical_location": "Kiambaa/Kihara/ 7/178, Gachie",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "ACK Thika Talents Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 214 -01000, Thika",
+    "physical_location": "ACK St. Andrews Cathedral, Thika",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Adventist Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 41352 -00100, Nairobi",
+    "physical_location": "SDA Central Kenya Conference, Red Hill Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "AIBK Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 56928 -00200, Nairobi",
+    "physical_location": "Development House, Moi Avenue",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Airlink Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 69979 -00400, Nairobi",
+    "physical_location": "Jomo Kenyatta International Airport (JKIA), Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Alarms Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 86969 -80100, Mom-basa",
+    "physical_location": "Behind Housing Finance, Moi Avenue, Mvita",
+    "county": "Mombasa",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "AMREF Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 18604 -00100, Nairobi",
+    "physical_location": "AMREF Building, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Appollosure Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 30389 -00100, Nairobi",
+    "physical_location": "Apollo Centre, Ring Rd Parklands",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ballot Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 45371 -00100, Nairobi",
+    "physical_location": "Anniversary Towers 21st Floor, Nairobi CBD",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Balozi Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 11539 -00400, Muthai-ga",
+    "physical_location": "Golf View Suites Muthaiga Off Wambui Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Bamburi Wananchi Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 88474 -80100, Mom-basa",
+    "physical_location": "Bamburi Cement Plc Staff Quarters, Mombasa",
+    "county": "Mombasa",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Bands Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 10614 -00100, Nairobi",
+    "physical_location": "Britam Centre, Upper Hill",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Banki Kuu Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 60000 -00200, Nairobi",
+    "physical_location": "Central Bank of Kenya Headquarters, Nairobi CBD",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Barabara Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 9632 -00200, Nairobi",
+    "physical_location": "Barabara Plaza, Mombasa Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Baraka Yetu Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 8070 -00200, Nairobi",
+    "physical_location": "Nacico Plaza, Ladhies Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "BAT Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 30000 -00100, Nairobi",
+    "physical_location": "BAT Premises, Industrial Area",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Besco Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 1624 -01000, Thika",
+    "physical_location": "Bidco Factory Premises, Thika",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Bestrock Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 717 -90200, Kitui",
+    "physical_location": "Winlo Complex Building, Kitui Town",
+    "county": "Kitui",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Biblia Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 7041 -00300, Nairobi",
+    "physical_location": "Kamirembe Place, Ring Road Kilimani, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Blue Eagle Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 30120 -00100, Nairobi",
+    "physical_location": "Bishop Gate, Upper Hill",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Braemeg Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 45112 -00100, Nairobi",
+    "physical_location": "Polla House, Gitanga Road, Kawangware",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Brookside Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 236 -00232, Ruiru",
+    "physical_location": "Brookside Dairy LTD, Thika Road, Ruiru",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Bunge Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 41842 -00100, Nairobi",
+    "physical_location": "Imani House, Parliament Road, Nairobi CBD",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Bunista Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 194-40601, Bondo-Siaya",
+    "physical_location": "Jaramogi Oginga Odinga University Of Science And Tech-nology, Bondo Town",
+    "county": "Siaya",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "CDF Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 46682 -00100, Nairobi",
+    "physical_location": "La Coline Gardens, Masaba Road, Upper Hill",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "CFAO Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 3391 -00506, Nairobi",
+    "physical_location": "Yamaha Building, CFAO Motors Limited Premises Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Christian Enterpreneurs Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 1460 -00900, Ruiru",
+    "physical_location": "Mapa House, Ruiru",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "CIC Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 59485 -00200, Nairobi",
+    "physical_location": "CIC Plaza 1, 2nd Floor Upper Hill",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "COCOTECH Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 15633 -00503, Nairobi",
+    "physical_location": "Fameco Building, Magadi Road, Langata",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Communication Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 1677 -00606, Nairobi",
+    "physical_location": "Communication Authority Centre, Westlands",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Concorde Regulated Non-WDT-Sac-co",
+    "postal_address": "P.O. Box 10690 -00100, Nairobi",
+    "physical_location": "Centenary House, Westlands",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Co-operative Bank Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 48231 -00100, Nairobi",
+    "physical_location": "Co-Op Bank House, Nairobi CBD",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Cotts Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 42485 -80100, Mom-basa",
+    "physical_location": "Mitchell Cotts Freight Kenya Building, Shimanzi",
+    "county": "Mombasa",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Davis & Shirtliff Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 41762 -00100, Nairobi",
+    "physical_location": "Davis & Shirtliff Building, Dundori Road, Industrial Area",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Devco Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 30645 -00100, Nairobi",
+    "physical_location": "KMA Building 7th Floor, Mara Road Upper Hill",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Dhamini Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 44749 -00100, Nairobi",
+    "physical_location": "ACK Parking Silo, Bishop Road, Westlands",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Dudu Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 30772 -00100, Nairobi",
+    "physical_location": "TRO Conference Building, ICIPE, Kasarani",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Eagle's Eye Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 3809 -01002, Thika",
+    "physical_location": "Christian Church International -Garissa Road, Thika",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Embassava Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 3546 -00200, Nairobi",
+    "physical_location": "Jiwabhai Vekaria Building, Taveta Road, Nairobi CBD",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Energy Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 10585 -00100, Nairobi",
+    "physical_location": "Kawi Complex Block A, South C",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "EPZA Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 788 -00242, Kitengela",
+    "physical_location": "EPZ -Athi River",
+    "county": "Machakos",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Equity Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 75104 -00200, Nairobi",
+    "physical_location": "Equity Centre, Upper Hill",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Esta Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 24 -01000, Thika",
+    "physical_location": "Kakuzi Plc Athara Office Makuyu, Muranga",
+    "county": "Muranga",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Exams Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 73598 -00200, Nairobi",
+    "physical_location": "New Mitihani House, Popo Road, South C",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Family Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 38993 -00100, Nairobi",
+    "physical_location": "10th Family Bank Towers, Nairobi CBD",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Farmers Choice Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 47791 -00100, Nairobi",
+    "physical_location": "Cemtek Building, Kahawa West, Area",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Faulu Bank Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 60240 -00200, Nairobi",
+    "physical_location": "Faulu Microfinance Bank Building, Off Ngong Road, Nai-robi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Finnlemm Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 67666 -00200, Nairobi",
+    "physical_location": "Finnlemm House, 55 Gatundu Road, Kileleshwa, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Forward Travellers Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 1272 -00518, Nairobi",
+    "physical_location": "Kayole Area, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Fugo Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 6434 -00300, Nairobi",
+    "physical_location": "Full Gospel Churches of Kenya, Along Manyanja Road",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Gathers Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 267 -01030, Gatundu",
+    "physical_location": "Gatundu Housing Coop House, Gatundu Town",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Global Express Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 67577 -00200, Nairobi",
+    "physical_location": "DHL House, Witu Road Off Lusaka Road, Industrial Area",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Grain Bulk Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 80469 -80100, Mom-basa",
+    "physical_location": "Grain Bulk Terminal Office Building, Shimanzi, Mombasa",
+    "county": "Mombasa",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Grand Granite Diaspora Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 18399 -00100, Nairobi",
+    "physical_location": "KMA APT, Block A, Suite 2.2, Chyulu Road, Upper Hill",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Green Aro Community Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 177 -60402, Ndori",
+    "physical_location": "Sacco House, Market-Dispensary Road, Siaya",
+    "county": "Siaya",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Haco Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 43903 -00100, Nairobi",
+    "physical_location": "Kasarani Mwiki Road,",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Heart Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 70000-00400, Nairobi",
+    "physical_location": "Tana House, Karen Shopping Centre, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "HELB Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 69489 -00400, Nairobi",
+    "physical_location": "Anniversary Towers, Nairobi CBD",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Hills Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 234 -30301, Nandi Hills",
+    "physical_location": "Siret O.E.P Plaza, KCB Street, Nandi Hills",
+    "county": "Nandi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Hoechem Regulated Non-WDT-Sac-co",
+    "postal_address": "P.O Box 30467 -00100, Nairobi",
+    "physical_location": "Highchem Complex, Mogadishu Road, Industrial Area, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Hyperflora Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 1076 -10400, Nanyuki",
+    "physical_location": "Kangaita Farm, Nanyuki",
+    "county": "Meru",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "ICEA Agents Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 46143 -00100, Nairobi",
+    "physical_location": "Nairobi West, Kodi Road House No. 24, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Irrigation Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 30372 -00100, Nairobi",
+    "physical_location": "Irrigation House, Lenana Road, Kilimani Area, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Jachin Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 12502 -00400, Nairobi",
+    "physical_location": "Hadada Apartments, Kindaruma Road, Off Ngong Road",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Java Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 21533 -00505, Nairobi",
+    "physical_location": "ABC Place, Waiyaki Way, Westlands, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Jumuia Ya Ulaya Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 29960 -00100, Nairobi",
+    "physical_location": "Dunhill Towers, 20th Floor, Waiyaki Way, Westlands, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kabarak University Regulated Non-WDT-Sacco",
+    "postal_address": "Private Bag 20157, Nakuru",
+    "physical_location": "Students Centre, Kabarak University",
+    "county": "Nakuru",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "KAG Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 67014 -00200, Nairobi",
+    "physical_location": "KAG East University, Buruburu Estate, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kanisa Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 1225 -00606, Nairobi",
+    "physical_location": "AACC Compound, Waiyaki Way, Westlands",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "KASNEB Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 41360 -00100, Nairobi",
+    "physical_location": "KASNEB Towers, Upper Hill, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "KEMRI Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 19643 -00202, Nairobi",
+    "physical_location": "KEMRI Visiting Scientists Quarters, Mbagathi Road",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kenchic Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 20052 -00200, Nai-robi",
+    "physical_location": "Exsan House Building, Industrial Area",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kenfam Regulated Non-WDT Sacco",
+    "postal_address": "P.O Box 26915-00504 Nairobi",
+    "physical_location": "South Gate Centre, Mukoma Road, South B, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kenred Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 40712 -00100, Nairobi",
+    "physical_location": "Kenya Red Cross Building, South C, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kentours Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 79333 -00200, Nairobi",
+    "physical_location": "Commodore Office Suites, Kindaruma Road, Kilimani, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kenya -USA Diaspora Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 21372 -00100, Nairobi",
+    "physical_location": "Crescent Business Centre, Parklands Area",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kenya Medical Association Regu-lated Non-WDT-Sacco",
+    "postal_address": "P.O Box 413 -00202, Nairobi",
+    "physical_location": "KMA Centre, Upper Hill, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kenya Re Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 30271 -00100, Nairobi",
+    "physical_location": "Re-insurance Plaza, Nairobi CBD",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kenya Rural Roads Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 48151 -00100, Nairobi",
+    "physical_location": "Barabara Plaza, Airport South Road, JKIA",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kenyatta Matibabu Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 2117 -00202, Nairobi",
+    "physical_location": "Flamingo Towers, Along Mara Road, Upper Hill",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ketepa Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 413 -20200, Kericho",
+    "physical_location": "Ketepa Head Office, Brooke House, Kericho Town",
+    "county": "Kericho",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kewisco Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 4491 -00200, Nairobi",
+    "physical_location": "West End Place, Nairobi West",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kiambu Chania Umoja Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 7715 -01000, Thika",
+    "physical_location": "Thika Stadium, Thika",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kiatu Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 595 -00217, Limuru",
+    "physical_location": "Bata Shoe Premises, Limuru Town",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kico Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 55319 -00200, Nairobi",
+    "physical_location": "Bruce House, Standard Street",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "KIDAPU Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 2303-00900, Kiambu",
+    "physical_location": "Kikinga House Annex,6th Floor, Kiambu Town",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kijabe Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 94 -02200, Kijabe",
+    "physical_location": "AIC Kijabe Hospital, Kijabe",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kilele Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 28403 -00200, Nairobi",
+    "physical_location": "KUSCCO Centre, Along Kilimanjaro Avenue, Upper Hill, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kimtech Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 1913 -10100, Nyeri",
+    "physical_location": "Dedan Kimathi University of Technology Premises, Resource Centre, Nyeri Town",
+    "county": "Nyeri",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kinga Regulated Non-WDT-Sacco",
+    "postal_address": "P.O. Box 22591 -00400,Nairobi",
+    "physical_location": "Jumuia Place, Kilimani, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kingsize Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 18034 -00500,Nairobi",
+    "physical_location": "Nairobi Bottlers Premises, North Airport Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kirungii Regulated Non-WDT-Sacco",
+    "postal_address": "P. O Box 30029 -0100, Nairobi",
+    "physical_location": "Deloitte Place, Waiyaki Way, Muthangari Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Kutafiti Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 230 -80108, Kilifi",
+    "physical_location": "KWTRP Transport Office, Kilifi",
+    "county": "Kilifi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Law Society of Kenya Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 6740 -00100, Nairobi",
+    "physical_location": "Crawford Business Park, Statehouse Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Limlak Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 1306 -00217, Kiambu",
+    "physical_location": "Ushirika Building, Limuru Town",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Lompasago Regulated-Non-WDT-Sacco",
+    "postal_address": "P.O Box 17553 -00500, Nairobi",
+    "physical_location": "Theevan Building, Jogoo Road",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "London Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 57387-00200, Athi River",
+    "physical_location": "London Distillers Premises, Athi River",
+    "county": "Machakos",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Madison Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 47382 -00100, Nairobi",
+    "physical_location": "Madison House, Upper Hill",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "MajaneesRegulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 001 -00217, Kiambu",
+    "physical_location": "Mabroukie Tea Factory, Nazareth Road -Limuru",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Maktaba Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 4156 -00200, Nairobi",
+    "physical_location": "Maktaba Kuu Building, Ngong Road",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Maridhawa Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 43013 -00100, Nairobi",
+    "physical_location": "UAP -Old Mutual Tower, Upper Hill",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Masterways Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 38715 -00600, Nairobi",
+    "physical_location": "Old Mutual Building, Kimathi Street, Nairobi CBD",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Mataara Travellers Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 1750 -01000, Thika",
+    "physical_location": "Kihanya Building, Thika",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Mikebe Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 109 -01000, Thika",
+    "physical_location": "Nampak Building, Thika",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Minet Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 48279 -00100, Nairobi",
+    "physical_location": "Minet House, Along Professional Way – Off Nyerere Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Mkombozi Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 62727 -00200, Nairobi",
+    "physical_location": "Alpha Centre, Godown No-85, Along Mombasa Road",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Mofaa Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 64742 -00620, Nairobi",
+    "physical_location": "Jeda Plaza, Roysambu",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Mount Kenya University Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 342 -01000, Thika",
+    "physical_location": "Sacco Centre, General Kago, Thika",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "MTN Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 944 -10200, Murang'a",
+    "physical_location": "Oluoch Building, Manyeki Road, Muranga Town",
+    "county": "Murang’a",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Mzima Springs Regulated Non-WDT-Sacco",
+    "postal_address": "P. O Box 59857 -00200, Nai-robi",
+    "physical_location": "Student Center Building, Strathmore University",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Nairobi Consumers Regulated Non-WDT-Sacco",
+    "postal_address": "P. O Box 36 -00300, Nairobi",
+    "physical_location": "New Nafuu Classic Building, Popo Road, Gikomba",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Nairobi Water Regulated Non-WDT-Sacco",
+    "postal_address": "P. O Box 13880 -00100, Nairobi",
+    "physical_location": "Garden Chambers, Moktar Dadah Street, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Nendeni Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 228 -00242, Kitengela",
+    "physical_location": "PCEA Kitengela Township Church Building, Kitengela",
+    "county": "Kajiado",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Neno Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 660 -60100, Embu",
+    "physical_location": "Pearl Centre House, S.N. Patel Street, Embu Town",
+    "county": "Embu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Network Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 56985 -00200, Nai-robi",
+    "physical_location": "Standard Group Center, Mombasa Road",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Nimepata Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 55405 -00200, Nairobi",
+    "physical_location": "International Leadership University, Mtito Andei Road, Westlands",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Nyumba -Nairobi Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 30088 -00100, Nairobi",
+    "physical_location": "Applewood Adams, Ngong Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Nyumba Generations Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 83594 -80100, Mombasa",
+    "physical_location": "Corrugated Sheets Limited-Mikindani, Mombasa",
+    "county": "Mombasa",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Panda Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 884 -20117, Naivasha",
+    "physical_location": "Flower Business Park, Along Nairobi-Nakuru Highway, Naivasha",
+    "county": "Nakuru",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Parents Plan Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 25196 -00603, Nairobi",
+    "physical_location": "Methodist Ministries Centre, Block C, Lavington, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Parliamentarians Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 44809 -00100, Nairobi",
+    "physical_location": "Protection House Building, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "PCEA Kayole Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 967 -00518, Nairobi",
+    "physical_location": "PCEA Kayole Church, Spine Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "PCEA Makupa Parish Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 97648 -80112, Mombasa",
+    "physical_location": "PCEA Makupa Church, Off Tom Mboya Street, Mombasa",
+    "county": "Mombasa",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "PCEA Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 27573 -00506, Nairobi",
+    "physical_location": "PCEA Jitegemea House, Along Muhoho Avenue, South C, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "PCEA Ruiru Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 1497 -00232, Ruiru",
+    "physical_location": "PCEA Ruiru Town Plaza Building, Ruiru Town",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "PEFA Nairobi Central Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 79459 -00200, Nairobi",
+    "physical_location": "Solar House 3rd Floor, Harambee Avenue, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Polytech Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 56679 -00200, Nairobi",
+    "physical_location": "Technical University of Kenya, Haile Selassie Ave-nue, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Postbank Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 30313 -00100, Nairobi",
+    "physical_location": "Postbank House, Banda Street, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Queensway Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 48165 -00100, Nairobi",
+    "physical_location": "Ojijo Plaza, Off Ojijo, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Radio Guard Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 27546 -00506, Nairobi",
+    "physical_location": "NACICO Plaza, Landhies Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Rambhai Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 41328 -00500, Nairobi",
+    "physical_location": "Theevan House, Jogoo Road, City Stadium, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ramco Group Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 18639 -00500, Nairobi",
+    "physical_location": "KCB Building, Enterprise Road, Industrial Area",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Reli Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 55541 -00200, Nairobi",
+    "physical_location": "Reli Sacco, Workshop Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Relief Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 73226 -00200, Nairobi",
+    "physical_location": "International Committee of the Red Cross Offices, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Rembo Shuttle Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 458 -00241, Kitengela",
+    "physical_location": "Red Heron Centre, Nairobi-Namanga Road, Kitengela",
+    "county": "Kajiado",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Royal Media Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 7468 -00300, Nairobi",
+    "physical_location": "Communication Centre, Maalim Juma Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Rubani Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 57509 -00200, Nairobi",
+    "physical_location": "Rubani House, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Sauti Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 30042 -00100, Nairobi",
+    "physical_location": "Sauti Office, Kapiti Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Sawa Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 46143 -00100, Nairobi",
+    "physical_location": "WestPark Suites, Ojijo Road, Westlands",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Shamiri Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 7504 -30100, Eldoret",
+    "physical_location": "MTRH, Memorial Wing, Eldoret",
+    "county": "Uasin Gishu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Shelloyees Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 73902 -00200, Nairobi",
+    "physical_location": "Vienna Court, State House Crescent Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Sisi Kwa Sisi Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 90434 -80100, Mombasa",
+    "physical_location": "Pandya Memorial Hospital, Mombasa",
+    "county": "Mombasa",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Smart Savers Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 30527 -00100, Nairobi",
+    "physical_location": "Isuzu East Africa Premises, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Stoke -UK Diaspora Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 73458 -00200, Nairobi",
+    "physical_location": "Sinkeed Arcade,Kitengela,",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Taa Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 10535 -00100, Nairobi",
+    "physical_location": "Finance House, Nairobi CBD",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Tetra Pak Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 78340 -00507, Nairobi",
+    "physical_location": "SMK Building, Industrial Area, Enterprise Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "The Standard Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 30080 -00100, Nairobi",
+    "physical_location": "The Standard Group Centre, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Torch Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 90401 -80100, Mombasa",
+    "physical_location": "Kenya Petroleum Refineries Premises, Changamwe",
+    "county": "Mombasa",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Total Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 30675 -00100, Nairobi",
+    "physical_location": "Regal Plaza, 2nd Floor West Wing, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Tramom Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 93008 -80102, Mombasa",
+    "physical_location": "Dynamic Building, Old Mombasa Road, Changamwe",
+    "county": "Mombasa",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Transglob Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 11364 -00400, Nairobi",
+    "physical_location": "Acceler Towers, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Transwest Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 794 -30200, Kitale",
+    "physical_location": "Ebby Towers, Kitale",
+    "county": "Trans Nzoia",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Uaminifu Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 4179 -00506, Nairobi",
+    "physical_location": "KWFT Centre, Kiambere Road, Upper Hill",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ubora Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 54974 -00200, Nairobi",
+    "physical_location": "KEBS Headquarters, Popo Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ukaguzi Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 61055 -00200, Nairobi",
+    "physical_location": "Anniversary Towers, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Ukombozi Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 2758 -20100, Nakuru",
+    "physical_location": "Deliverance Church, Kariba Street, Nakuru",
+    "county": "Nakuru",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Unbound Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 1163 -00100, Nairobi",
+    "physical_location": "Mountain view, House 97, Kangemi Area, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Unga Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 30386 -00100, Nairobi",
+    "physical_location": "Ngano House, Industrial Area",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Unifying Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 553 -00605, Kiambu",
+    "physical_location": "Mustard Seed Mall, Along Waiyaki Way, Uthiru",
+    "county": "Kiambu",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "United Women Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 3228 -00100, Nairobi",
+    "physical_location": "Green House Mall, Adams Arcade, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Uokoaji Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 30793 -00100, Nairobi",
+    "physical_location": "Commodore Office Suites, Suite 4c, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Urban Roads Regulated Non-WDT Sacco",
+    "postal_address": "P.O Box 22435-00100 Nairobi",
+    "physical_location": "Barabara Plaza, Mazao Road-Off South Airport Road, JKIA, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "USIU-Africa Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 14634 -00800, Nairobi",
+    "physical_location": "USIU, Maintenance Yard, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Utabibu Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 102697 -00101, Nairobi",
+    "physical_location": "Doctors’ Park, 4th Floor, Parklands Avenue Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Utafiti Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 30709 -00100, Nairobi",
+    "physical_location": "ILRI Campus, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Uwezo Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 78799 -00507, Nairobi",
+    "physical_location": "Crown Paints, Likoni Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Vegpro Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 3774 -00100, Nairobi",
+    "physical_location": "Jomo Kenyatta International Airport-Cargo Village, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Verona Huruma Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 47714 -00100, Nairobi",
+    "physical_location": "Holy Trinity Catholic Church, Kariobangi Area, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Vision Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 1240 -00502, Nairobi",
+    "physical_location": "World Vision Complex, Karen Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Wasado Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 18011 -00500, Nairobi",
+    "physical_location": "KCB Building Industrial Area, 3rd Floor, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Waskom Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 17592 -00500, Nairobi",
+    "physical_location": "Blue House, Kangundo Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Zoghori Regulated Non-WDT-Sacco",
+    "postal_address": "P.O Box 86838 -80100, Mombasa",
+    "physical_location": "Tilu Bilu Building, Digo Road, Mombasa",
+    "county": "Mombasa",
+    "schedule": "II",
+    "business_type": "non_deposit_taking",
+    "is_visible": true
+  },
+  {
+    "name": "Dumisha SACCO Society Ltd",
+    "postal_address": "P.O Box 84 – 20600 Maralal",
+    "physical_location": "Dumisha Sacco Plaza, Maralal Town",
+    "county": "Samburu",
+    "schedule": "III",
+    "business_type": "restricted",
+    "is_visible": true
+  },
+  {
+    "name": "Bi-High Sacco Society Ltd",
+    "postal_address": "P.O Box 90 – 60500 Marsabit",
+    "physical_location": "Marsabit Teachers Plaza, Marsabit Town",
+    "county": "Marsabit",
+    "schedule": "III",
+    "business_type": "restricted",
+    "is_visible": true
+  },
+  {
+    "name": "Metropolitan National Sacco Society Ltd",
+    "postal_address": "P.O Box 871 – 00900, Kiambu",
+    "physical_location": "Metropolitan National Sacco Building, Kiambu Town",
+    "county": "Kiambu",
+    "schedule": "III",
+    "business_type": "restricted",
+    "is_visible": true
+  },
+  {
+    "name": "Ol’Kaunsel Regulated Non-WDT-Sacco Society Ltd",
+    "postal_address": "P.O Box 540 – 01100, Kajiado",
+    "physical_location": "Kajiado County Assembly Offices, Kajiado Town",
+    "county": "Kajiado",
+    "schedule": "III",
+    "business_type": "restricted",
+    "is_visible": true
+  },
+  {
+    "name": "Digital Media Regulated Non-WDT-Sacco Society Ltd",
+    "postal_address": "P.O Box 69825 – 00400, Nairobi",
+    "physical_location": "Red Commercial Complex, 2nd Floor, Mombasa Road, Nairobi",
+    "county": "Nairobi",
+    "schedule": "III",
+    "business_type": "restricted",
+    "is_visible": true
+  },
+  {
+    "name": "Nufaika Sacco Society Ltd",
+    "postal_address": "P.O Box 735 – 10300, Kerugoya",
+    "physical_location": "Machere Building, Machere Street, Kerugoya, Kirinyaga County",
+    "county": "Kirinyaga",
+    "schedule": "IV",
+    "business_type": "revoked",
+    "is_visible": true
+  },
+  {
+    "name": "PESA Sacco Society Ltd",
+    "postal_address": "P.O Box 38622 -00623, Nairobi",
+    "physical_location": "Mountain Mall, Along Thika Road Nairobi",
+    "county": "Nairobi",
+    "schedule": "V",
+    "business_type": "revoked",
+    "is_visible": true
+  }
+]

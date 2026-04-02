@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Hakiki{% endblock %}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    [x-cloak] { display: none; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800 antialiased">
+
+  {% block navbar %}
+  {% if request.cookies.get("session") %}
+  <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between gap-8">
+
+      <!-- Brand -->
+      <a href="/dashboard" class="flex items-center gap-2 shrink-0">
+        <span class="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center text-white text-xs font-bold">H</span>
+        <span class="font-semibold text-slate-800 text-sm tracking-tight">Hakiki</span>
+      </a>
+
+      <!-- Nav links -->
+      <div class="flex items-center gap-1 text-sm">
+        <a href="/dashboard"
+          class="px-3 py-1.5 rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition font-medium">
+          Dashboard
+        </a>
+        <a href="/billing"
+          class="px-3 py-1.5 rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition font-medium">
+          Billing
+        </a>
+        {% if is_admin %}
+        <span class="w-px h-4 bg-slate-200 mx-1"></span>
+        <a href="/admin"
+          class="px-3 py-1.5 rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition font-medium">
+          Users
+        </a>
+        <a href="/admin/finance"
+          class="px-3 py-1.5 rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition font-medium">
+          Finance
+        </a>
+        <a href="/admin/config"
+          class="px-3 py-1.5 rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition font-medium">
+          Config
+        </a>
+        {% endif %}
+        <span class="w-px h-4 bg-slate-200 mx-1"></span>
+        <a href="/logout"
+          class="px-3 py-1.5 rounded-md text-slate-500 hover:text-red-500 hover:bg-red-50 transition font-medium">
+          Logout
+        </a>
+      </div>
+
+    </div>
+  </nav>
+  {% endif %}
+  {% endblock %}
+
+  <main class="{% block main_class %}{% endblock %}">
+    {% block content %}{% endblock %}
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% block title %}Tier Config — Hakiki Admin{% endblock %}
+{% block main_class %}max-w-4xl mx-auto px-6 py-10{% endblock %}
+
+{% block content %}
+
+<div class="mb-8 flex items-center justify-between">
+  <div>
+    <h1 class="text-2xl font-bold text-slate-800">Tier Configuration</h1>
+    <p class="text-slate-500 text-sm mt-0.5">Prices, call limits and access per tier. Changes take effect immediately.</p>
+  </div>
+  <a href="/admin" class="text-sm text-slate-500 hover:text-blue-600 transition">← Users</a>
+</div>
+
+{% if saved %}
+<div class="mb-6 bg-green-50 border border-green-200 rounded-xl px-5 py-3 text-green-800 text-sm font-medium flex items-center gap-2">
+  <span class="text-green-500">✓</span> Configuration saved and applied.
+</div>
+{% endif %}
+
+<form method="post" action="/admin/config">
+  <div class="space-y-6">
+    {% for t in tiers %}
+    <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+
+      <!-- Tier header -->
+      <div class="px-6 py-4 border-b border-slate-100 flex items-center gap-3
+        {% if t.tier == 'enterprise' %}bg-purple-50/60
+        {% elif t.tier == 'pro' %}bg-blue-50/60
+        {% else %}bg-slate-50/60{% endif %}">
+        <span class="w-3 h-3 rounded-full
+          {% if t.tier == 'enterprise' %}bg-purple-500
+          {% elif t.tier == 'pro' %}bg-blue-500
+          {% else %}bg-slate-400{% endif %}"></span>
+        <h2 class="font-semibold text-slate-800 capitalize">{{ t.tier }}</h2>
+      </div>
+
+      <div class="p-6 grid grid-cols-2 gap-4">
+
+        <!-- Label -->
+        <div class="col-span-2 sm:col-span-1">
+          <label class="block text-xs font-semibold text-slate-500 mb-1.5 uppercase tracking-wider">Display name</label>
+          <input type="text" name="{{ t.tier }}_label" value="{{ t.label }}"
+            class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+        </div>
+
+        <!-- Monthly calls -->
+        <div class="col-span-2 sm:col-span-1">
+          <label class="block text-xs font-semibold text-slate-500 mb-1.5 uppercase tracking-wider">
+            Monthly calls <span class="font-normal normal-case text-slate-400">(blank = unlimited)</span>
+          </label>
+          <input type="number" name="{{ t.tier }}_monthly"
+            value="{{ t.monthly_calls if t.monthly_calls is not none else '' }}"
+            min="0" placeholder="Unlimited"
+            class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+        </div>
+
+        <!-- Prices section -->
+        <div class="col-span-2">
+          <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">Pricing (KES)</p>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+
+            <div>
+              <label class="block text-xs text-slate-500 mb-1.5">Weekly</label>
+              <div class="relative">
+                <span class="absolute left-3 top-2 text-slate-400 text-xs font-medium">KES</span>
+                <input type="number" name="{{ t.tier }}_price_weekly"
+                  value="{{ t.price_weekly | int }}" min="0" step="1"
+                  class="w-full pl-10 pr-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs text-slate-500 mb-1.5">Monthly</label>
+              <div class="relative">
+                <span class="absolute left-3 top-2 text-slate-400 text-xs font-medium">KES</span>
+                <input type="number" name="{{ t.tier }}_price_monthly"
+                  value="{{ t.price_usd | int }}" min="0" step="1"
+                  class="w-full pl-10 pr-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs text-slate-500 mb-1.5">Quarterly</label>
+              <div class="relative">
+                <span class="absolute left-3 top-2 text-slate-400 text-xs font-medium">KES</span>
+                <input type="number" name="{{ t.tier }}_price_quarterly"
+                  value="{{ t.price_quarterly | int }}" min="0" step="1"
+                  class="w-full pl-10 pr-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs text-slate-500 mb-1.5">Annual</label>
+              <div class="relative">
+                <span class="absolute left-3 top-2 text-slate-400 text-xs font-medium">KES</span>
+                <input type="number" name="{{ t.tier }}_price_annual"
+                  value="{{ t.price_annual | int }}" min="0" step="1"
+                  class="w-full pl-10 pr-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- API limits -->
+        <div>
+          <label class="block text-xs font-semibold text-slate-500 mb-1.5 uppercase tracking-wider">
+            /search max results <span class="font-normal normal-case text-slate-400">(blank = unlimited)</span>
+          </label>
+          <input type="number" name="{{ t.tier }}_search"
+            value="{{ t.search_limit if t.search_limit is not none else '' }}"
+            min="0" placeholder="Unlimited"
+            class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-500 mb-1.5 uppercase tracking-wider">
+            /list max results <span class="font-normal normal-case text-slate-400">(blank = unlimited, -1 = blocked)</span>
+          </label>
+          <input type="number" name="{{ t.tier }}_list"
+            value="{{ t.list_limit if t.list_limit is not none else '' }}"
+            min="-1" placeholder="Unlimited"
+            class="w-full px-3 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+        </div>
+
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="mt-6 flex justify-end">
+    <button type="submit"
+      class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-2.5 rounded-lg text-sm transition">
+      Save changes
+    </button>
+  </div>
+</form>
+
+{% endblock %}
