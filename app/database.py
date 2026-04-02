@@ -5,7 +5,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite+aiosqlite:///./hakiki.db")
+_raw_url = os.getenv("DATABASE_URL", "sqlite+aiosqlite:///./hakiki.db")
+
+# Railway / Heroku provide postgresql:// — SQLAlchemy async needs postgresql+asyncpg://
+if _raw_url.startswith("postgresql://") or _raw_url.startswith("postgres://"):
+    _raw_url = _raw_url.replace("postgres://", "postgresql+asyncpg://", 1) \
+                       .replace("postgresql://", "postgresql+asyncpg://", 1)
+
+DATABASE_URL = _raw_url
 
 # PostgreSQL needs a slightly different engine config
 _is_postgres = DATABASE_URL.startswith("postgresql")

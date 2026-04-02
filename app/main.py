@@ -44,20 +44,22 @@ _TIER_FIELDS: dict[str, set] = {
 async def lifespan(app: FastAPI):
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
+        # ADD COLUMN IF NOT EXISTS works on Postgres; SQLite uses try/except
+        _pg = str(conn.engine.url).startswith("postgresql")
         for col_sql in [
-            "ALTER TABLE api_users ADD COLUMN credits_reset_at TIMESTAMP",
-            "ALTER TABLE api_users ADD COLUMN password_hash TEXT",
-            "ALTER TABLE api_users ADD COLUMN api_key_plain TEXT",
-            "ALTER TABLE api_users ADD COLUMN full_name TEXT",
-            "ALTER TABLE api_users ADD COLUMN phone TEXT",
-            "ALTER TABLE api_users ADD COLUMN company TEXT",
-            "ALTER TABLE api_users ADD COLUMN use_case TEXT",
-            "ALTER TABLE tier_config ADD COLUMN price_weekly NUMERIC(10,2) NOT NULL DEFAULT 0",
-            "ALTER TABLE tier_config ADD COLUMN price_quarterly NUMERIC(10,2) NOT NULL DEFAULT 0",
-            "ALTER TABLE tier_config ADD COLUMN price_annual NUMERIC(10,2) NOT NULL DEFAULT 0",
+            "ALTER TABLE api_users ADD COLUMN{} credits_reset_at TIMESTAMP",
+            "ALTER TABLE api_users ADD COLUMN{} password_hash TEXT",
+            "ALTER TABLE api_users ADD COLUMN{} api_key_plain TEXT",
+            "ALTER TABLE api_users ADD COLUMN{} full_name TEXT",
+            "ALTER TABLE api_users ADD COLUMN{} phone TEXT",
+            "ALTER TABLE api_users ADD COLUMN{} company TEXT",
+            "ALTER TABLE api_users ADD COLUMN{} use_case TEXT",
+            "ALTER TABLE tier_config ADD COLUMN{} price_weekly NUMERIC(10,2) NOT NULL DEFAULT 0",
+            "ALTER TABLE tier_config ADD COLUMN{} price_quarterly NUMERIC(10,2) NOT NULL DEFAULT 0",
+            "ALTER TABLE tier_config ADD COLUMN{} price_annual NUMERIC(10,2) NOT NULL DEFAULT 0",
         ]:
             try:
-                await conn.execute(text(col_sql))
+                await conn.execute(text(col_sql.format(" IF NOT EXISTS" if _pg else "")))
             except Exception:
                 pass
 
