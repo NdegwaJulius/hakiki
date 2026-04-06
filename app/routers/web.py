@@ -34,7 +34,7 @@ def _verify_password(password: str, stored: str) -> bool:
         return False
 
 SECRET_KEY   = os.getenv("SECRET_KEY", "dev-secret")
-ADMIN_EMAIL  = os.getenv("ADMIN_EMAIL", "")
+ADMIN_EMAIL  = os.getenv("ADMIN_EMAIL", "").strip().lower()
 APP_URL      = os.getenv("APP_URL", "http://localhost:8000")
 _signer      = URLSafeTimedSerializer(SECRET_KEY)
 _reset_signer = URLSafeTimedSerializer(SECRET_KEY + "-reset")
@@ -43,7 +43,7 @@ RESET_MAX    = 1 * 60 * 60     # 1 hour
 
 
 def _is_admin(user: ApiUser) -> bool:
-    return bool(ADMIN_EMAIL) and user.email == ADMIN_EMAIL
+    return bool(ADMIN_EMAIL) and user.email.strip().lower() == ADMIN_EMAIL
 
 
 # ── Session helpers ───────────────────────────────────────────────────────────
@@ -221,7 +221,7 @@ async def dashboard(request: Request, new_key: str = None, db: AsyncSession = De
 @router.get("/admin", response_class=HTMLResponse)
 async def admin_panel(request: Request, db: AsyncSession = Depends(get_db)):
     user = await _current_user(request, db)
-    if not user or user.email != ADMIN_EMAIL:
+    if not user or user.email.strip().lower() != ADMIN_EMAIL:
         return RedirectResponse("/login", status_code=302)
 
     users_result = await db.execute(select(ApiUser).order_by(ApiUser.created_at.desc()))
@@ -243,7 +243,7 @@ async def update_tier(
     db: AsyncSession = Depends(get_db),
 ):
     admin = await _current_user(request, db)
-    if not admin or admin.email != ADMIN_EMAIL:
+    if not admin or admin.email.strip().lower() != ADMIN_EMAIL:
         return RedirectResponse("/login", status_code=302)
 
     if tier not in TIER_MONTHLY_LIMIT:
@@ -261,7 +261,7 @@ async def update_tier(
 @router.post("/admin/users/{user_id}/toggle")
 async def toggle_user(user_id: str, request: Request, db: AsyncSession = Depends(get_db)):
     admin = await _current_user(request, db)
-    if not admin or admin.email != ADMIN_EMAIL:
+    if not admin or admin.email.strip().lower() != ADMIN_EMAIL:
         return RedirectResponse("/login", status_code=302)
 
     result = await db.execute(select(ApiUser).where(ApiUser.id == user_id))
@@ -400,7 +400,7 @@ async def billing(request: Request, db: AsyncSession = Depends(get_db)):
 @router.get("/admin/finance", response_class=HTMLResponse)
 async def admin_finance(request: Request, db: AsyncSession = Depends(get_db)):
     admin = await _current_user(request, db)
-    if not admin or admin.email != ADMIN_EMAIL:
+    if not admin or admin.email.strip().lower() != ADMIN_EMAIL:
         return RedirectResponse("/login", status_code=302)
 
     from app.models import Payment
@@ -440,7 +440,7 @@ async def admin_finance(request: Request, db: AsyncSession = Depends(get_db)):
 @router.get("/admin/config", response_class=HTMLResponse)
 async def admin_config_page(request: Request, db: AsyncSession = Depends(get_db)):
     admin = await _current_user(request, db)
-    if not admin or admin.email != ADMIN_EMAIL:
+    if not admin or admin.email.strip().lower() != ADMIN_EMAIL:
         return RedirectResponse("/login", status_code=302)
     import app.tier_config as tc
     return templates.TemplateResponse("admin_config.html", {
@@ -457,7 +457,7 @@ async def admin_config_save(
     db: AsyncSession = Depends(get_db),
 ):
     admin = await _current_user(request, db)
-    if not admin or admin.email != ADMIN_EMAIL:
+    if not admin or admin.email.strip().lower() != ADMIN_EMAIL:
         return RedirectResponse("/login", status_code=302)
 
     form = await request.form()
