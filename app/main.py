@@ -111,30 +111,33 @@ import os as _os
 
 _doc_signer = _Signer(_os.getenv("SECRET_KEY", "dev-secret"))
 _DOC_SESSION_MAX = 7 * 24 * 3600
+_ADMIN_EMAIL = _os.getenv("ADMIN_EMAIL", "").strip().lower()
 
 
-def _doc_user(request: Request) -> bool:
+async def _doc_admin(request: Request, db: AsyncSession = Depends(get_db)) -> bool:
     token = request.cookies.get("session")
     if not token:
         return False
     try:
-        _doc_signer.loads(token, max_age=_DOC_SESSION_MAX)
-        return True
+        user_id = _doc_signer.loads(token, max_age=_DOC_SESSION_MAX)
     except _Bad:
         return False
+    result = await db.execute(select(ApiUser).where(ApiUser.id == user_id))
+    user = result.scalar_one_or_none()
+    return bool(user and _ADMIN_EMAIL and user.email.strip().lower() == _ADMIN_EMAIL)
 
 
 @app.get("/openapi.json", include_in_schema=False)
-async def openapi_schema(request: Request):
-    if not _doc_user(request):
+async def openapi_schema(request: Request, is_admin: bool = Depends(_doc_admin)):
+    if not is_admin:
         from fastapi.responses import RedirectResponse
         return RedirectResponse("/login")
     return get_openapi(title=app.title, version=app.version, routes=app.routes)
 
 
 @app.get("/docs", include_in_schema=False)
-async def swagger_ui(request: Request):
-    if not _doc_user(request):
+async def swagger_ui(request: Request, is_admin: bool = Depends(_doc_admin)):
+    if not is_admin:
         from fastapi.responses import RedirectResponse
         return RedirectResponse("/login")
     return get_swagger_ui_html(openapi_url="/openapi.json", title="Hakiki API Docs")
@@ -252,4 +255,20 @@ async def stats(
         "by_schedule":     dict(sorted(by_schedule.items())),
         "by_business_type": dict(by_type.most_common()),
         "by_county":       dict(by_county.most_common()),
+    }
+
+
+@app.get(f"{PREFIX}/filters")
+@limiter.limit(RATE_LIMIT)
+async def filters(
+    request: Request,
+    db: AsyncSession = Depends(get_db),
+    current_user: ApiUser = Depends(get_current_user),
+):
+    """Returns all distinct filter values for schedule, business_type, and county."""
+    await deduct_credit_and_log(current_user, f"{PREFIX}/filters", db, found=True)
+    return {
+        "schedules":       sorted(set(s["schedule"]      for s in _SACCOS)),
+        "business_types":  sorted(set(s["business_type"] for s in _SACCOS)),
+        "counties":        sorted(set(s["county"]        for s in _SACCOS)),
     }
