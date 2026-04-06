@@ -30,7 +30,11 @@ engine = create_async_engine(
         "pool_size": 10,
         "max_overflow": 20,
         "pool_pre_ping": True,
-        "connect_args": {"ssl": _pg_ssl_ctx},
+        "connect_args": {
+            "ssl": _pg_ssl_ctx,
+            "statement_cache_size": 0,
+            "prepared_statement_cache_size": 0,
+        },
     } if _is_postgres else {
         "connect_args": {"check_same_thread": False},
     })
