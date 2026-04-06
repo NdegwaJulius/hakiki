@@ -17,11 +17,12 @@ from app.database import get_db
 from app.dependencies import deduct_credit_and_log, get_current_user
 from app.limiter import limiter, RATE_LIMIT
 from app.models import ApiUser
+import app.store as store
 import app.tier_config as tier_config
 
-# ── In-memory store (populated during app lifespan) ───────────────────────────
+# ── In-memory store (shared via app.store) ────────────────────────────────────
 
-_CBK_ENTITIES: list[dict] = []
+_CBK_ENTITIES = store.CBK_ENTITIES   # shared reference
 
 VALID_ENTITY_TYPES = {"dcp", "psp", "forex", "mfb", "remittance"}
 
@@ -53,7 +54,7 @@ def load_data(json_path: Path) -> None:
         return
     with open(json_path) as f:
         data = json.load(f)
-    _CBK_ENTITIES.extend(data)
+    store.reload_cbk(data)
     by_cat = Counter(r["category"] for r in data)
     summary = ", ".join(f"{k}={v}" for k, v in sorted(by_cat.items()))
     print(f"  Loaded  : {len(data)} CBK entities into memory  ({summary})")

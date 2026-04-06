@@ -18,6 +18,7 @@ from app.routers import web as web_router
 from app.routers import cbk as cbk_router
 import app.tier_config as tier_config
 from app.limiter import limiter, RATE_LIMIT
+import app.store as store
 
 load_dotenv()
 
@@ -30,7 +31,7 @@ DEV_EMAIL   = "dev@hakiki.local"
 JSON_PATH     = Path(__file__).parent.parent / "saccos_2026.json"
 CBK_JSON_PATH = Path(__file__).parent.parent / "cbk_entities.json"
 
-_SACCOS: list[dict] = []
+_SACCOS = store.SACCOS   # shared reference — mutations visible everywhere
 
 _ALL_FIELDS = {"name", "county", "schedule", "business_type", "is_visible",
                "postal_address", "physical_location"}
@@ -78,7 +79,7 @@ async def lifespan(app: FastAPI):
         await tier_config.load(db)
 
     with open(JSON_PATH) as f:
-        _SACCOS.extend(json.load(f))
+        store.reload_saccos(json.load(f))
 
     cbk_router.load_data(CBK_JSON_PATH)
 

@@ -1,10 +1,14 @@
+import asyncio
 import hashlib
 import hmac
+import json
 import os
 import secrets
+import tempfile
 from datetime import datetime, timezone
+from pathlib import Path
 
-from fastapi import APIRouter, Depends, Form, Request
+from fastapi import APIRouter, Depends, File, Form, Request, UploadFile
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 from itsdangerous import BadSignature, URLSafeTimedSerializer
@@ -14,6 +18,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.database import get_db
 from app.dependencies import TIER_MONTHLY_LIMIT, hash_api_key
 from app.models import ApiUser, UsageLog
+import app.store as store
 
 router = APIRouter()
 templates = Jinja2Templates(directory="frontend/templates")
@@ -491,3 +496,171 @@ async def admin_config_save(
     await db.commit()
     await tc.load(db)   # refresh cache immediately
     return RedirectResponse("/admin/config?saved=1", status_code=302)
+
+
+# ── Admin: data uploads ───────────────────────────────────────────────────────
+
+CBK_CATEGORIES = {
+    "dcp":        "Digital Credit Providers",
+    "psp":        "Payment Service Providers",
+    "forex":      "Forex Bureaus",
+    "mfb":        "Microfinance Banks",
+    "remittance": "Money Remittance Providers",
+}
+
+SUPABASE_URL = os.getenv("SUPABASE_URL", "").rstrip("/")
+SERVICE_KEY  = os.getenv("SUPABASE_SERVICE_KEY", "")
+
+
+def _supabase_upsert(table: str, records: list[dict], on_conflict: str) -> tuple[int, str]:
+    """Upsert records to Supabase via REST API. Returns (status, message)."""
+    import ssl
+    import urllib.error
+    import urllib.request
+    ssl._create_default_https_context = ssl._create_unverified_context
+
+    if not SUPABASE_URL or not SERVICE_KEY:
+        return 0, "SUPABASE_URL / SUPABASE_SERVICE_KEY not set — skipped DB sync"
+
+    batch_size = 100
+    for i in range(0, len(records), batch_size):
+        batch = records[i : i + batch_size]
+        url   = f"{SUPABASE_URL}/rest/v1/{table}?on_conflict={on_conflict}"
+        body  = json.dumps(batch).encode()
+        req   = urllib.request.Request(url, data=body, method="POST")
+        req.add_header("apikey",        SERVICE_KEY)
+        req.add_header("Authorization", f"Bearer {SERVICE_KEY}")
+        req.add_header("Content-Type",  "application/json")
+        req.add_header("Prefer",        "return=minimal,resolution=merge-duplicates")
+        try:
+            with urllib.request.urlopen(req) as r:
+                status = r.status
+        except urllib.error.HTTPError as e:
+            return e.code, e.read()[:200].decode()
+
+    return 200, f"{len(records)} records synced to Supabase"
+
+
+@router.get("/admin/data", response_class=HTMLResponse)
+async def admin_data_page(
+    request: Request,
+    db: AsyncSession = Depends(get_db),
+    msg: str = None,
+    error: str = None,
+):
+    admin = await _current_user(request, db)
+    if not admin or not _is_admin(admin):
+        return RedirectResponse("/login", status_code=302)
+
+    from collections import Counter
+    cbk_counts = Counter(e["category"] for e in store.CBK_ENTITIES)
+
+    return templates.TemplateResponse("admin_data.html", {
+        "request":      request,
+        "admin":        admin,
+        "is_admin":     True,
+        "msg":          msg,
+        "error":        error,
+        "sacco_count":  len(store.SACCOS),
+        "cbk_counts":   {cat: cbk_counts.get(cat, 0) for cat in CBK_CATEGORIES},
+        "cbk_labels":   CBK_CATEGORIES,
+    })
+
+
+@router.post("/admin/upload/sacco")
+async def upload_sacco(
+    request: Request,
+    file: UploadFile = File(...),
+    db: AsyncSession = Depends(get_db),
+):
+    admin = await _current_user(request, db)
+    if not admin or not _is_admin(admin):
+        return RedirectResponse("/login", status_code=302)
+
+    if not file.filename.lower().endswith(".pdf"):
+        return RedirectResponse("/admin/data?error=Please+upload+a+PDF+file", status_code=302)
+
+    # Save to temp file then parse in thread pool (pdfplumber is sync)
+    contents = await file.read()
+    with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as tmp:
+        tmp.write(contents)
+        tmp_path = tmp.name
+
+    try:
+        from scrape_sasra import scrape_from_file
+        loop    = asyncio.get_event_loop()
+        records = await loop.run_in_executor(None, scrape_from_file, tmp_path)
+    except Exception as e:
+        return RedirectResponse(f"/admin/data?error=Parse+error:+{str(e)[:80]}", status_code=302)
+    finally:
+        Path(tmp_path).unlink(missing_ok=True)
+
+    if not records:
+        return RedirectResponse("/admin/data?error=No+records+extracted+from+PDF", status_code=302)
+
+    # Reload in-memory store
+    store.reload_saccos(records)
+
+    # Persist JSON (local / Railway ephemeral)
+    json_path = Path(__file__).parent.parent.parent / "saccos_2026.json"
+    with open(json_path, "w") as f:
+        json.dump(records, f, ensure_ascii=False, indent=2)
+
+    # Sync to Supabase
+    status, db_msg = _supabase_upsert("saccos", records, "name,schedule")
+
+    msg = f"SACCO: {len(records)} records loaded into memory. {db_msg}"
+    return RedirectResponse(f"/admin/data?msg={msg}", status_code=302)
+
+
+@router.post("/admin/upload/cbk/{entity_type}")
+async def upload_cbk(
+    entity_type: str,
+    request: Request,
+    file: UploadFile = File(...),
+    db: AsyncSession = Depends(get_db),
+):
+    admin = await _current_user(request, db)
+    if not admin or not _is_admin(admin):
+        return RedirectResponse("/login", status_code=302)
+
+    if entity_type not in CBK_CATEGORIES:
+        return RedirectResponse("/admin/data?error=Unknown+entity+type", status_code=302)
+
+    if not file.filename.lower().endswith(".pdf"):
+        return RedirectResponse("/admin/data?error=Please+upload+a+PDF+file", status_code=302)
+
+    contents = await file.read()
+    with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as tmp:
+        tmp.write(contents)
+        tmp_path = tmp.name
+
+    try:
+        from scrape_cbk import scrape_entity
+        loop    = asyncio.get_event_loop()
+        records = await loop.run_in_executor(None, scrape_entity, Path(tmp_path), entity_type)
+    except Exception as e:
+        return RedirectResponse(f"/admin/data?error=Parse+error:+{str(e)[:80]}", status_code=302)
+    finally:
+        Path(tmp_path).unlink(missing_ok=True)
+
+    if not records:
+        return RedirectResponse(
+            f"/admin/data?error=No+records+extracted+from+PDF+(entity_type={entity_type})",
+            status_code=302,
+        )
+
+    # Hot-reload only this category in memory
+    store.reload_cbk_category(entity_type, records)
+
+    # Persist full JSON
+    json_path = Path(__file__).parent.parent.parent / "cbk_entities.json"
+    with open(json_path, "w") as f:
+        json.dump(store.CBK_ENTITIES, f, ensure_ascii=False, indent=2)
+
+    # Sync to Supabase
+    status, db_msg = _supabase_upsert("cbk_entities", records, "license_number")
+
+    label = CBK_CATEGORIES[entity_type]
+    msg   = f"{label}: {len(records)} records loaded into memory. {db_msg}"
+    return RedirectResponse(f"/admin/data?msg={msg}", status_code=302)

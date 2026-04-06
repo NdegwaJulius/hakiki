@@ -398,5 +398,46 @@ def main():
     print(f"Output written to {OUTPUT_PATH}  ({len(results)} records)")
 
 
+def scrape_from_file(pdf_path: str) -> list[dict]:
+    """
+    Importable entry point for the admin upload handler.
+    Parses the given SASRA PDF and returns a list of SACCO records.
+    Does not write any files or print summaries.
+    """
+    all_records = []
+
+    with pdfplumber.open(pdf_path) as pdf:
+        for page in pdf.pages:
+            words = page.extract_words()
+            left_words  = [w for w in words if w["x0"] <  390]
+            right_words = [w for w in words if w["x0"] >= 390]
+            left_changes  = find_schedule_changes(left_words)
+            right_changes = find_schedule_changes(right_words)
+            all_records += process_column(left_words,  L_COLS, left_changes)
+            all_records += process_column(right_words, R_COLS, right_changes)
+
+    results = []
+    for roman, rec in all_records:
+        name     = clean(rec.get("name", ""))
+        postal   = clean(rec.get("postal_address", ""))
+        physical = clean(rec.get("physical_location", ""))
+        county   = clean(rec.get("county", ""))
+        if roman in ("IV", "V") and not county:
+            county = county_from_physical(physical)
+        if len(name) < 3:
+            continue
+        results.append({
+            "name":              name,
+            "postal_address":    postal,
+            "physical_location": physical,
+            "county":            county,
+            "schedule":          roman,
+            "business_type":     BIZ_TYPE[roman],
+            "is_visible":        True,
+        })
+
+    return results
+
+
 if __name__ == "__main__":
     main()
