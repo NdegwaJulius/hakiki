@@ -23,7 +23,7 @@ RATE_LIMIT  = os.getenv("RATE_LIMIT", "100/minute")
 API_VERSION = os.getenv("API_VERSION", "v1")
 PREFIX      = f"/sacco/{API_VERSION}"
 
-DEV_API_KEY = "hk_dev_testkey_localonly"
+DEV_API_KEY = os.getenv("DEV_API_KEY", "")
 DEV_EMAIL   = "dev@hakiki.local"
 
 JSON_PATH = Path(__file__).parent.parent / "saccos_2026.json"
@@ -64,11 +64,12 @@ async def lifespan(app: FastAPI):
                 pass
 
     async with AsyncSessionLocal() as db:
-        # Seed dev user
-        existing = await db.execute(select(ApiUser).where(ApiUser.email == DEV_EMAIL))
-        if not existing.scalar_one_or_none():
-            db.add(ApiUser(email=DEV_EMAIL, api_key_hash=hash_api_key(DEV_API_KEY), tier="enterprise", credits=0))
-            await db.commit()
+        # Seed dev user (only when DEV_API_KEY is explicitly set — never in production)
+        if DEV_API_KEY:
+            existing = await db.execute(select(ApiUser).where(ApiUser.email == DEV_EMAIL))
+            if not existing.scalar_one_or_none():
+                db.add(ApiUser(email=DEV_EMAIL, api_key_hash=hash_api_key(DEV_API_KEY), tier="enterprise", credits=0))
+                await db.commit()
 
         # Seed + load tier config
         await tier_config.seed_defaults(db)
