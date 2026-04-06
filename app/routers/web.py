@@ -180,7 +180,7 @@ async def dashboard(request: Request, new_key: str = None, db: AsyncSession = De
     # Reset quota display if new month
     monthly_limit = TIER_MONTHLY_LIMIT.get(user.tier)
     if monthly_limit:
-        now = datetime.now(timezone.utc)
+        now = datetime.utcnow()
         last = user.credits_reset_at
         if last is None or (now.year, now.month) != (last.year, last.month):
             await db.execute(
@@ -252,7 +252,7 @@ async def update_tier(
     new_credits = TIER_MONTHLY_LIMIT[tier] or 0
     await db.execute(
         update(ApiUser).where(ApiUser.id == user_id)
-        .values(tier=tier, credits=new_credits, credits_reset_at=datetime.now(timezone.utc))
+        .values(tier=tier, credits=new_credits, credits_reset_at=datetime.utcnow())
     )
     await db.commit()
     return RedirectResponse("/admin", status_code=302)

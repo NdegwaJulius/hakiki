@@ -28,7 +28,7 @@ async def _reset_quota_if_new_month(user: ApiUser, db: AsyncSession) -> ApiUser:
     if monthly_limit is None:
         return user  # enterprise — no quota to reset
 
-    now = datetime.now(timezone.utc)
+    now = datetime.utcnow()
     last = user.credits_reset_at
 
     if last is None or (now.year, now.month) != (last.year, last.month):
