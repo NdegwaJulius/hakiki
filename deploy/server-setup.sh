@@ -5,7 +5,7 @@ set -e
 
 APP_DIR=/opt/hakiki
 APP_USER=hakiki
-REPO_URL=https://github.com/YOUR_GITHUB_USER/hakiki.git  # ← update this
+REPO_URL=https://github.com/NdegwaJulius/hakiki.git  # ← update this
 
 # ── 1. System packages ────────────────────────────────────────────────────────
 apt-get update -qq

@@ -8,6 +8,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app/ ./app/
 COPY frontend/ ./frontend/
 COPY saccos_2026.json .
+COPY cbk_entities.json .
+COPY scrape_cbk.py .
+COPY scrape_sasra.py .
 
 RUN mkdir -p /app/data
 

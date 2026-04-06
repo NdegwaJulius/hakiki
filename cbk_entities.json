@@ -1,0 +1,6047 @@
+[
+  {
+    "license_number": "CBK/DCP/ABITOLIMITED",
+    "entity_name": "Abito Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Alozi Estate Road",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ABSOLUTECRED",
+    "entity_name": "Absolute Credit Kenya Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ultramond Godown and Offices",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ACQUIRECREDI",
+    "entity_name": "Acquire Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Lynn Marie Apartments Office Block",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ADJACENTPOSS",
+    "entity_name": "Adjacent Possible Finance Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Roysambu",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ADROITCREDIT",
+    "entity_name": "Adroit Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/AJAXCREDITKE",
+    "entity_name": "Ajax Credit Kenya Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ngong Road",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ALEZALIMITED",
+    "entity_name": "Aleza Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Kisumu",
+    "town": "Oginga Odinga Street",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/AMBUSHCAPITA",
+    "entity_name": "Ambush Capital Limited trading under FlashPesa",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ngong Road",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ANJOYCREDITL",
+    "entity_name": "Anjoy Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Mama Ngina Street",
+    "licensed_since": "2023-03-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ASAINTERNATI",
+    "entity_name": "ASA International Kenya Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Off Isaac Gathanju Road Lavington",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ASANTEFSEAST",
+    "entity_name": "Asante FS East Africa Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2023-03-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ASAPCREDITLI",
+    "entity_name": "Asap Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Old Mutual Building Kimathi Street",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ASPIRELENDIN",
+    "entity_name": "Aspire Lending Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Rehema Place-Ngong Road",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/AUTOCHEKLIMI",
+    "entity_name": "Autochek Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Nivina Towers",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/AUXILIARYCRE",
+    "entity_name": "Auxiliary Credit Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Riverside Properties",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/AVENEWSKELTD",
+    "entity_name": "Avenews Ke Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Parklands",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/AVENTUSTECHN",
+    "entity_name": "Aventus Technology Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Rhapta Heights",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/AVLCAPITALLT",
+    "entity_name": "AVL Capital Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Upper Hill Road",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/AZURACREDITL",
+    "entity_name": "Azura Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/BCFKENYALIMI",
+    "entity_name": "BCF Kenya Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "L.R. No: 209/14/77 Wambugu Road Parklands",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/BIDIICREDITL",
+    "entity_name": "Bidii Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ngong Road",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/BIMASKENYALI",
+    "entity_name": "Bimas Kenya Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Embu",
+    "town": "Bimas Plaza",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/BINGWAMICROC",
+    "entity_name": "Bingwa Micro Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "",
+    "town": "Thika",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/BLESMARKCRED",
+    "entity_name": "Blesmark Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Bomet",
+    "town": "Cherantho Plaza",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/BOOSTLINECAP",
+    "entity_name": "Boostline Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Sangyug Centre",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/BOSSRICHCRED",
+    "entity_name": "Bossrich Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Vision Plaza",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/BRACKENYACOM",
+    "entity_name": "BRAC Kenya Company Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Chania Avenue",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/BRISKCREDITL",
+    "entity_name": "Brisk Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kindaruma Road",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/BYTECHCREDIT",
+    "entity_name": "Bytech Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Building Opposite Shell Petro Station.",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/CASHMARTCAPI",
+    "entity_name": "Cashmart Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Muthithi Road",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/CERESTECHLIM",
+    "entity_name": "Ceres Tech Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ruaraka",
+    "licensed_since": "2022-09-19",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/CHAPEOCAPITA",
+    "entity_name": "Chapeo Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Mombasa",
+    "town": "Wallstreet Business Park",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/CHELETECREDI",
+    "entity_name": "Chelete Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "George Padmore Road",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/CHIMECAPITAL",
+    "entity_name": "Chime Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Harambee Avenue",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/COLKOSENTERP",
+    "entity_name": "Colkos Enterprises Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Near Adams Arcade",
+    "licensed_since": "2023-03-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/CREDITAREACA",
+    "entity_name": "Creditarea Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Spect Godown No.3",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/DECIMALCAPIT",
+    "entity_name": "Decimal Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Upperhill",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/DEXINTECKENY",
+    "entity_name": "Dexintec Kenya Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Starehe District",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/DIMECREDITLI",
+    "entity_name": "Dime Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Limuru Road",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/DOTCASHCREDI",
+    "entity_name": "Dotcash Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Chania Avenue",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/EASTAFRICAFU",
+    "entity_name": "East Africa Futures Company Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Koinange Street",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/EASYASSETMAN",
+    "entity_name": "Easy Asset Management Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/EASYWAYSCRED",
+    "entity_name": "Easyways Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Trio Complex Thika Road behind Garden City Mall",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/EDPARTNERSAF",
+    "entity_name": "ED Partners Africa Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Parkfield Place",
+    "licensed_since": "2024-06-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/EDENBRIDGECA",
+    "entity_name": "Edenbridge Capital Ltd.",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kimathi Street",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/EDOMXLIMITED",
+    "entity_name": "EDOMX Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2023-03-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ELEVATECREDI",
+    "entity_name": "Elevate Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ELLEGANTCRED",
+    "entity_name": "Ellegant Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kasarani",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/EXTENDMONEYS",
+    "entity_name": "Extend Money Services Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Vision Plaza",
+    "licensed_since": "2023-03-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/FABILOCREDIT",
+    "entity_name": "Fabilo Credit Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ring Road Westlands Lane",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/FACTORHOUSEL",
+    "entity_name": "Factorhouse Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Liberty Plaza",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/FAHARIPOINTC",
+    "entity_name": "Fahari Point Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Viewpark Towers 14th Floor -Utalii Lane",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/FANTOMCAPITA",
+    "entity_name": "Fantom Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Energies Ruaraka",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/FEZOTECHKENY",
+    "entity_name": "Fezotech Kenya Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands District",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/FINBERRYCAPI",
+    "entity_name": "Finberry Capital Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "No 40 Riara Road.",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/FINBOOMCREDI",
+    "entity_name": "Finboom Credit Kenya Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Kiambu",
+    "town": "Ruiru",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/FINCORPCREDI",
+    "entity_name": "Fincorp Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Parklands Road",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/FINCREDITLIM",
+    "entity_name": "Fincredit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "North Tower 2nd Floor",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/FINSEILLIMIT",
+    "entity_name": "Finseil Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Nyerere Road",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/FORTUNECREDI",
+    "entity_name": "Fortune Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ngong Lane",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/FOURTHGENERA",
+    "entity_name": "Fourth Generation Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Africa Reit House",
+    "licensed_since": "2023-03-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/FRICTIONLESS",
+    "entity_name": "Frictionless Enterprises Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kenya",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/FUTUREINNODI",
+    "entity_name": "Futureinno Digital Tech Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Mogotio Road",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/GEOLANDCREDI",
+    "entity_name": "Geoland Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Meru",
+    "town": "",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/GETCASHCAPIT",
+    "entity_name": "Getcash Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Lunga Lunga",
+    "licensed_since": "2022-09-19",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/GIANDOAFRICA",
+    "entity_name": "Giando Africa Limited (Trading as Flash Credit Africa)",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Woodvale Groove",
+    "licensed_since": "2022-09-19",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/GIRLSFIRSTKE",
+    "entity_name": "Girls First Kenya Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kenya (Zuri Health HQ)",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/GRANARYCAPIT",
+    "entity_name": "Granary Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Credit Bank Building",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/GUAVACAPITAL",
+    "entity_name": "Guava Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "",
+    "town": "Thika Road",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/HANISCAPITAL",
+    "entity_name": "Hanis Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Mombasa",
+    "town": "Sameer Park Building",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/HELACAPITALL",
+    "entity_name": "Hela Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Kiambu",
+    "town": "Wing A",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/HELIUMCREDIT",
+    "entity_name": "Helium Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/INSPIRECREDI",
+    "entity_name": "Inspire Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Thika Superhighway",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/INVENTUREMOB",
+    "entity_name": "Inventure Mobile Limited (Trading as Tala)",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2023-01-30",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ISMUKCREDITL",
+    "entity_name": "Ismuk Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "University Way",
+    "licensed_since": "2024-06-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/JACKFRUITASS",
+    "entity_name": "Jackfruit Associates Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Rhapta Road",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/JAFARICREDIT",
+    "entity_name": "Jafari Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kenyatta Avenue",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/JAMBOFINCRED",
+    "entity_name": "Jambofin Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "",
+    "town": "Thika Road",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/JIJENGECREDI",
+    "entity_name": "Jijenge Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kaunda Street",
+    "licensed_since": "2022-09-19",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/JUHUDIKILIMO",
+    "entity_name": "Juhudi Kilimo Company Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Argwings Khodek Road",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/JUMOKENYALIM",
+    "entity_name": "Jumo Kenya Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Riverside Drive",
+    "licensed_since": "2023-01-30",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/KEEPVISIONAN",
+    "entity_name": "Keep Vision and Growth Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Thika Road Shell Toll Petrol Station",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/KIFEDHALTD",
+    "entity_name": "Kifedha Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Murang'a",
+    "town": "Ngara",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/KIKWETUCREDI",
+    "entity_name": "Kikwetu Credit Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Alimex Plaza",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/KWELISMARTSO",
+    "entity_name": "Kweli Smart Solutions Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "UN Crescent Avenue",
+    "licensed_since": "2022-09-19",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/LASIRICAPITA",
+    "entity_name": "Lasiri Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kenya",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/LEAFCREDITLI",
+    "entity_name": "Leaf Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Crescent Business Center",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/LEJALTD",
+    "entity_name": "Leja Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kenya",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/LENANAINNOVA",
+    "entity_name": "Lenana Innovative Solutions Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Third Floor",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/LETSHEGOKENY",
+    "entity_name": "Letshego Kenya Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "",
+    "licensed_since": "2023-01-30",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/LIBERTYAFRIK",
+    "entity_name": "Liberty Afrika Technologies Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Utalii Street",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/LIPALATERLIM",
+    "entity_name": "Lipa Later Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Off Olenguruone Avenue",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/LITTLELIMITE",
+    "entity_name": "Little Limited (trading as SpotIt)",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Off Waiyaki Way",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/LITTLEPESALI",
+    "entity_name": "Little Pesa Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2023-03-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/LOANPLUSDIGI",
+    "entity_name": "Loan Plus Digital Credit Provider Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/LOBELITECCRE",
+    "entity_name": "Lobelitec Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Commodore Offices Plot 209",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/LOCKBXLIMITE",
+    "entity_name": "LockBx Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Sifa Towers",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/LONGITUDECAP",
+    "entity_name": "Longitude Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ngong Road",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/LUCASONCAPIT",
+    "entity_name": "Lucason Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Syokimau",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MAISONCAPITA",
+    "entity_name": "M aison Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Murang'a",
+    "town": "Ngara",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MALICASHINVE",
+    "entity_name": "M alicash Investment Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Machakos",
+    "town": "Roo",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MARALALLEDGE",
+    "entity_name": "M aralal Ledger Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Kiambu",
+    "town": "Wing B",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MARBLECAPITA",
+    "entity_name": "M arble Capital Solutions Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "",
+    "town": "Ongata Rongai",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MAXXTONENTER",
+    "entity_name": "M axxton Enterprises Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "College House",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MAYFLOWERCAP",
+    "entity_name": "M ayflower Capital limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Meru",
+    "town": "Mwea Town",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MCF2KENYALIM",
+    "entity_name": "M CF 2 Kenya Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Off Naushad Merali Drive",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MEDNOWCAPITA",
+    "entity_name": "M ednow Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Karen",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MFSTECHNOLOG",
+    "entity_name": "M FS Technologies Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Lantana Road (Off Rhapta Road)",
+    "licensed_since": "2023-01-30",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MILHANACCESS",
+    "entity_name": "M ilhan Access Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Azure Tower Lantana Road Westlands",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MIMICREDITLI",
+    "entity_name": "M imi Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Parklands Road",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MINTCREDITLI",
+    "entity_name": "M int Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Tsavo Road",
+    "licensed_since": "2024-06-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MKASHSOLUTIO",
+    "entity_name": "M Kash Solutions Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Waiyaki Way",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MKMCAPITALLI",
+    "entity_name": "M KM Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Suite 10",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MKOPALOANKEN",
+    "entity_name": "M -Kopa Loan Kenya Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "M-Kopa House",
+    "licensed_since": "2023-01-30",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MKULIMAPAYCR",
+    "entity_name": "M kulimapay Credit Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "off Waiyaki Way",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MODESTYCREDI",
+    "entity_name": "M odesty Credit Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Meru",
+    "town": "Union Square",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MOGOAUTOLIMI",
+    "entity_name": "M ogo Auto Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kaburu Drive-Off Ngong Road",
+    "licensed_since": "2024-06-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MOMENTUMCRED",
+    "entity_name": "M omentum Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Mama Ngina Street",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MONEZALTD",
+    "entity_name": "M oneza Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MOTOHOPECAPI",
+    "entity_name": "M oto Hope Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Thika Road",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MULARCREDITL",
+    "entity_name": "M ular Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Embakasi",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MUSONICAPITA",
+    "entity_name": "M usoni Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ring Road Kilimani",
+    "licensed_since": "",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MWANANCHICRE",
+    "entity_name": "M wananchi Credit Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Central Business District",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MWANZOCREDIT",
+    "entity_name": "M wanzo Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Deliverance Road",
+    "licensed_since": "2022-09-19",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MYCREDITLIMI",
+    "entity_name": "M ycredit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Loita Street",
+    "licensed_since": "2023-01-30",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/MYWAGEPAYLIM",
+    "entity_name": "M yWagepay Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Astrol Building (Opp Garden City)",
+    "licensed_since": "2022-09-19",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/NATALTECHLIM",
+    "entity_name": "N atal Tech Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "",
+    "town": "Kenol Sagana Highway",
+    "licensed_since": "2023-01-30",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/NAWIRIAFRICA",
+    "entity_name": "N awiri African Sprouts Ltd trading as Fast Credit",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Western Heights building",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/NEWARKFRONTI",
+    "entity_name": "N ewark Frontiers Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Dagoretti/ Mutuini/1356",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/NGAOCREDITLI",
+    "entity_name": "N gao Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ngong Rd",
+    "licensed_since": "2023-01-30",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/NUMIDATECHNO",
+    "entity_name": "N umida Technologies Kenya Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kenya",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ODICREDITLIM",
+    "entity_name": "O DI Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Crescent Road",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/OKOLEAINTERN",
+    "entity_name": "O kolea International Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Northern Bypass",
+    "licensed_since": "2023-03-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ONWARDSSWIFT",
+    "entity_name": "O nwards Swift Company Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "",
+    "town": "Kimathi Street",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/OPALQUICKLIM",
+    "entity_name": "O pal Quick Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Meru",
+    "town": "Opposite Magunas Supermarket",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/OTASCREDITLI",
+    "entity_name": "O tas Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Peponi Road",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/PATOCAPITALL",
+    "entity_name": "P ato Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/PAYABLUCREDI",
+    "entity_name": "P ayablu Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "off Ngong Road",
+    "licensed_since": "2024-06-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/PEMBENICASHL",
+    "entity_name": "P embeni Cash Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kasarani",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/PESAGLOWCAPI",
+    "entity_name": "P esaglow Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Derrick House",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/PESAKUUCREDI",
+    "entity_name": "P esakuu Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Muthangari Drive",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/PESHEECAPITA",
+    "entity_name": "P eshee Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Machakos",
+    "town": "west corner office",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/PEZESHAAFRIC",
+    "entity_name": "P ezesha Africa Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2023-01-30",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/PHOENIXCAPIT",
+    "entity_name": "P hoenix Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Nyangumi Road",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/PICAPITALLIM",
+    "entity_name": "P i Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/PLATINUMCRED",
+    "entity_name": "P latinum Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Mama Ngina Street",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/PREMIERCREDI",
+    "entity_name": "P remier Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Koinange Street",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/PROGRESSIVEC",
+    "entity_name": "P rogressive Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "",
+    "licensed_since": "2024-06-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/PUPHIKCREDIT",
+    "entity_name": "P uphik Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Bomet",
+    "town": "Kipchamba Street",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/RADICREDITLI",
+    "entity_name": "R adi Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kindaruma Lane",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/REALPEOPLEKE",
+    "entity_name": "R eal People Kenya Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Muthangari Drive",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/REAZILLADCPL",
+    "entity_name": "R eazilla DCP Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Dagoretti",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/REWOTCIROLIM",
+    "entity_name": "R ewot Ciro Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Keekorok Road",
+    "licensed_since": "2022-09-19",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/RISINECREDIT",
+    "entity_name": "R isine Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "James Gichuru Road",
+    "licensed_since": "2023-03-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ROSATAPCREDI",
+    "entity_name": "R osatap Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Mombasa",
+    "town": "Gateway Mall",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/SEANALACREDI",
+    "entity_name": "S eanala Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Milimani Road",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/SELECTMANAGE",
+    "entity_name": "S elect Management Services Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Mama Ngina Street",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/SENTICAPITAL",
+    "entity_name": "S enti Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/SEVIINNOVATI",
+    "entity_name": "S evi Innovation Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Baba Dogo Road",
+    "licensed_since": "2022-09-19",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/SIMBAGELDLTD",
+    "entity_name": "S imbageld Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Monrovia Street",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/SIMPLEPAYCAP",
+    "entity_name": "S implepay Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Lower Kabete Road",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/SIPRANDACAPI",
+    "entity_name": "S ipranda Capital Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Wing C",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/SITIMOBILITY",
+    "entity_name": "S iti Mobility Technologies Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/SNOWFLEXCAPI",
+    "entity_name": "S nowflex Capital Limtied",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Central Business District",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/SOKOHELALIMI",
+    "entity_name": "S okohela Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Naivasha Road",
+    "licensed_since": "2022-09-19",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/SPECTRUMCRED",
+    "entity_name": "S pectrum Credit Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Commodore Office Suites",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/SPREADCAPITA",
+    "entity_name": "S pread Capital Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Koinange/Biashara Street",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/STEADFASTCRE",
+    "entity_name": "S teadfast Credit Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Utawala Area",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/STRIDECREDIT",
+    "entity_name": "S tride Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Meru",
+    "town": "Ghana Street",
+    "licensed_since": "2024-06-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/SUFFICELTD",
+    "entity_name": "S uffice Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Nextgen Mall",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/SURECREDCAPI",
+    "entity_name": "S ure Cred Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ruaraka",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/TANIRCREDITA",
+    "entity_name": "T anir Credit & Accounting Services Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "",
+    "town": "Kenversity Sacco Building",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/TAZUCREDITLI",
+    "entity_name": "T azu Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Riverside Square",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/TENAKATAENTE",
+    "entity_name": "T enakata Enterprises Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Mamlaka Road",
+    "licensed_since": "2023-01-30",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/TENTACORPHOL",
+    "entity_name": "T entacorp Holdings Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Off Ngong Road",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/TINYCOSTCRED",
+    "entity_name": "T inycost Credit Kenya Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Kiambu",
+    "town": "Ruiru",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/TIPPOINTCAPI",
+    "entity_name": "T ip-Point Capital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Sifa Towers",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/TRANSSNETCRE",
+    "entity_name": "T ranssnet Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Off Ngong Road",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/TREASURESTOR",
+    "entity_name": "T reasure Store Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Hurlingham 2nd Floor Room F2 -10. Argwings Kodhek Groove",
+    "licensed_since": "2024-10-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/TRUSTGROSCAL",
+    "entity_name": "T rustGro SCA Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Muthithi Road",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/UBAPESALIMIT",
+    "entity_name": "U baPesa Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Muthaiga",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/UMOJAFANISIL",
+    "entity_name": "U moja Fanisi Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Lavington",
+    "licensed_since": "2023-01-30",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/UNIDIRECTLTD",
+    "entity_name": "U nidirect Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/UNIFICREDITL",
+    "entity_name": "U nifi Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kenya",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/VISIONEDGECR",
+    "entity_name": "V ision Edge Credit Partners Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "T-plaza 2nd floor Kenyatta highway Thika town",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/WABEMACREDIT",
+    "entity_name": "W abema Credit Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Mombasa",
+    "town": "",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/WAKANDACREDI",
+    "entity_name": "W akanda Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kenya",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/WATUCREDITLT",
+    "entity_name": "W atu Credit Ltd",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Lower Hill Road",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/WESTLIPCREDI",
+    "entity_name": "W estlip Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ninety-Eight Riverside Drive",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ZAIDIPATOLIM",
+    "entity_name": "Z aidi Pato Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kasarani",
+    "licensed_since": "2025-09-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ZAMARADICAPI",
+    "entity_name": "Z amaradi Capital & Credit Group Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kenya",
+    "licensed_since": "2025-06-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ZANIFULIMITE",
+    "entity_name": "Z anifu Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Mkungu Close",
+    "licensed_since": "2023-01-30",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ZENKADIGITAL",
+    "entity_name": "Z enka Digital Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2023-03-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ZIKICREDITLI",
+    "entity_name": "Z iki Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Moi Avenue",
+    "licensed_since": "2025-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/DCP/ZILLIONSCRED",
+    "entity_name": "Z illions Credit Limited",
+    "category": "dcp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Baba Dogo",
+    "licensed_since": "2024-03-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "digital_credit"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_dcp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/SAFARICOMPLC",
+    "entity_name": "Safaricom PLC",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2016-01-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "To issue, process, store, send and facilitate mobile money payments.",
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/AIRTELMONEYK",
+    "entity_name": "Airtel Money Kenya Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Parkside Towers",
+    "licensed_since": "2022-01-21",
+    "license_expiry": "",
+    "services_permitted": [
+      "To issue, process, store, send and facilitate mobile money payments.",
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/TELKOMKENYAL",
+    "entity_name": "Telkom Kenya Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ralph Bunche Road",
+    "licensed_since": "2018-01-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "To issue, process, store, send and facilitate mobile money payments.",
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/VIEWTECHLIMI",
+    "entity_name": "Viewtech Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Utalii Lane",
+    "licensed_since": "2021-09-15",
+    "license_expiry": "",
+    "services_permitted": [
+      "To issue, process, store, send and facilitate mobile money payments.",
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/FINSERVEAFRI",
+    "entity_name": "Finserve Africa Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Hospital Road",
+    "licensed_since": "2022-01-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "To issue, process, store, send and facilitate mobile money payments.",
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/WEBTRIBELIMI",
+    "entity_name": "Web Tribe Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Monrovia Street",
+    "licensed_since": "2022-02-10",
+    "license_expiry": "",
+    "services_permitted": [
+      "To issue, process, store, send and facilitate mobile money payments.",
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/TANDAAGENTLI",
+    "entity_name": "Tanda Agent Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kenya.",
+    "licensed_since": "2023-09-13",
+    "license_expiry": "",
+    "services_permitted": [
+      "To issue, process, store, send and facilitate mobile money payments.",
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/AFRINETGLOBA",
+    "entity_name": "Afrinet Global & Company Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kenya.",
+    "licensed_since": "2024-03-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "To issue, process, store, send and facilitate mobile money payments.",
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/KASHIASERVIC",
+    "entity_name": "Kashia Services Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Parklands Road",
+    "licensed_since": "2023-08-14",
+    "license_expiry": "",
+    "services_permitted": [
+      "To issue, process, store, send and facilitate mobile money payments.",
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/CELLULANTKEN",
+    "entity_name": "Cellulant Kenya Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "State House Crescent Road",
+    "licensed_since": "2022-01-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "To process, store, send and facilitate mobile money payments.",
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/PESAPALLIMIT",
+    "entity_name": "Pesapal Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kabarnet Lane Next to St Nicholas Senior School",
+    "licensed_since": "2021-06-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "To process, store, send and facilitate mobile money payments.",
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/LOOPPAYCOLIM",
+    "entity_name": "Loop Payco Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "General Mathenge Drive",
+    "licensed_since": "2023-02-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "To process, store, send and facilitate mobile money payments.",
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/JUMIAPAYMENT",
+    "entity_name": "Jumia Payment Services Kenya Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Maua Close",
+    "licensed_since": "2023-04-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "To process, store, send and facilitate mobile money payments.",
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/UMSUKACAPITA",
+    "entity_name": "Umsuka Capital Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Jamhuri Park Show Ground",
+    "licensed_since": "2023-06-29",
+    "license_expiry": "",
+    "services_permitted": [
+      "To process, store, send and facilitate mobile money payments.",
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/FIVESPOTKENY",
+    "entity_name": "Fivespot Kenya Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ring Road Kilimani",
+    "licensed_since": "2021-10-25",
+    "license_expiry": "",
+    "services_permitted": [
+      "To process, store, send and facilitate mobile money payments.",
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/PAYKITKENYAL",
+    "entity_name": "Paykit Kenya Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Stellato Business Complex Muthithi Rd",
+    "licensed_since": "2024-12-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "To process, store, send and facilitate mobile money payments.",
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/CRAFTSILICON",
+    "entity_name": "Craft Silicon Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Off Waiyaki Way",
+    "licensed_since": "2022-08-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/VIRTUALPAYIN",
+    "entity_name": "Virtual Pay International Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Off Waiyaki Way",
+    "licensed_since": "2022-08-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/DIRECTPAYLIM",
+    "entity_name": "Direct Pay Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kilimani",
+    "licensed_since": "2022-08-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/PESAWISESERV",
+    "entity_name": "Pesawise Services Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Park Place Building",
+    "licensed_since": "2022-08-08",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/PAYSTACKPAYM",
+    "entity_name": "Paystack Payments Kenya Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2022-11-08",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/WAKANDIKENYA",
+    "entity_name": "Wakandi Kenya Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "ABC Place Block E",
+    "licensed_since": "2022-01-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of SACCOS and other Informal Financial Groups."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/DLOCALPAYMEN",
+    "entity_name": "DLocal Payments Kenya Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2023-01-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/PESAFLOWLIMI",
+    "entity_name": "Pesaflow Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "",
+    "town": "Lavington.",
+    "licensed_since": "2023-03-16",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/UNLIMITKENYA",
+    "entity_name": "Unlimit Kenya Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "ICEA Lion Centre Riverside Park",
+    "licensed_since": "2023-01-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/GLADYSTECHNO",
+    "entity_name": "Gladys Technologies Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Off Ring Road Kileleshwa",
+    "licensed_since": "2023-04-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/DOLCEPAYKENY",
+    "entity_name": "Dolcepay Kenya Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "The Atrium",
+    "licensed_since": "2023-04-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/MAMLAKAHUBAN",
+    "entity_name": "Mamlaka Hub and Spoke Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kilimani",
+    "licensed_since": "2023-05-29",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/ECLECTICSINT",
+    "entity_name": "Eclectics International Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Mamlaka Road",
+    "licensed_since": "2023-06-09",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/SKYWORLDLIMI",
+    "entity_name": "Sky World Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2023-07-21",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/DATAINTEGRAT",
+    "entity_name": "Data Integrated Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kenya",
+    "licensed_since": "2023-09-13",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/KASAPAYLIMIT",
+    "entity_name": "Kasapay Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Karen Road",
+    "licensed_since": "2024-09-12",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/FINGOPAYMENT",
+    "entity_name": "Fingo Payments Services Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "",
+    "town": "Westlands",
+    "licensed_since": "2024-08-16",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/TANGAZOLETUL",
+    "entity_name": "Tangazoletu Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Mayfair Business Center Parklands Rd Westlands",
+    "licensed_since": "2024-08-16",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/ZAMUPAYLIMIT",
+    "entity_name": "Zamupay Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Mitsumi Business Park",
+    "licensed_since": "2024-12-23",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/TENDEPAYLIMI",
+    "entity_name": "Tendepay Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kenya",
+    "licensed_since": "2025-01-20",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of payments on behalf of merchants"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/INTERSWITCHE",
+    "entity_name": "Interswitch East Africa (Kenya) Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2019-01-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "To own, possess, operate, manage or control infrastructure for the provision of payment services"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/KENSWITCHLIM",
+    "entity_name": "Kenswitch Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Milimani",
+    "licensed_since": "2019-01-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "To own, possess, operate, manage or control infrastructure for the provision of payment services"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/INTEGRATEDPA",
+    "entity_name": "Integrated Payment Services Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Mama Ngina Street",
+    "licensed_since": "2020-01-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "To own, possess, operate, manage or control infrastructure for the provision of payment services"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/KENYAAIRPORT",
+    "entity_name": "Kenya Airports Parking Services (KAPS) Limited",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kindaruma Lane",
+    "licensed_since": "2022-05-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "To receive, store and facilitate payments for parking using pre-paid cards and mobile money."
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/PSP/KENYACOMMERC",
+    "entity_name": "Kenya Commerce Exchange Service Bureau (KENEX)",
+    "category": "psp",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2023-03-16",
+    "license_expiry": "",
+    "services_permitted": [
+      "To provide a platform that facilitates processing of SWIFT payments on behalf of banks"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_psp.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/ALMASFOREXBU",
+    "entity_name": "Almas Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ring Road",
+    "licensed_since": "2025-07-22",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/ALPHAFOREXBU",
+    "entity_name": "Alpha Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2003-01-11",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/ANGAFOREXBUR",
+    "entity_name": "Anga Forex Bureau Ltd.",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Terminal 1",
+    "licensed_since": "2025-09-25",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/ARISTOCRATSF",
+    "entity_name": "Aristocrats Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kenindia House",
+    "licensed_since": "1995-01-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/ATLANTICFORE",
+    "entity_name": "Atlantic Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "First Floor",
+    "licensed_since": "2026-01-29",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/AVENUEFOREXB",
+    "entity_name": "Avenue Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Mombasa",
+    "town": "Moi Avenue",
+    "licensed_since": "2008-09-29",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/BAMBURIFOREX",
+    "entity_name": "Bamburi Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Mombasa",
+    "town": "City Mall Nakumatt Nyali",
+    "licensed_since": "2003-11-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/BAYFOREXBURE",
+    "entity_name": "Bay Forex Bureau (Nairobi) Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "The Stanley Building Kenyatta Avenue",
+    "licensed_since": "1995-08-16",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/BOSTONFOREXB",
+    "entity_name": "Boston Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2014-05-26",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/CARRINGTONFO",
+    "entity_name": "Carrington Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Hurlingham",
+    "licensed_since": "2024-11-12",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/CBDFOREXBURE",
+    "entity_name": "CBD Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2009-11-24",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/CENTRALFOREX",
+    "entity_name": "Central Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kaunda Street",
+    "licensed_since": "1995-09-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/CLASSICFOREX",
+    "entity_name": "Classic Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Thika Road",
+    "licensed_since": "2008-07-25",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/COLORSFOREXB",
+    "entity_name": "Colors Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kaunda Street",
+    "licensed_since": "2024-11-26",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/COMMERCIALFO",
+    "entity_name": "Commercial Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Mama Ngina Street",
+    "licensed_since": "2008-05-16",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/CONFERENCEFO",
+    "entity_name": "Conference Forex Bureau Company Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ground Floor",
+    "licensed_since": "2008-01-30",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/CONTINENTALF",
+    "entity_name": "Continental Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kimathi Street",
+    "licensed_since": "1995-07-21",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/COSMOSFOREXB",
+    "entity_name": "Cosmos Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Standard/Kaunda Street",
+    "licensed_since": "1995-09-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/CRYSTALFOREX",
+    "entity_name": "Crystal Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kaunda Street",
+    "licensed_since": "2023-10-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/DAYLIFFFOREX",
+    "entity_name": "Dayliff Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Industrial Area",
+    "licensed_since": "2024-03-13",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/DELTAFOREXBU",
+    "entity_name": "Delta Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Kilifi",
+    "town": "Watamu",
+    "licensed_since": "2025-11-17",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/DUBLINFOREXB",
+    "entity_name": "Dublin Forex Bureau Ltd.",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "River Side",
+    "licensed_since": "2025-09-23",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/EFAMFOREXBUR",
+    "entity_name": "Efam Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kamakis",
+    "licensed_since": "2025-02-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/ELECTRONFORE",
+    "entity_name": "Electron Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Prudential Assurance Building",
+    "licensed_since": "2022-06-21",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/FOREXBUREAUA",
+    "entity_name": "Forex Bureau Afro Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "",
+    "licensed_since": "1998-02-17",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/GATEWAYFOREX",
+    "entity_name": "Gateway Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kaunda Street",
+    "licensed_since": "2003-11-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/GIANTFOREXBU",
+    "entity_name": "Giant Forex Bureau de Change Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Jomo Kenyatta International Airport",
+    "licensed_since": "1998-05-21",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/GIVEANDTAKEF",
+    "entity_name": "Give and Take Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Gigiri",
+    "licensed_since": "2003-11-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/GLORYFOREIGN",
+    "entity_name": "Glory Foreign Exchange Bureau Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Norwich Union House Kimathi Street",
+    "licensed_since": "1998-05-21",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/GNKFOREXBURE",
+    "entity_name": "GNK Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Langata Road",
+    "licensed_since": "2003-11-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/GREENEXCHANG",
+    "entity_name": "Green Exchange Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Koinange Street",
+    "licensed_since": "2009-08-17",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/HARARFOREXBU",
+    "entity_name": "Harar Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Red Hill Road",
+    "licensed_since": "2025-09-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/INDUSTRIALAR",
+    "entity_name": "Industrial Area Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Parklands",
+    "licensed_since": "2003-11-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/ISLANDFOREXB",
+    "entity_name": "Island Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Mombasa",
+    "town": "Moi Avenue",
+    "licensed_since": "2003-12-15",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/KAITMATFOREX",
+    "entity_name": "Kaitmat Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Village Market",
+    "licensed_since": "1995-01-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/KARAMAFOREXB",
+    "entity_name": "Karama Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Highway Mall along Uhuru Highway",
+    "licensed_since": "2021-09-13",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/KENZAEXCHANG",
+    "entity_name": "Kenza Exchange Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "JKIA",
+    "licensed_since": "2003-09-09",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/KIFARUFOREXB",
+    "entity_name": "Kifaru Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Limuru Road",
+    "licensed_since": "2022-08-11",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/KINGSCROSSBU",
+    "entity_name": "Kings Cross Bureau De Change Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ground Floor",
+    "licensed_since": "2024-11-29",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/LACHEFOREXBU",
+    "entity_name": "La’che Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "",
+    "town": "Upper Hill",
+    "licensed_since": "2004-04-10",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/LEOFOREXBURE",
+    "entity_name": "Leo Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Mombasa",
+    "town": "T. S. S. Towers Nkrumah Road",
+    "licensed_since": "1999-05-21",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/LIMEFOREXBUR",
+    "entity_name": "Lime Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Argwings Kodhek Road",
+    "licensed_since": "2026-01-29",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/LINKFOREXBUR",
+    "entity_name": "Link Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kenyatta Avenue",
+    "licensed_since": "1995-04-25",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/MAGNUMFOREXB",
+    "entity_name": "Magnum Forex Bureau De Change Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Uhuru Highway",
+    "licensed_since": "2009-08-17",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/MANIFESTFORE",
+    "entity_name": "Manifest Forex Bureau Exchange Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "",
+    "town": "Terminal 1E at the Jomo Kenyatta International Airport (JKIA)",
+    "licensed_since": "2024-03-18",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/MARITIMEFORE",
+    "entity_name": "Maritime Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Nkrumah Road",
+    "licensed_since": "2003-11-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/MIDDLETOWNFO",
+    "entity_name": "Middletown Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "",
+    "licensed_since": "1998-01-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/MILBAKFOREXB",
+    "entity_name": "Milbak Forex Bureau Ltd.",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Mombasa",
+    "town": "Mwenye Aboud Road off Nkrumah Road",
+    "licensed_since": "2025-11-17",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/MIDWAYFOREXB",
+    "entity_name": "Midway Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ground Floor",
+    "licensed_since": "2024-11-26",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/MONABUREAUDE",
+    "entity_name": "Mona Bureau De Change Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Panari Centre",
+    "licensed_since": "2005-12-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/MONEYPOINTFO",
+    "entity_name": "Moneypoint Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "",
+    "town": "Busia.",
+    "licensed_since": "2008-06-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/MORGANFOREXB",
+    "entity_name": "Morgan Forex Bureau De Change Ltd P. O. Box 79012 – 00400 Nairobi Tel No. 020-4444073",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2008-07-25",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/ORBITBUREAUD",
+    "entity_name": "Orbit Bureau De Change Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ngong Road",
+    "licensed_since": "2005-12-19",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/MUTHAIGAABCF",
+    "entity_name": "Muthaiga-ABC Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "",
+    "town": "Muthaiga.",
+    "licensed_since": "2008-11-13",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/NAIROBIBUREA",
+    "entity_name": "Nairobi Bureau De Change Ltd Nairobi",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "",
+    "licensed_since": "1995-07-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/NAMANGAFOREX",
+    "entity_name": "Namanga Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "",
+    "town": "Namanga Town",
+    "licensed_since": "2003-12-15",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/NASEEBFOREXB",
+    "entity_name": "Naseeb Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ole Shapara Road",
+    "licensed_since": "2023-08-07",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/NAWALFOREXBU",
+    "entity_name": "Nawal Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Chaka Road",
+    "licensed_since": "2003-12-15",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/NEXUSFOREXBU",
+    "entity_name": "Nexus Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Parklands",
+    "licensed_since": "2025-12-18",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/NORTHWINGFOR",
+    "entity_name": "North Wing Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Gigiri Box UN Avenue",
+    "licensed_since": "2023-07-07",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/OFFSHOREFORE",
+    "entity_name": "Offshore Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Koinange Street",
+    "licensed_since": "2008-05-12",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/ORAXFOREXBUR",
+    "entity_name": "Orax Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kaunda Street",
+    "licensed_since": "2025-10-21",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/PACIFICFOREX",
+    "entity_name": "Pacific Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Standard Street",
+    "licensed_since": "2007-11-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/PANTHERFOREX",
+    "entity_name": "Panther Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Shujaa Mall Kilimani",
+    "licensed_since": "2024-04-16",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/PEAKTOPBUREA",
+    "entity_name": "Peaktop Bureau De Change Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Mama Ngina/Kaunda Street",
+    "licensed_since": "2004-09-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/PEARLFOREXBU",
+    "entity_name": "Pearl Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Unipen Flats",
+    "licensed_since": "1998-01-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/PELFOREXBURE",
+    "entity_name": "Pel Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Kisumu",
+    "town": "Allmamra Plaza Oginga Odinga Road",
+    "licensed_since": "1995-09-25",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/PLANETFOREXB",
+    "entity_name": "Planet Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Lonrho House",
+    "licensed_since": "2023-07-20",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/PWANIFOREXBU",
+    "entity_name": "Pwani Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Mombasa",
+    "town": "K.S.I Jamaat Building",
+    "licensed_since": "1995-08-16",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/RANDFOREXBUR",
+    "entity_name": "Rand Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "University Way",
+    "licensed_since": "2012-05-28",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/REGIONALFORE",
+    "entity_name": "Regional Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kimathi Street",
+    "licensed_since": "2008-04-28",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/RIFTVALLEYFO",
+    "entity_name": "Rift Valley Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nakuru",
+    "town": "Court Road",
+    "licensed_since": "2004-06-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/SATELLITEFOR",
+    "entity_name": "Satellite Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Standard Street",
+    "licensed_since": "2004-06-17",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/SIMBAFOREXBU",
+    "entity_name": "Simba Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Mombasa",
+    "town": "Moi International Airport",
+    "licensed_since": "2008-04-16",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/SISIFOREXBUR",
+    "entity_name": "Sisi Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Haile Selasie Avenue",
+    "licensed_since": "2012-10-22",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/SKYFOREXBURE",
+    "entity_name": "Sky Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Mama Ngina/ Kaunda Street",
+    "licensed_since": "2006-05-12",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/SOLIDEXCHANG",
+    "entity_name": "Solid Exchange Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "JKIA Unit 2",
+    "licensed_since": "1995-07-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/SPRINGSFOREX",
+    "entity_name": "Springs Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Eastleigh",
+    "licensed_since": "2019-01-14",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/STERLINGFORE",
+    "entity_name": "Sterling Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Biashara Street",
+    "licensed_since": "1995-11-27",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/TANAFOREXBUR",
+    "entity_name": "Tana Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Diamond Plaza II Ground Floor Parklands",
+    "licensed_since": "2025-01-30",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/THEPALMFOREX",
+    "entity_name": "The Palm Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kenyatta Avenue",
+    "licensed_since": "2023-01-10",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/TRADEBUREAUD",
+    "entity_name": "Trade Bureau De Change Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "City Hall Way",
+    "licensed_since": "1999-05-21",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/TRAVELLERSFO",
+    "entity_name": "Travellers Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ring Road Westlands",
+    "licensed_since": "1995-09-07",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/TRAVELPOINTF",
+    "entity_name": "Travel Point Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "International Arrivals Terminal",
+    "licensed_since": "2008-02-11",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/UNIONFOREXBU",
+    "entity_name": "Union Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "1999-01-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/VENUSFOREXBU",
+    "entity_name": "Venus Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kilimani",
+    "licensed_since": "2025-01-30",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/VIEWFOREXBUR",
+    "entity_name": "View Forex Bureau Limited",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "BandaStreet",
+    "licensed_since": "2021-11-12",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/WALLSTREETBU",
+    "entity_name": "Wallstreet Bureau De Change Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Eldoret",
+    "town": "Uganda Road",
+    "licensed_since": "1999-01-08",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/WESTLANDSFOR",
+    "entity_name": "Westlands Forex Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "",
+    "licensed_since": "2003-11-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/FOREX/YAYACENTREEX",
+    "entity_name": "Yaya Centre Exchange Bureau Ltd",
+    "category": "forex",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Argwings Kodhek Road",
+    "licensed_since": "1995-06-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "foreign_exchange"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_forex.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/MFB/CARITASMICRO",
+    "entity_name": "Caritas Microfinance Bank Limited",
+    "category": "mfb",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kaunda Street",
+    "licensed_since": "2015-06-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "microfinance",
+      "deposit_taking",
+      "lending"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_mfb.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/MFB/BRANCHMICROF",
+    "entity_name": "Branch Microfinance Bank Limited",
+    "category": "mfb",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Mogotio Road",
+    "licensed_since": "",
+    "license_expiry": "",
+    "services_permitted": [
+      "microfinance",
+      "deposit_taking",
+      "lending"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_mfb.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/MFB/CHOICEMICROF",
+    "entity_name": "Choice Microfinance Bank Limited",
+    "category": "mfb",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Magadi Road",
+    "licensed_since": "2015-05-13",
+    "license_expiry": "",
+    "services_permitted": [
+      "microfinance",
+      "deposit_taking",
+      "lending"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_mfb.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/MFB/UMBAMICROFIN",
+    "entity_name": "Umba Microfinance Bank Limited",
+    "category": "mfb",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ngong Road",
+    "licensed_since": "2015-01-12",
+    "license_expiry": "",
+    "services_permitted": [
+      "microfinance",
+      "deposit_taking",
+      "lending"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_mfb.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/MFB/FAULUMICROFI",
+    "entity_name": "Faulu Microfinance Bank Limited",
+    "category": "mfb",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ngong Lane -Off Ngong Road",
+    "licensed_since": "2009-05-21",
+    "license_expiry": "",
+    "services_permitted": [
+      "microfinance",
+      "deposit_taking",
+      "lending"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_mfb.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/MFB/KENYAWOMENMI",
+    "entity_name": "Kenya Women Microfinance Bank PLC",
+    "category": "mfb",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Upper Hill",
+    "licensed_since": "2010-03-31",
+    "license_expiry": "",
+    "services_permitted": [
+      "microfinance",
+      "deposit_taking",
+      "lending"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_mfb.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/MFB/RAFIKIMICROF",
+    "entity_name": "Rafiki Microfinance Bank Limited",
+    "category": "mfb",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Biashara Street",
+    "licensed_since": "2011-06-14",
+    "license_expiry": "",
+    "services_permitted": [
+      "microfinance",
+      "deposit_taking",
+      "lending"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_mfb.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/MFB/LOLCKENYAMIC",
+    "entity_name": "Lolc Kenya Microfinance Bank PLC",
+    "category": "mfb",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2010-12-31",
+    "license_expiry": "",
+    "services_permitted": [
+      "microfinance",
+      "deposit_taking",
+      "lending"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_mfb.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/MFB/SMEPMICROFIN",
+    "entity_name": "SMEP Microfinance Bank Limited",
+    "category": "mfb",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Off Argwings Kodhek Road",
+    "licensed_since": "2010-12-14",
+    "license_expiry": "",
+    "services_permitted": [
+      "microfinance",
+      "deposit_taking",
+      "lending"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_mfb.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/MFB/SUMACMICROFI",
+    "entity_name": "S umac Microfinance Bank Limited",
+    "category": "mfb",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Koinange Street",
+    "licensed_since": "2012-10-29",
+    "license_expiry": "",
+    "services_permitted": [
+      "microfinance",
+      "deposit_taking",
+      "lending"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_mfb.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/MFB/UIMICROFINAN",
+    "entity_name": "U & I Microfinance Bank Limited",
+    "category": "mfb",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "River Road",
+    "licensed_since": "2013-04-08",
+    "license_expiry": "",
+    "services_permitted": [
+      "microfinance",
+      "deposit_taking",
+      "lending"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_mfb.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/MFB/SALAAMMICROF",
+    "entity_name": "Salaam Microfinance Bank Limited",
+    "category": "mfb",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Moktar Daddah Street",
+    "licensed_since": "2010-11-08",
+    "license_expiry": "",
+    "services_permitted": [
+      "microfinance",
+      "deposit_taking",
+      "lending"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_mfb.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/MFB/ONITMICROFIN",
+    "entity_name": "On It Microfinance Bank Limited",
+    "category": "mfb",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "James Gichuru Rd",
+    "licensed_since": "2016-05-21",
+    "license_expiry": "",
+    "services_permitted": [
+      "microfinance",
+      "deposit_taking",
+      "lending"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_mfb.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/MFB/MUUNGANOMICR",
+    "entity_name": "Muungano Microfinance Bank PLC",
+    "category": "mfb",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "",
+    "town": "Kangari-Githumu Road",
+    "licensed_since": "2019-10-30",
+    "license_expiry": "",
+    "services_permitted": [
+      "microfinance",
+      "deposit_taking",
+      "lending"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_mfb.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/AFRISENDMONE",
+    "entity_name": "Afrisend Money Transfer Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2022-02-10",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/AIRTELMONEYT",
+    "entity_name": "Airtel Money Transfer Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ground Floor",
+    "licensed_since": "2017-07-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/AMALEXPRESSM",
+    "entity_name": "Amal Express Money Transfer Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "st Amal Plaza",
+    "licensed_since": "2014-06-03",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/AMANAMONEYTR",
+    "entity_name": "Amana Money Transfer Ltd",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Eastleigh",
+    "licensed_since": "2014-11-06",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/BAKAALEXPRES",
+    "entity_name": "Bakaal Express Money Transfer Ltd",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "st 1 Avenue Eastleigh",
+    "licensed_since": "2015-11-25",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/CASHIAMONEYR",
+    "entity_name": "Cashia Money Remittance Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Parklands",
+    "licensed_since": "2024-09-30",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/DAYTONAKENYA",
+    "entity_name": "Daytona Kenya Money Transfer Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kilimani",
+    "licensed_since": "2025-06-13",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/DAHABSHILLMO",
+    "entity_name": "Dahabshill Money Transfer Limited.",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Standard Street",
+    "licensed_since": "2013-11-19",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/KUWAPAYMONEY",
+    "entity_name": "Kuwapay Money Transfer Ltd",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ground Floor",
+    "licensed_since": "2025-04-16",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/FLEXMONEYTRA",
+    "entity_name": "Flex Money Transfer Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ngong Road",
+    "licensed_since": "2015-02-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/GALAMONEYTRA",
+    "entity_name": "Gala Money Transfer Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "",
+    "licensed_since": "2023-07-12",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/HODANGLOBALM",
+    "entity_name": "Hodan Global Money Remittance and Ex-change Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kaunda Street",
+    "licensed_since": "2015-01-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/IFTINEXPRESS",
+    "entity_name": "Iftin Express Money Transfer Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Muindi Mbingu Street",
+    "licensed_since": "2014-07-10",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/JUBAEXPRESSM",
+    "entity_name": "Juba Express Money Transfer Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kaunda Street",
+    "licensed_since": "2014-07-10",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/JUNCTIONFORE",
+    "entity_name": "Junction Forex and Money Remittance Ltd",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ngong Road",
+    "licensed_since": "2023-10-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/KAAHEXPRESSM",
+    "entity_name": "Kaah Express Money Transfer Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Eastleigh",
+    "licensed_since": "2014-10-22",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/LAEKENMONEYT",
+    "entity_name": "Laeken Money Transfer Ltd",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Kilimani",
+    "licensed_since": "2024-08-29",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/REZATOMONEYR",
+    "entity_name": "Rezato Money Remittance Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Kisumu",
+    "town": "Oginga Odinga Road",
+    "licensed_since": "2025-07-31",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/TERRAPAYMONE",
+    "entity_name": "Terrapay Money Transfer Services (Kenya) Ltd.",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Parklands 2nd Avenue",
+    "licensed_since": "2017-03-12",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/MUKURUMONEYT",
+    "entity_name": "Mukuru Money Transfer Ltd",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Parklands",
+    "licensed_since": "2019-03-29",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/ORISENDMONEY",
+    "entity_name": "Orisend Money Transfer Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2025-03-17",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/REALVALUEMON",
+    "entity_name": "Real Value Money Transfer Ltd",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Eastleigh",
+    "licensed_since": "2016-01-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/REMITCOREMON",
+    "entity_name": "Remitcore Money Transfer Ltd",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "",
+    "town": "Kenya.",
+    "licensed_since": "2023-12-14",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/SAFARICOMMON",
+    "entity_name": "Safaricom Money Transfer Services Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Westlands",
+    "licensed_since": "2014-12-03",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/SAHEENMONEYT",
+    "entity_name": "Saheen Money Transfer Ltd",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Mombasa",
+    "town": "Ganjoni",
+    "licensed_since": "2025-09-25",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/SOUTHENDFORE",
+    "entity_name": "Southend Forex and Money Remittance Ltd",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "",
+    "town": "Upper Hill",
+    "licensed_since": "2025-11-10",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/SUNNYFOREXAN",
+    "entity_name": "Sunny Forex and Remittance Ltd",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Gitanga Road",
+    "licensed_since": "2023-11-17",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/SURFINMONEYR",
+    "entity_name": "Surfin Money Remittance Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Argwings Kodhek Road",
+    "licensed_since": "2024-01-29",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/TARGETMONEYT",
+    "entity_name": "Target Money Transfer Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ground Floor",
+    "licensed_since": "2015-10-02",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/TAWAKALMONEY",
+    "entity_name": "Tawakal Money Transfer Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Standard Street",
+    "licensed_since": "2015-01-01",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/UPESIMONEYTR",
+    "entity_name": "Upesi Money Transfer Ltd",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Ngong Road",
+    "licensed_since": "2016-01-05",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/WAFTMONEYTRA",
+    "entity_name": "Waft Money Transfer Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Kiambu",
+    "town": "Thindigua",
+    "licensed_since": "2025-08-15",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  },
+  {
+    "license_number": "CBK/REMITTANCE/WAPIMONEYTRA",
+    "entity_name": "Wapi Money Transfer Limited",
+    "category": "remittance",
+    "sub_category": "",
+    "status": "licensed",
+    "county": "Nairobi",
+    "town": "Parklands",
+    "licensed_since": "2023-01-11",
+    "license_expiry": "",
+    "services_permitted": [
+      "money_remittance",
+      "international_transfers"
+    ],
+    "source_doc": "data/cbk_pdfs/cbk_remittance.pdf",
+    "last_scraped": "2026-04-06T18:06:30+00:00"
+  }
+]
