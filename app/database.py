@@ -2,6 +2,7 @@ import os
 import ssl as _ssl
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import sessionmaker, DeclarativeBase
+from sqlalchemy.pool import NullPool
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -27,13 +28,10 @@ engine = create_async_engine(
     DATABASE_URL,
     echo=False,
     **({
-        "pool_size": 10,
-        "max_overflow": 20,
-        "pool_pre_ping": True,
+        "poolclass": NullPool,
         "connect_args": {
             "ssl": _pg_ssl_ctx,
             "statement_cache_size": 0,
-            "prepared_statement_cache_size": 0,
         },
     } if _is_postgres else {
         "connect_args": {"check_same_thread": False},
