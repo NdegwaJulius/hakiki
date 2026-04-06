@@ -8,3 +8,8 @@ slowapi==0.1.9
 jinja2==3.1.4
 python-multipart==0.0.12
 itsdangerous==2.2.0
+
+# ── Scraper dependencies (not required for API runtime) ───────────────────────
+pdfplumber==0.11.4          # SACCO + CBK PDF text extraction
+camelot-py[cv]==0.11.0      # CBK PDF table extraction (lattice/stream)
+PyPDF2==3.0.1               # CBK PDF text fallback

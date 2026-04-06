@@ -6,7 +6,7 @@ from typing import Optional
 
 from dotenv import load_dotenv
 from fastapi import Depends, FastAPI, HTTPException, Query, Request
-from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 from sqlalchemy import select, text
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -15,18 +15,20 @@ from app.database import AsyncSessionLocal, Base, engine, get_db
 from app.dependencies import deduct_credit_and_log, get_current_user, hash_api_key
 from app.models import ApiUser
 from app.routers import web as web_router
+from app.routers import cbk as cbk_router
 import app.tier_config as tier_config
+from app.limiter import limiter, RATE_LIMIT
 
 load_dotenv()
 
-RATE_LIMIT  = os.getenv("RATE_LIMIT", "100/minute")
 API_VERSION = os.getenv("API_VERSION", "v1")
 PREFIX      = f"/sacco/{API_VERSION}"
 
 DEV_API_KEY = os.getenv("DEV_API_KEY", "")
 DEV_EMAIL   = "dev@hakiki.local"
 
-JSON_PATH = Path(__file__).parent.parent / "saccos_2026.json"
+JSON_PATH     = Path(__file__).parent.parent / "saccos_2026.json"
+CBK_JSON_PATH = Path(__file__).parent.parent / "cbk_entities.json"
 
 _SACCOS: list[dict] = []
 
@@ -78,17 +80,14 @@ async def lifespan(app: FastAPI):
     with open(JSON_PATH) as f:
         _SACCOS.extend(json.load(f))
 
+    cbk_router.load_data(CBK_JSON_PATH)
+
     print(f"\n  API key : {DEV_API_KEY}")
     print(f"  Loaded  : {len(_SACCOS)} SACCOs into memory")
     print(f"  Docs    : http://localhost:8000/docs\n")
 
     yield
 
-
-def _rate_key(request: Request) -> str:
-    return request.headers.get("X-API-Key") or (request.client.host if request.client else "unknown")
-
-limiter = Limiter(key_func=_rate_key)
 
 app = FastAPI(
     title="Hakiki API",
@@ -114,34 +113,53 @@ _DOC_SESSION_MAX = 7 * 24 * 3600
 _ADMIN_EMAIL = _os.getenv("ADMIN_EMAIL", "").strip().lower()
 
 
-async def _doc_admin(request: Request, db: AsyncSession = Depends(get_db)) -> bool:
+async def _doc_user(request: Request, db: AsyncSession = Depends(get_db)) -> Optional[ApiUser]:
+    """Return the logged-in user from session cookie, or None."""
     token = request.cookies.get("session")
     if not token:
-        return False
+        return None
     try:
         user_id = _doc_signer.loads(token, max_age=_DOC_SESSION_MAX)
     except _Bad:
-        return False
+        return None
     result = await db.execute(select(ApiUser).where(ApiUser.id == user_id))
-    user = result.scalar_one_or_none()
-    return bool(user and _ADMIN_EMAIL and user.email.strip().lower() == _ADMIN_EMAIL)
+    return result.scalar_one_or_none()
+
+
+_ADMIN_ROUTE_PREFIXES = ("/admin",)
+
+
+def _filtered_schema(is_admin: bool) -> dict:
+    schema = get_openapi(title=app.title, version=app.version, routes=app.routes)
+    if is_admin:
+        return schema
+    # Strip admin paths from the schema for regular users
+    filtered_paths = {
+        path: ops
+        for path, ops in schema.get("paths", {}).items()
+        if not any(path.startswith(prefix) for prefix in _ADMIN_ROUTE_PREFIXES)
+    }
+    schema["paths"] = filtered_paths
+    return schema
 
 
 @app.get("/openapi.json", include_in_schema=False)
-async def openapi_schema(request: Request, is_admin: bool = Depends(_doc_admin)):
-    if not is_admin:
-        from fastapi.responses import RedirectResponse
+async def openapi_schema(request: Request, user: Optional[ApiUser] = Depends(_doc_user)):
+    from fastapi.responses import RedirectResponse
+    if not user:
         return RedirectResponse("/login")
-    return get_openapi(title=app.title, version=app.version, routes=app.routes)
+    is_admin = bool(_ADMIN_EMAIL and user.email.strip().lower() == _ADMIN_EMAIL)
+    return _filtered_schema(is_admin)
 
 
 @app.get("/docs", include_in_schema=False)
-async def swagger_ui(request: Request, is_admin: bool = Depends(_doc_admin)):
-    if not is_admin:
-        from fastapi.responses import RedirectResponse
+async def swagger_ui(request: Request, user: Optional[ApiUser] = Depends(_doc_user)):
+    from fastapi.responses import RedirectResponse
+    if not user:
         return RedirectResponse("/login")
     return get_swagger_ui_html(openapi_url="/openapi.json", title="Hakiki API Docs")
 app.include_router(web_router.router)
+app.include_router(cbk_router.router)
 
 
 def _serialize(sacco: dict, tier: str) -> dict:
