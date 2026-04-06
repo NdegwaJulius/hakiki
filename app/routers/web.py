@@ -541,7 +541,7 @@ def _supabase_upsert(table: str, records: list[dict], on_conflict: str) -> tuple
     return 200, f"{len(records)} records synced to Supabase"
 
 
-@router.get("/admin/data", response_class=HTMLResponse)
+@router.get("/admin/sources", response_class=HTMLResponse)
 async def admin_data_page(
     request: Request,
     db: AsyncSession = Depends(get_db),
@@ -555,7 +555,7 @@ async def admin_data_page(
     from collections import Counter
     cbk_counts = Counter(e["category"] for e in store.CBK_ENTITIES)
 
-    return templates.TemplateResponse("admin_data.html", {
+    return templates.TemplateResponse("admin_sources.html", {
         "request":      request,
         "admin":        admin,
         "is_admin":     True,
@@ -578,7 +578,7 @@ async def upload_sacco(
         return RedirectResponse("/login", status_code=302)
 
     if not file.filename.lower().endswith(".pdf"):
-        return RedirectResponse("/admin/data?error=Please+upload+a+PDF+file", status_code=302)
+        return RedirectResponse("/admin/sources?error=Please+upload+a+PDF+file", status_code=302)
 
     # Save to temp file then parse in thread pool (pdfplumber is sync)
     contents = await file.read()
@@ -591,12 +591,12 @@ async def upload_sacco(
         loop    = asyncio.get_event_loop()
         records = await loop.run_in_executor(None, scrape_from_file, tmp_path)
     except Exception as e:
-        return RedirectResponse(f"/admin/data?error=Parse+error:+{str(e)[:80]}", status_code=302)
+        return RedirectResponse(f"/admin/sources?error=Parse+error:+{str(e)[:80]}", status_code=302)
     finally:
         Path(tmp_path).unlink(missing_ok=True)
 
     if not records:
-        return RedirectResponse("/admin/data?error=No+records+extracted+from+PDF", status_code=302)
+        return RedirectResponse("/admin/sources?error=No+records+extracted+from+PDF", status_code=302)
 
     # Reload in-memory store
     store.reload_saccos(records)
@@ -610,7 +610,7 @@ async def upload_sacco(
     status, db_msg = _supabase_upsert("saccos", records, "name,schedule")
 
     msg = f"SACCO: {len(records)} records loaded into memory. {db_msg}"
-    return RedirectResponse(f"/admin/data?msg={msg}", status_code=302)
+    return RedirectResponse(f"/admin/sources?msg={msg}", status_code=302)
 
 
 @router.post("/admin/upload/cbk/{entity_type}")
@@ -625,10 +625,10 @@ async def upload_cbk(
         return RedirectResponse("/login", status_code=302)
 
     if entity_type not in CBK_CATEGORIES:
-        return RedirectResponse("/admin/data?error=Unknown+entity+type", status_code=302)
+        return RedirectResponse("/admin/sources?error=Unknown+entity+type", status_code=302)
 
     if not file.filename.lower().endswith(".pdf"):
-        return RedirectResponse("/admin/data?error=Please+upload+a+PDF+file", status_code=302)
+        return RedirectResponse("/admin/sources?error=Please+upload+a+PDF+file", status_code=302)
 
     contents = await file.read()
     with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as tmp:
@@ -640,13 +640,13 @@ async def upload_cbk(
         loop    = asyncio.get_event_loop()
         records = await loop.run_in_executor(None, scrape_entity, Path(tmp_path), entity_type)
     except Exception as e:
-        return RedirectResponse(f"/admin/data?error=Parse+error:+{str(e)[:80]}", status_code=302)
+        return RedirectResponse(f"/admin/sources?error=Parse+error:+{str(e)[:80]}", status_code=302)
     finally:
         Path(tmp_path).unlink(missing_ok=True)
 
     if not records:
         return RedirectResponse(
-            f"/admin/data?error=No+records+extracted+from+PDF+(entity_type={entity_type})",
+            f"/admin/sources?error=No+records+extracted+from+PDF+(entity_type={entity_type})",
             status_code=302,
         )
 
@@ -663,4 +663,4 @@ async def upload_cbk(
 
     label = CBK_CATEGORIES[entity_type]
     msg   = f"{label}: {len(records)} records loaded into memory. {db_msg}"
-    return RedirectResponse(f"/admin/data?msg={msg}", status_code=302)
+    return RedirectResponse(f"/admin/sources?msg={msg}", status_code=302)
