@@ -30,13 +30,13 @@ JSON_PATH = Path(__file__).parent.parent / "saccos_2026.json"
 
 _SACCOS: list[dict] = []
 
-# Fields visible per tier (free gets basic, pro/enterprise get all)
+_ALL_FIELDS = {"name", "county", "schedule", "business_type", "is_visible",
+               "postal_address", "physical_location"}
+
 _TIER_FIELDS: dict[str, set] = {
-    "free":       {"name", "county", "schedule", "business_type", "is_visible"},
-    "pro":        {"name", "county", "schedule", "business_type", "is_visible",
-                   "postal_address", "physical_location"},
-    "enterprise": {"name", "county", "schedule", "business_type", "is_visible",
-                   "postal_address", "physical_location"},
+    "free":       _ALL_FIELDS,
+    "pro":        _ALL_FIELDS,
+    "enterprise": _ALL_FIELDS,
 }
 
 
@@ -232,3 +232,23 @@ async def list_saccos(
 
     await deduct_credit_and_log(current_user, f"{PREFIX}/list", db, found=True)
     return {"total": total, "page": page, "results": [_serialize(s, current_user.tier) for s in page_slice]}
+
+
+@app.get(f"{PREFIX}/stats")
+@limiter.limit(RATE_LIMIT)
+async def stats(
+    request: Request,
+    db: AsyncSession = Depends(get_db),
+    current_user: ApiUser = Depends(get_current_user),
+):
+    from collections import Counter
+    by_schedule     = Counter(s["schedule"]      for s in _SACCOS)
+    by_type         = Counter(s["business_type"] for s in _SACCOS)
+    by_county       = Counter(s["county"]        for s in _SACCOS)
+    await deduct_credit_and_log(current_user, f"{PREFIX}/stats", db, found=True)
+    return {
+        "total": len(_SACCOS),
+        "by_schedule":     dict(sorted(by_schedule.items())),
+        "by_business_type": dict(by_type.most_common()),
+        "by_county":       dict(by_county.most_common()),
+    }
