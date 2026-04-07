@@ -575,6 +575,107 @@ async def admin_data_page(
     })
 
 
+@router.get("/admin/data/sacco", response_class=HTMLResponse)
+async def admin_data_sacco(
+    request: Request,
+    q: str = None,
+    county: str = None,
+    page: int = 1,
+    db: AsyncSession = Depends(get_db),
+):
+    admin = await _current_user(request, db)
+    if not admin or not _is_admin(admin):
+        return RedirectResponse("/login", status_code=302)
+
+    records = store.SACCOS
+    if q:
+        q_l = q.lower()
+        records = [r for r in records if q_l in r.get("name", "").lower()]
+    if county:
+        c_l = county.lower()
+        records = [r for r in records if c_l in r.get("county", "").lower()]
+
+    page_size = 50
+    total = len(records)
+    pages = max(1, (total + page_size - 1) // page_size)
+    page = max(1, min(page, pages))
+    page_records = records[(page - 1) * page_size : page * page_size]
+
+    counties = sorted(set(r.get("county", "") for r in store.SACCOS if r.get("county")))
+
+    return templates.TemplateResponse("admin_data_table.html", {
+        "request":    request,
+        "is_admin":   True,
+        "title":      "SACCO Societies",
+        "label":      "sacco",
+        "columns":    ["name", "county", "schedule", "business_type"],
+        "records":    page_records,
+        "total":      total,
+        "page":       page,
+        "pages":      pages,
+        "q":          q or "",
+        "county":     county or "",
+        "counties":   counties,
+        "back_url":   "/admin/sources",
+    })
+
+
+@router.get("/admin/data/cbk/{entity_type}", response_class=HTMLResponse)
+async def admin_data_cbk(
+    request: Request,
+    entity_type: str,
+    q: str = None,
+    county: str = None,
+    status: str = None,
+    page: int = 1,
+    db: AsyncSession = Depends(get_db),
+):
+    admin = await _current_user(request, db)
+    if not admin or not _is_admin(admin):
+        return RedirectResponse("/login", status_code=302)
+
+    if entity_type not in CBK_CATEGORIES:
+        raise HTTPException(status_code=404, detail="Unknown entity type")
+
+    records = [e for e in store.CBK_ENTITIES if e["category"] == entity_type]
+    if q:
+        q_l = q.lower()
+        records = [r for r in records if q_l in r.get("entity_name", "").lower()]
+    if county:
+        c_l = county.lower()
+        records = [r for r in records if c_l in r.get("county", "").lower()]
+    if status:
+        records = [r for r in records if r.get("status") == status.lower()]
+
+    page_size = 50
+    total = len(records)
+    pages = max(1, (total + page_size - 1) // page_size)
+    page = max(1, min(page, pages))
+    page_records = records[(page - 1) * page_size : page * page_size]
+
+    pool = [e for e in store.CBK_ENTITIES if e["category"] == entity_type]
+    counties  = sorted(set(r.get("county", "") for r in pool if r.get("county")))
+    statuses  = sorted(set(r.get("status", "") for r in pool if r.get("status")))
+
+    return templates.TemplateResponse("admin_data_table.html", {
+        "request":     request,
+        "is_admin":    True,
+        "title":       CBK_CATEGORIES[entity_type],
+        "label":       entity_type,
+        "columns":     ["entity_name", "license_number", "county", "status", "sub_category", "licensed_since"],
+        "records":     page_records,
+        "total":       total,
+        "page":        page,
+        "pages":       pages,
+        "q":           q or "",
+        "county":      county or "",
+        "status":      status or "",
+        "counties":    counties,
+        "statuses":    statuses,
+        "back_url":    "/admin/sources",
+    })
+
+
 @router.post("/admin/upload/sacco")
 async def upload_sacco(
     request: Request,

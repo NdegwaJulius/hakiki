@@ -56,7 +56,7 @@
         {% for cat, label in cbk_labels.items() %}
         <div class="px-6 py-4 flex items-center gap-4">
           <div class="w-52 shrink-0">
-            <p class="text-sm font-medium text-slate-700">{{ label }}</p>
+            <a href="/admin/data/cbk/{{ cat }}" class="text-sm font-medium text-slate-700 hover:text-blue-600 transition">{{ label }}</a>
             <p class="text-xs text-slate-400 mt-0.5">{{ cbk_counts[cat] }} records in memory</p>
           </div>
           <form method="post" action="/admin/upload/cbk/{{ cat }}"
@@ -94,7 +94,7 @@
       </div>
       <div class="px-6 py-4 flex items-center gap-4">
         <div class="w-52 shrink-0">
-          <p class="text-sm font-medium text-slate-700">All Schedules (I – V)</p>
+          <a href="/admin/data/sacco" class="text-sm font-medium text-slate-700 hover:text-purple-600 transition">All Schedules (I – V)</a>
           <p class="text-xs text-slate-400 mt-0.5">{{ sacco_count }} SACCOs in memory</p>
         </div>
         <form method="post" action="/admin/upload/sacco"
