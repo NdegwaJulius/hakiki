@@ -522,9 +522,17 @@ def _supabase_upsert(table: str, records: list[dict], on_conflict: str) -> tuple
     if not SUPABASE_URL or not SERVICE_KEY:
         return 0, "SUPABASE_URL / SUPABASE_SERVICE_KEY not set — skipped DB sync"
 
+    DATE_FIELDS = {"licensed_since", "license_expiry"}
+
+    def _clean(record: dict) -> dict:
+        return {
+            k: (None if (k in DATE_FIELDS and not v) else v)
+            for k, v in record.items()
+        }
+
     batch_size = 100
     for i in range(0, len(records), batch_size):
-        batch = records[i : i + batch_size]
+        batch = [_clean(r) for r in records[i : i + batch_size]]
         url   = f"{SUPABASE_URL}/rest/v1/{table}?on_conflict={on_conflict}"
         body  = json.dumps(batch).encode()
         req   = urllib.request.Request(url, data=body, method="POST")
