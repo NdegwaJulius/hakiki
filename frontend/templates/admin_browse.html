@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}Browse — Hakiki Admin{% endblock %}
+{% block main_class %}max-w-4xl mx-auto px-6 py-10{% endblock %}
+
+{% block content %}
+
+<div class="mb-8">
+  <h1 class="text-2xl font-bold text-slate-800">Browse Data</h1>
+  <p class="text-slate-500 text-sm mt-0.5">All licensed-entity datasets currently loaded in memory.</p>
+</div>
+
+<!-- CBK -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden mb-6">
+  <div class="px-6 py-4 border-b border-slate-100 flex items-center justify-between">
+    <div>
+      <h2 class="font-semibold text-slate-800">Central Bank of Kenya</h2>
+      <p class="text-xs text-slate-400 mt-0.5">{{ cbk_total }} entities across 5 categories</p>
+    </div>
+  </div>
+  <div class="divide-y divide-slate-100">
+    {% for cat, label in cbk_labels.items() %}
+    <a href="/admin/data/cbk/{{ cat }}"
+       class="flex items-center justify-between px-6 py-4 hover:bg-slate-50 transition group">
+      <div>
+        <p class="text-sm font-medium text-slate-700 group-hover:text-blue-600 transition">{{ label }}</p>
+        {% if cbk_doc_dates.get(cat) %}
+        <p class="text-xs text-slate-400 mt-0.5">As of {{ cbk_doc_dates[cat] }}</p>
+        {% else %}
+        <p class="text-xs text-slate-300 mt-0.5">No document date</p>
+        {% endif %}
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="text-sm font-semibold text-slate-700">{{ cbk_counts[cat] }}</span>
+        <svg class="w-4 h-4 text-slate-300 group-hover:text-blue-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- SACCO -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+  <div class="px-6 py-4 border-b border-slate-100">
+    <h2 class="font-semibold text-slate-800">SACCO Societies (SASRA)</h2>
+  </div>
+  <a href="/admin/data/sacco"
+     class="flex items-center justify-between px-6 py-4 hover:bg-slate-50 transition group">
+    <div>
+      <p class="text-sm font-medium text-slate-700 group-hover:text-purple-600 transition">All Schedules (I – V)</p>
+      <p class="text-xs text-slate-400 mt-0.5">{{ sacco_last_updated or "No document date" }}</p>
+    </div>
+    <div class="flex items-center gap-3">
+      <span class="text-sm font-semibold text-slate-700">{{ sacco_count }}</span>
+      <svg class="w-4 h-4 text-slate-300 group-hover:text-purple-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+      </svg>
+    </div>
+  </a>
+</div>
+
+{% endblock %}

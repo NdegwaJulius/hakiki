@@ -587,6 +587,46 @@ async def admin_data_page(
     })
 
 
+@router.get("/admin/browse", response_class=HTMLResponse)
+async def admin_browse(request: Request, db: AsyncSession = Depends(get_db)):
+    admin = await _current_user(request, db)
+    if not admin or not _is_admin(admin):
+        return RedirectResponse("/login", status_code=302)
+
+    from collections import Counter
+    from datetime import datetime as _dt
+    cbk_counts = Counter(e["category"] for e in store.CBK_ENTITIES)
+
+    cbk_doc_dates: dict[str, str] = {}
+    for cat in CBK_CATEGORIES:
+        dates = [e.get("doc_date", "") for e in store.CBK_ENTITIES if e["category"] == cat and e.get("doc_date")]
+        if dates:
+            try:
+                cbk_doc_dates[cat] = _dt.fromisoformat(max(dates)).strftime("%d %b %Y")
+            except Exception:
+                cbk_doc_dates[cat] = max(dates)
+
+    import os as _os
+    _sacco_json = Path(__file__).parent.parent.parent / "saccos_2026.json"
+    sacco_last_updated = None
+    try:
+        _mtime = _os.path.getmtime(_sacco_json)
+        sacco_last_updated = _dt.utcfromtimestamp(_mtime).strftime("%d %b %Y")
+    except Exception:
+        pass
+
+    return templates.TemplateResponse("admin_browse.html", {
+        "request":           request,
+        "is_admin":          True,
+        "cbk_labels":        CBK_CATEGORIES,
+        "cbk_counts":        {cat: cbk_counts.get(cat, 0) for cat in CBK_CATEGORIES},
+        "cbk_doc_dates":     cbk_doc_dates,
+        "cbk_total":         len(store.CBK_ENTITIES),
+        "sacco_count":       len(store.SACCOS),
+        "sacco_last_updated": sacco_last_updated,
+    })
+
+
 @router.get("/admin/data/sacco", response_class=HTMLResponse)
 async def admin_data_sacco(
     request: Request,
