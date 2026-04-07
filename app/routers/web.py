@@ -615,15 +615,30 @@ async def admin_browse(request: Request, db: AsyncSession = Depends(get_db)):
     except Exception:
         pass
 
+    from collections import Counter as _Counter
+    # CBK aggregates
+    cbk_county  = _Counter(e.get("county","") for e in store.CBK_ENTITIES if e.get("county"))
+    cbk_status  = _Counter(e.get("status","") for e in store.CBK_ENTITIES if e.get("status"))
+
+    # SACCO aggregates
+    sacco_schedule  = _Counter(s.get("schedule","")      for s in store.SACCOS if s.get("schedule"))
+    sacco_biz       = _Counter(s.get("business_type","") for s in store.SACCOS if s.get("business_type"))
+    sacco_county    = _Counter(s.get("county","")        for s in store.SACCOS if s.get("county"))
+
     return templates.TemplateResponse("admin_browse.html", {
-        "request":           request,
-        "is_admin":          True,
-        "cbk_labels":        CBK_CATEGORIES,
-        "cbk_counts":        {cat: cbk_counts.get(cat, 0) for cat in CBK_CATEGORIES},
-        "cbk_doc_dates":     cbk_doc_dates,
-        "cbk_total":         len(store.CBK_ENTITIES),
-        "sacco_count":       len(store.SACCOS),
+        "request":            request,
+        "is_admin":           True,
+        "cbk_labels":         CBK_CATEGORIES,
+        "cbk_counts":         {cat: cbk_counts.get(cat, 0) for cat in CBK_CATEGORIES},
+        "cbk_doc_dates":      cbk_doc_dates,
+        "cbk_total":          len(store.CBK_ENTITIES),
+        "cbk_county_top":     cbk_county.most_common(10),
+        "cbk_status":         dict(cbk_status),
+        "sacco_count":        len(store.SACCOS),
         "sacco_last_updated": sacco_last_updated,
+        "sacco_schedule":     dict(sorted(sacco_schedule.items())),
+        "sacco_biz":          dict(sacco_biz.most_common()),
+        "sacco_county_top":   sacco_county.most_common(10),
     })
 
 

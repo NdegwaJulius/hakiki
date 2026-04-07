@@ -1,63 +1,188 @@
 {% extends "base.html" %}
 {% block title %}Browse — Hakiki Admin{% endblock %}
-{% block main_class %}max-w-4xl mx-auto px-6 py-10{% endblock %}
+{% block main_class %}max-w-7xl mx-auto px-6 py-10{% endblock %}
 
 {% block content %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
 <div class="mb-8">
   <h1 class="text-2xl font-bold text-slate-800">Browse Data</h1>
-  <p class="text-slate-500 text-sm mt-0.5">All licensed-entity datasets currently loaded in memory.</p>
+  <p class="text-slate-500 text-sm mt-0.5">Click any category to explore records.</p>
 </div>
 
-<!-- CBK -->
-<div class="bg-white rounded-xl border border-slate-200 overflow-hidden mb-6">
-  <div class="px-6 py-4 border-b border-slate-100 flex items-center justify-between">
-    <div>
-      <h2 class="font-semibold text-slate-800">Central Bank of Kenya</h2>
-      <p class="text-xs text-slate-400 mt-0.5">{{ cbk_total }} entities across 5 categories</p>
-    </div>
+<!-- ── Hero stats ─────────────────────────────────────────────────────────── -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+  <div class="bg-white rounded-xl border border-slate-200 p-5">
+    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-1">CBK Entities</p>
+    <p class="text-3xl font-bold text-slate-800">{{ cbk_total }}</p>
+    <p class="text-xs text-slate-400 mt-1">5 categories</p>
   </div>
-  <div class="divide-y divide-slate-100">
-    {% for cat, label in cbk_labels.items() %}
-    <a href="/admin/data/cbk/{{ cat }}"
-       class="flex items-center justify-between px-6 py-4 hover:bg-slate-50 transition group">
-      <div>
-        <p class="text-sm font-medium text-slate-700 group-hover:text-blue-600 transition">{{ label }}</p>
-        {% if cbk_doc_dates.get(cat) %}
-        <p class="text-xs text-slate-400 mt-0.5">As of {{ cbk_doc_dates[cat] }}</p>
-        {% else %}
-        <p class="text-xs text-slate-300 mt-0.5">No document date</p>
-        {% endif %}
-      </div>
-      <div class="flex items-center gap-3">
-        <span class="text-sm font-semibold text-slate-700">{{ cbk_counts[cat] }}</span>
-        <svg class="w-4 h-4 text-slate-300 group-hover:text-blue-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-        </svg>
-      </div>
-    </a>
-    {% endfor %}
+  <div class="bg-white rounded-xl border border-slate-200 p-5">
+    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-1">SACCOs</p>
+    <p class="text-3xl font-bold text-slate-800">{{ sacco_count }}</p>
+    <p class="text-xs text-slate-400 mt-1">{{ sacco_last_updated or "—" }}</p>
+  </div>
+  <div class="bg-white rounded-xl border border-slate-200 p-5">
+    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-1">Total Records</p>
+    <p class="text-3xl font-bold text-blue-600">{{ cbk_total + sacco_count }}</p>
+    <p class="text-xs text-slate-400 mt-1">across all datasets</p>
+  </div>
+  <div class="bg-white rounded-xl border border-slate-200 p-5">
+    <p class="text-xs font-medium text-slate-400 uppercase tracking-wider mb-1">Regulators</p>
+    <p class="text-3xl font-bold text-slate-800">2</p>
+    <p class="text-xs text-slate-400 mt-1">CBK · SASRA</p>
   </div>
 </div>
 
-<!-- SACCO -->
-<div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
-  <div class="px-6 py-4 border-b border-slate-100">
-    <h2 class="font-semibold text-slate-800">SACCO Societies (SASRA)</h2>
+<!-- ── CBK section ────────────────────────────────────────────────────────── -->
+<h2 class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3">Central Bank of Kenya</h2>
+
+<!-- Clickable category cards -->
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-6">
+  {% for cat, label in cbk_labels.items() %}
+  <a href="/admin/data/cbk/{{ cat }}"
+     class="bg-white rounded-xl border border-slate-200 p-4 hover:border-blue-400 hover:shadow-sm transition group">
+    <p class="text-2xl font-bold text-slate-800 group-hover:text-blue-600 transition">{{ cbk_counts[cat] }}</p>
+    <p class="text-xs font-medium text-slate-600 mt-1 leading-tight">{{ label }}</p>
+    {% if cbk_doc_dates.get(cat) %}
+    <p class="text-xs text-slate-300 mt-2">as of {{ cbk_doc_dates[cat] }}</p>
+    {% endif %}
+  </a>
+  {% endfor %}
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+  <!-- CBK by category (bar) -->
+  <div class="bg-white rounded-xl border border-slate-200 p-6">
+    <h3 class="text-sm font-semibold text-slate-700 mb-4">Entities by Category</h3>
+    <canvas id="cbkCategoryChart" height="200"></canvas>
   </div>
+  <!-- CBK top counties (horizontal bar) -->
+  <div class="bg-white rounded-xl border border-slate-200 p-6">
+    <h3 class="text-sm font-semibold text-slate-700 mb-4">Top Counties (CBK)</h3>
+    <canvas id="cbkCountyChart" height="200"></canvas>
+  </div>
+</div>
+
+<!-- ── SACCO section ──────────────────────────────────────────────────────── -->
+<h2 class="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-3">SACCO Societies — SASRA</h2>
+
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+  <!-- Schedule donut -->
+  <div class="bg-white rounded-xl border border-slate-200 p-6">
+    <h3 class="text-sm font-semibold text-slate-700 mb-4">By Schedule</h3>
+    <canvas id="saccoScheduleChart" height="220"></canvas>
+  </div>
+  <!-- Business type bar -->
+  <div class="bg-white rounded-xl border border-slate-200 p-6">
+    <h3 class="text-sm font-semibold text-slate-700 mb-4">By Business Type</h3>
+    <canvas id="saccoBizChart" height="220"></canvas>
+  </div>
+  <!-- Top counties -->
+  <div class="bg-white rounded-xl border border-slate-200 p-6">
+    <h3 class="text-sm font-semibold text-slate-700 mb-4">Top Counties (SACCO)</h3>
+    <canvas id="saccoCountyChart" height="220"></canvas>
+  </div>
+</div>
+
+<div class="text-right mb-2">
   <a href="/admin/data/sacco"
-     class="flex items-center justify-between px-6 py-4 hover:bg-slate-50 transition group">
-    <div>
-      <p class="text-sm font-medium text-slate-700 group-hover:text-purple-600 transition">All Schedules (I – V)</p>
-      <p class="text-xs text-slate-400 mt-0.5">{{ sacco_last_updated or "No document date" }}</p>
-    </div>
-    <div class="flex items-center gap-3">
-      <span class="text-sm font-semibold text-slate-700">{{ sacco_count }}</span>
-      <svg class="w-4 h-4 text-slate-300 group-hover:text-purple-400 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-      </svg>
-    </div>
+     class="inline-flex items-center gap-1.5 text-sm font-medium text-purple-600 hover:text-purple-800 transition">
+    Browse all SACCOs
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+    </svg>
   </a>
 </div>
+
+<script>
+const BLUE_PALETTE  = ['#3b82f6','#60a5fa','#93c5fd','#bfdbfe','#dbeafe'];
+const MULTI_PALETTE = ['#3b82f6','#8b5cf6','#10b981','#f59e0b','#ef4444','#06b6d4','#f97316','#84cc16','#ec4899','#6366f1'];
+
+function barChart(id, labels, data, color) {
+  new Chart(document.getElementById(id), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{ data, backgroundColor: color || BLUE_PALETTE[0],
+        borderRadius: 6, borderSkipped: false }]
+    },
+    options: {
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { display: false }, ticks: { font: { size: 11 } } },
+        y: { grid: { color: '#f1f5f9' }, ticks: { font: { size: 11 } } }
+      }
+    }
+  });
+}
+
+function hBarChart(id, labels, data) {
+  new Chart(document.getElementById(id), {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{ data, backgroundColor: MULTI_PALETTE, borderRadius: 4 }]
+    },
+    options: {
+      indexAxis: 'y',
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { color: '#f1f5f9' }, ticks: { font: { size: 10 } } },
+        y: { grid: { display: false }, ticks: { font: { size: 11 } } }
+      }
+    }
+  });
+}
+
+function donutChart(id, labels, data) {
+  new Chart(document.getElementById(id), {
+    type: 'doughnut',
+    data: {
+      labels,
+      datasets: [{ data, backgroundColor: MULTI_PALETTE,
+        borderWidth: 2, borderColor: '#fff' }]
+    },
+    options: {
+      cutout: '60%',
+      plugins: {
+        legend: { position: 'bottom', labels: { font: { size: 11 }, padding: 12 } }
+      }
+    }
+  });
+}
+
+// ── CBK category bar ──────────────────────────────────────────────────────────
+barChart('cbkCategoryChart',
+  {{ cbk_labels.values() | list | tojson }},
+  {{ cbk_counts.values() | list | tojson }},
+  MULTI_PALETTE
+);
+
+// ── CBK top counties horizontal bar ──────────────────────────────────────────
+hBarChart('cbkCountyChart',
+  {{ cbk_county_top | map(attribute=0) | list | tojson }},
+  {{ cbk_county_top | map(attribute=1) | list | tojson }}
+);
+
+// ── SACCO schedule donut ──────────────────────────────────────────────────────
+donutChart('saccoScheduleChart',
+  {{ sacco_schedule.keys() | list | tojson | safe }},
+  {{ sacco_schedule.values() | list | tojson }}
+);
+
+// ── SACCO business type bar ───────────────────────────────────────────────────
+barChart('saccoBizChart',
+  {{ sacco_biz.keys() | list | map('replace', '_', ' ') | list | tojson }},
+  {{ sacco_biz.values() | list | tojson }},
+  MULTI_PALETTE
+);
+
+// ── SACCO top counties horizontal bar ────────────────────────────────────────
+hBarChart('saccoCountyChart',
+  {{ sacco_county_top | map(attribute=0) | list | tojson }},
+  {{ sacco_county_top | map(attribute=1) | list | tojson }}
+);
+</script>
 
 {% endblock %}
