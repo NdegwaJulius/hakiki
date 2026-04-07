@@ -14,7 +14,19 @@
       Data Management
     </a>
     <h1 class="text-2xl font-bold text-slate-800">{{ title }}</h1>
-    <p class="text-slate-500 text-sm mt-0.5">{{ total }} records</p>
+    <div class="flex items-center gap-3 mt-0.5">
+      <p class="text-slate-500 text-sm">{{ total }} records</p>
+      {% if last_updated %}
+      <span class="text-xs text-slate-400">·</span>
+      <span class="inline-flex items-center gap-1 text-xs text-slate-400">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+        </svg>
+        Last updated {{ last_updated }}
+      </span>
+      {% endif %}
+    </div>
   </div>
 </div>
 

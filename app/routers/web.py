@@ -561,17 +561,29 @@ async def admin_data_page(
         return RedirectResponse("/login", status_code=302)
 
     from collections import Counter
+    from datetime import datetime as _dt
     cbk_counts = Counter(e["category"] for e in store.CBK_ENTITIES)
 
+    # Compute latest last_scraped per category for display
+    cbk_last_scraped: dict[str, str] = {}
+    for cat in CBK_CATEGORIES:
+        dates = [e.get("last_scraped", "") for e in store.CBK_ENTITIES if e["category"] == cat and e.get("last_scraped")]
+        if dates:
+            try:
+                cbk_last_scraped[cat] = _dt.fromisoformat(max(dates).replace("Z", "+00:00")).strftime("%d %b %Y")
+            except Exception:
+                pass
+
     return templates.TemplateResponse("admin_sources.html", {
-        "request":      request,
-        "admin":        admin,
-        "is_admin":     True,
-        "msg":          msg,
-        "error":        error,
-        "sacco_count":  len(store.SACCOS),
-        "cbk_counts":   {cat: cbk_counts.get(cat, 0) for cat in CBK_CATEGORIES},
-        "cbk_labels":   CBK_CATEGORIES,
+        "request":          request,
+        "admin":            admin,
+        "is_admin":         True,
+        "msg":              msg,
+        "error":            error,
+        "sacco_count":      len(store.SACCOS),
+        "cbk_counts":       {cat: cbk_counts.get(cat, 0) for cat in CBK_CATEGORIES},
+        "cbk_labels":       CBK_CATEGORIES,
+        "cbk_last_scraped": cbk_last_scraped,
     })
 
 
@@ -603,20 +615,31 @@ async def admin_data_sacco(
 
     counties = sorted(set(r.get("county", "") for r in store.SACCOS if r.get("county")))
 
+    # Use JSON file mtime as last-updated proxy for SACCOs (no last_scraped in data)
+    import os as _os
+    _sacco_json = Path(__file__).parent.parent.parent / "saccos_2026.json"
+    try:
+        _mtime = _os.path.getmtime(_sacco_json)
+        from datetime import datetime as _dt
+        last_updated = _dt.utcfromtimestamp(_mtime).strftime("%d %b %Y")
+    except Exception:
+        last_updated = None
+
     return templates.TemplateResponse("admin_data_table.html", {
-        "request":    request,
-        "is_admin":   True,
-        "title":      "SACCO Societies",
-        "label":      "sacco",
-        "columns":    ["name", "county", "schedule", "business_type"],
-        "records":    page_records,
-        "total":      total,
-        "page":       page,
-        "pages":      pages,
-        "q":          q or "",
-        "county":     county or "",
-        "counties":   counties,
-        "back_url":   "/admin/sources",
+        "request":      request,
+        "is_admin":     True,
+        "title":        "SACCO Societies",
+        "label":        "sacco",
+        "columns":      ["name", "county", "schedule", "business_type"],
+        "records":      page_records,
+        "total":        total,
+        "page":         page,
+        "pages":        pages,
+        "q":            q or "",
+        "county":       county or "",
+        "counties":     counties,
+        "back_url":     "/admin/sources",
+        "last_updated": last_updated,
     })
 
 
@@ -657,12 +680,23 @@ async def admin_data_cbk(
     counties  = sorted(set(r.get("county", "") for r in pool if r.get("county")))
     statuses  = sorted(set(r.get("status", "") for r in pool if r.get("status")))
 
+    # last_scraped is ISO timestamp; take the max across records in this category
+    scraped_dates = [r.get("last_scraped", "") for r in pool if r.get("last_scraped")]
+    last_updated = None
+    if scraped_dates:
+        from datetime import datetime as _dt
+        try:
+            latest = max(scraped_dates)
+            last_updated = _dt.fromisoformat(latest.replace("Z", "+00:00")).strftime("%d %b %Y")
+        except Exception:
+            pass
+
     return templates.TemplateResponse("admin_data_table.html", {
         "request":     request,
         "is_admin":    True,
         "title":       CBK_CATEGORIES[entity_type],
         "label":       entity_type,
-        "columns":     ["entity_name", "license_number", "county", "status", "sub_category", "licensed_since"],
+        "columns":     ["entity_name", "license_number", "county", "status", "sub_category", "licensed_since", "license_expiry"],
         "records":     page_records,
         "total":       total,
         "page":        page,
@@ -673,6 +707,7 @@ async def admin_data_cbk(
         "counties":    counties,
         "statuses":    statuses,
         "back_url":    "/admin/sources",
+        "last_updated": last_updated,
     })
 
 
