@@ -145,6 +145,39 @@ def parse_date(raw: str) -> str:
     return ""
 
 
+def extract_doc_date(pdf_path: Path) -> str:
+    """
+    Pull the regulator's 'as of' date from the PDF header.
+    Handles: 'UPDATED ON MARCH 6, 2026', 'AS AT NOVEMBER 6, 2025', etc.
+    Returns YYYY-MM-DD or ''.
+    """
+    try:
+        import pdfplumber  # type: ignore
+        with pdfplumber.open(str(pdf_path)) as pdf:
+            text = ""
+            for page in pdf.pages[:2]:
+                text += (page.extract_text() or "") + "\n"
+    except Exception:
+        return ""
+
+    # Look for explicit "UPDATED ON ..." or "AS AT ..." or "AS OF ..."
+    m = re.search(
+        r"(?:UPDATED\s+ON|AS\s+AT|AS\s+OF)\s+([A-Z][A-Z]+\s+\d{1,2},?\s+\d{4})",
+        text, re.I
+    )
+    if m:
+        return parse_date(m.group(1))
+
+    # Fallback: find any standalone "Month DD, YYYY" near the top 3 lines
+    for line in text.splitlines()[:8]:
+        m2 = re.search(r"([A-Z][a-z]+\s+\d{1,2},?\s+\d{4})", line)
+        if m2:
+            d = parse_date(m2.group(1))
+            if d:
+                return d
+    return ""
+
+
 def make_licence_number(category: str, name: str, serial: str = "") -> str:
     """Auto-generate a stable licence number from category + name."""
     slug = re.sub(r"[^A-Z0-9]", "", name.upper())[:12]
@@ -238,6 +271,7 @@ def scrape_format_a(pdf_path: Path, category: str) -> list[dict]:
     records: list[dict] = []
     source_doc = str(pdf_path)
     is_psp = (category == "psp")
+    doc_date = extract_doc_date(pdf_path)
 
     with pdfplumber.open(str(pdf_path)) as pdf:
         for page in pdf.pages:
@@ -288,6 +322,7 @@ def scrape_format_a(pdf_path: Path, category: str) -> list[dict]:
                         "license_expiry":     "",
                         "services_permitted": services,
                         "source_doc":         source_doc,
+                        "doc_date":           doc_date,
                         "last_scraped":       NOW_ISO,
                     })
 
@@ -307,6 +342,7 @@ def scrape_format_b(pdf_path: Path, category: str) -> list[dict]:
 
     records: list[dict] = []
     source_doc = str(pdf_path)
+    doc_date = extract_doc_date(pdf_path)
 
     with pdfplumber.open(str(pdf_path)) as pdf:
         for page in pdf.pages:
@@ -351,6 +387,7 @@ def scrape_format_b(pdf_path: Path, category: str) -> list[dict]:
                         "license_expiry":     "",
                         "services_permitted": DEFAULT_SERVICES[category],
                         "source_doc":         source_doc,
+                        "doc_date":           doc_date,
                         "last_scraped":       NOW_ISO,
                     })
 

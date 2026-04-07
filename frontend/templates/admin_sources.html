@@ -60,7 +60,7 @@
             <p class="text-xs text-slate-400 mt-0.5">{{ cbk_counts[cat] }} records</p>
             {% set cat_dates = cbk_last_scraped.get(cat) %}
             {% if cat_dates %}
-            <p class="text-xs text-slate-300 mt-0.5">updated {{ cat_dates }}</p>
+            <p class="text-xs text-slate-300 mt-0.5">as of {{ cat_dates }}</p>
             {% endif %}
           </div>
           <form method="post" action="/admin/upload/cbk/{{ cat }}"

@@ -564,15 +564,15 @@ async def admin_data_page(
     from datetime import datetime as _dt
     cbk_counts = Counter(e["category"] for e in store.CBK_ENTITIES)
 
-    # Compute latest last_scraped per category for display
+    # Compute regulator doc_date per category for display on sources page
     cbk_last_scraped: dict[str, str] = {}
     for cat in CBK_CATEGORIES:
-        dates = [e.get("last_scraped", "") for e in store.CBK_ENTITIES if e["category"] == cat and e.get("last_scraped")]
+        dates = [e.get("doc_date", "") for e in store.CBK_ENTITIES if e["category"] == cat and e.get("doc_date")]
         if dates:
             try:
-                cbk_last_scraped[cat] = _dt.fromisoformat(max(dates).replace("Z", "+00:00")).strftime("%d %b %Y")
+                cbk_last_scraped[cat] = _dt.fromisoformat(max(dates)).strftime("%d %b %Y")
             except Exception:
-                pass
+                cbk_last_scraped[cat] = max(dates)
 
     return templates.TemplateResponse("admin_sources.html", {
         "request":          request,
@@ -680,16 +680,15 @@ async def admin_data_cbk(
     counties  = sorted(set(r.get("county", "") for r in pool if r.get("county")))
     statuses  = sorted(set(r.get("status", "") for r in pool if r.get("status")))
 
-    # last_scraped is ISO timestamp; take the max across records in this category
-    scraped_dates = [r.get("last_scraped", "") for r in pool if r.get("last_scraped")]
+    # doc_date is the regulator's own "as of" date printed on the PDF
+    doc_dates = [r.get("doc_date", "") for r in pool if r.get("doc_date")]
     last_updated = None
-    if scraped_dates:
-        from datetime import datetime as _dt
+    if doc_dates:
         try:
-            latest = max(scraped_dates)
-            last_updated = _dt.fromisoformat(latest.replace("Z", "+00:00")).strftime("%d %b %Y")
+            from datetime import datetime as _dt
+            last_updated = _dt.fromisoformat(max(doc_dates)).strftime("%d %b %Y")
         except Exception:
-            pass
+            last_updated = max(doc_dates)
 
     return templates.TemplateResponse("admin_data_table.html", {
         "request":     request,
