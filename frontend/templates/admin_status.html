@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}System Status — Hakiki Admin{% endblock %}
+{% block main_class %}max-w-5xl mx-auto px-6 py-10{% endblock %}
+
+{% block content %}
+
+<div class="mb-8 flex items-center justify-between">
+  <div>
+    <h1 class="text-2xl font-bold text-slate-800">System Status</h1>
+    <p class="text-slate-500 text-sm mt-0.5">Live snapshot of the running process.</p>
+  </div>
+  <div class="flex items-center gap-2">
+    {% if overall_ok %}
+    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-green-50 border border-green-200 text-green-700 text-xs font-semibold">
+      <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> All systems operational
+    </span>
+    {% else %}
+    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-red-50 border border-red-200 text-red-700 text-xs font-semibold">
+      <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span> Degraded
+    </span>
+    {% endif %}
+  </div>
+</div>
+
+<!-- ── Service checks ─────────────────────────────────────────────────────── -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden mb-6">
+  <div class="px-6 py-3 border-b border-slate-100 bg-slate-50">
+    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Services</p>
+  </div>
+  <div class="divide-y divide-slate-100">
+
+    {% for svc in services %}
+    <div class="px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        {% if svc.ok %}
+        <span class="w-2.5 h-2.5 rounded-full bg-green-400 shrink-0"></span>
+        {% else %}
+        <span class="w-2.5 h-2.5 rounded-full bg-red-400 shrink-0 animate-pulse"></span>
+        {% endif %}
+        <div>
+          <p class="text-sm font-medium text-slate-800">{{ svc.name }}</p>
+          <p class="text-xs text-slate-400 mt-0.5">{{ svc.detail }}</p>
+        </div>
+      </div>
+      <span class="text-xs font-medium {% if svc.ok %}text-green-600{% else %}text-red-500{% endif %}">
+        {{ "Healthy" if svc.ok else "Error" }}
+      </span>
+    </div>
+    {% endfor %}
+
+  </div>
+</div>
+
+<!-- ── In-memory data ─────────────────────────────────────────────────────── -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden mb-6">
+  <div class="px-6 py-3 border-b border-slate-100 bg-slate-50">
+    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">In-Memory Store</p>
+  </div>
+  <div class="divide-y divide-slate-100">
+
+    <div class="px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="w-2.5 h-2.5 rounded-full {% if sacco_count > 0 %}bg-green-400{% else %}bg-amber-400{% endif %} shrink-0"></span>
+        <div>
+          <p class="text-sm font-medium text-slate-800">SACCO Societies</p>
+          <p class="text-xs text-slate-400 mt-0.5">SASRA · {{ sacco_last_updated or "date unknown" }}</p>
+        </div>
+      </div>
+      <span class="text-sm font-bold text-slate-700">{{ sacco_count }} records</span>
+    </div>
+
+    {% for cat, label in cbk_labels.items() %}
+    <div class="px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="w-2.5 h-2.5 rounded-full {% if cbk_counts[cat] > 0 %}bg-green-400{% else %}bg-amber-400 animate-pulse{% endif %} shrink-0"></span>
+        <div>
+          <p class="text-sm font-medium text-slate-800">{{ label }}</p>
+          <p class="text-xs text-slate-400 mt-0.5">CBK
+            {% if cbk_doc_dates.get(cat) %} · as of {{ cbk_doc_dates[cat] }}{% endif %}
+          </p>
+        </div>
+      </div>
+      <span class="text-sm font-bold {% if cbk_counts[cat] > 0 %}text-slate-700{% else %}text-amber-500{% endif %}">
+        {{ cbk_counts[cat] }} records
+      </span>
+    </div>
+    {% endfor %}
+
+  </div>
+</div>
+
+<!-- ── Environment ────────────────────────────────────────────────────────── -->
+<div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+  <div class="px-6 py-3 border-b border-slate-100 bg-slate-50">
+    <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Environment</p>
+  </div>
+  <div class="divide-y divide-slate-100">
+    {% for key, val in env_info.items() %}
+    <div class="px-6 py-3 flex items-center justify-between">
+      <span class="text-xs text-slate-500 font-mono">{{ key }}</span>
+      <span class="text-xs font-medium text-slate-700 font-mono">{{ val }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

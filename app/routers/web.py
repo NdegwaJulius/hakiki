@@ -12,7 +12,7 @@ from fastapi import APIRouter, Depends, File, Form, Request, UploadFile
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 from itsdangerous import BadSignature, URLSafeTimedSerializer
-from sqlalchemy import select, update
+from sqlalchemy import select, text, update
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.database import get_db
@@ -584,6 +584,74 @@ async def admin_data_page(
         "cbk_counts":       {cat: cbk_counts.get(cat, 0) for cat in CBK_CATEGORIES},
         "cbk_labels":       CBK_CATEGORIES,
         "cbk_last_scraped": cbk_last_scraped,
+    })
+
+
+@router.get("/admin/status", response_class=HTMLResponse)
+async def admin_status(request: Request, db: AsyncSession = Depends(get_db)):
+    admin = await _current_user(request, db)
+    if not admin or not _is_admin(admin):
+        return RedirectResponse("/login", status_code=302)
+
+    import os as _os
+    from collections import Counter as _Counter
+    from datetime import datetime as _dt
+
+    # DB check
+    db_ok = False
+    try:
+        await db.execute(text("SELECT 1"))
+        db_ok = True
+    except Exception:
+        pass
+
+    # Supabase env check
+    sb_url = bool(_os.getenv("SUPABASE_URL"))
+    sb_key = bool(_os.getenv("SUPABASE_SERVICE_KEY"))
+
+    cbk_counts = _Counter(e["category"] for e in store.CBK_ENTITIES)
+    cbk_doc_dates: dict[str, str] = {}
+    for cat in CBK_CATEGORIES:
+        dates = [e.get("doc_date","") for e in store.CBK_ENTITIES if e["category"] == cat and e.get("doc_date")]
+        if dates:
+            try:
+                cbk_doc_dates[cat] = _dt.fromisoformat(max(dates)).strftime("%d %b %Y")
+            except Exception:
+                cbk_doc_dates[cat] = max(dates)
+
+    _sacco_json = Path(__file__).parent.parent.parent / "saccos_2026.json"
+    sacco_last_updated = None
+    try:
+        sacco_last_updated = _dt.utcfromtimestamp(_os.path.getmtime(_sacco_json)).strftime("%d %b %Y")
+    except Exception:
+        pass
+
+    services = [
+        {"name": "Database",        "ok": db_ok,   "detail": "PostgreSQL via Supabase pooler"},
+        {"name": "Supabase REST",   "ok": sb_url and sb_key, "detail": "SUPABASE_URL + SERVICE_KEY configured" if (sb_url and sb_key) else "Missing env vars — uploads won't sync"},
+        {"name": "SACCO store",     "ok": len(store.SACCOS) > 0,      "detail": f"{len(store.SACCOS)} records loaded"},
+        {"name": "CBK store",       "ok": len(store.CBK_ENTITIES) > 0, "detail": f"{len(store.CBK_ENTITIES)} records loaded"},
+    ]
+
+    env_info = {
+        "API_VERSION":   _os.getenv("API_VERSION", "v1"),
+        "RATE_LIMIT":    _os.getenv("RATE_LIMIT", "100/minute"),
+        "ADMIN_EMAIL":   _os.getenv("ADMIN_EMAIL", "—"),
+        "SUPABASE_URL":  _os.getenv("SUPABASE_URL", "not set")[:40] + "…" if _os.getenv("SUPABASE_URL") else "not set",
+        "SUPABASE_KEY":  "configured" if sb_key else "not set",
+    }
+
+    return templates.TemplateResponse("admin_status.html", {
+        "request":          request,
+        "is_admin":         True,
+        "overall_ok":       all(s["ok"] for s in services),
+        "services":         services,
+        "sacco_count":      len(store.SACCOS),
+        "sacco_last_updated": sacco_last_updated,
+        "cbk_labels":       CBK_CATEGORIES,
+        "cbk_counts":       {cat: cbk_counts.get(cat, 0) for cat in CBK_CATEGORIES},
+        "cbk_doc_dates":    cbk_doc_dates,
+        "env_info":         env_info,
     })
 
 
