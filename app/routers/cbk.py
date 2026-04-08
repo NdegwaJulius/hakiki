@@ -246,3 +246,57 @@ async def list_entities(
         "page":        page,
         "results":     [_serialize(e, current_user.tier) for e in page_slice],
     }
+
+
+@router.get(
+    "/{entity_type}/filters",
+    summary="Return distinct filter values for a CBK entity type",
+)
+@limiter.limit(RATE_LIMIT)
+async def entity_filters(
+    request: Request,
+    entity_type: str,
+    db: AsyncSession = Depends(get_db),
+    current_user: ApiUser = Depends(get_current_user),
+):
+    """Returns all distinct counties, statuses, and sub-categories for the entity type."""
+    et   = _validate_entity_type(entity_type)
+    pool = _by_type(et)
+
+    await deduct_credit_and_log(current_user, f"/cbk/{API_VERSION}/{et}/filters", db, found=True)
+    return {
+        "entity_type":   et,
+        "counties":      sorted(set(e["county"]       for e in pool if e.get("county"))),
+        "statuses":      sorted(set(e["status"]       for e in pool if e.get("status"))),
+        "sub_categories": sorted(set(e["sub_category"] for e in pool if e.get("sub_category"))),
+    }
+
+
+@router.get(
+    "/{entity_type}/stats",
+    summary="Aggregated statistics for a CBK entity type",
+)
+@limiter.limit(RATE_LIMIT)
+async def entity_stats(
+    request: Request,
+    entity_type: str,
+    db: AsyncSession = Depends(get_db),
+    current_user: ApiUser = Depends(get_current_user),
+):
+    """Returns counts by county, status, and sub-category."""
+    et   = _validate_entity_type(entity_type)
+    pool = _by_type(et)
+
+    by_county      = Counter(e["county"]       for e in pool if e.get("county"))
+    by_status      = Counter(e["status"]       for e in pool if e.get("status"))
+    by_sub_category = Counter(e["sub_category"] for e in pool if e.get("sub_category"))
+
+    await deduct_credit_and_log(current_user, f"/cbk/{API_VERSION}/{et}/stats", db, found=True)
+    return {
+        "entity_type":      et,
+        "label":            ENTITY_LABELS[et],
+        "total":            len(pool),
+        "by_county":        dict(by_county.most_common()),
+        "by_status":        dict(by_status),
+        "by_sub_category":  dict(by_sub_category.most_common()),
+    }
