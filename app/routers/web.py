@@ -715,6 +715,7 @@ async def admin_data_sacco(
     request: Request,
     q: str = None,
     county: str = None,
+    schedule: str = None,
     page: int = 1,
     db: AsyncSession = Depends(get_db),
 ):
@@ -729,6 +730,8 @@ async def admin_data_sacco(
     if county:
         c_l = county.lower()
         records = [r for r in records if c_l in r.get("county", "").lower()]
+    if schedule:
+        records = [r for r in records if r.get("schedule") == schedule.upper()]
 
     page_size = 50
     total = len(records)
