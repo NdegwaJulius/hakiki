@@ -191,7 +191,7 @@ def make_licence_number(category: str, name: str, serial: str = "") -> str:
 #   Anjoy Credit Limited
 #   Postal Address: P.O. Box 40583 – 00100, Nairobi
 #   Telephone: +254769984360
-#   Email: info@anjoycredit.com
+#   Email: info@example.com
 #   Physical Address: Transnational House 1st Floor, Mama Ngina Street, Nairobi
 #   Date Licensed: March 27, 2023
 

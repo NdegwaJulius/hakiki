@@ -10,7 +10,7 @@ Usage:
     python test_cbk.py
 
     # Custom host / API key:
-    python test_cbk.py --base-url http://localhost:8000 --api-key hk_dev_testkey_localonly
+    python test_cbk.py --base-url http://localhost:8000 --api-key <your-api-key>
 """
 
 import argparse
@@ -26,7 +26,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 DEFAULT_BASE  = "http://localhost:8000"
-DEFAULT_KEY   = os.getenv("DEV_API_KEY", "hk_dev_testkey_localonly")
+DEFAULT_KEY   = os.getenv("DEV_API_KEY", "")
 ENTITY_TYPES  = ["dcp", "psp", "forex", "mfb", "remittance"]
 
 

@@ -22,7 +22,7 @@ load_dotenv()
 SUPABASE_URL      = os.getenv("SUPABASE_URL", "").rstrip("/")
 SERVICE_KEY       = os.getenv("SUPABASE_SERVICE_KEY", "")
 JSON_PATH         = Path(__file__).parent / "saccos_2026.json"
-DEV_API_KEY       = "hk_dev_testkey_localonly"
+DEV_API_KEY       = os.getenv("DEV_API_KEY", "")  # set in .env to seed a local dev user
 DEV_EMAIL         = "dev@hakiki.local"
 BATCH_SIZE        = 100
 
@@ -64,16 +64,19 @@ def main():
             raise SystemExit(f"Batch {i} failed ({status}): {body[:300].decode()}")
         print(f"  saccos {min(i + BATCH_SIZE, len(records))}/{len(records)}")
 
-    # ── Dev API user ──────────────────────────────────────────────────────────
-    status, body = rest_post(
-        "api_users",
-        {"email": DEV_EMAIL, "api_key_hash": _hash(DEV_API_KEY),
-         "tier": "enterprise", "credits": 9999},
-        on_conflict="email",
-    )
-    if status not in (200, 201):
-        raise SystemExit(f"api_users failed ({status}): {body[:300].decode()}")
-    print(f"Dev user upserted")
+    # ── Dev API user (only when DEV_API_KEY is set) ───────────────────────────
+    if DEV_API_KEY:
+        status, body = rest_post(
+            "api_users",
+            {"email": DEV_EMAIL, "api_key_hash": _hash(DEV_API_KEY),
+             "tier": "enterprise", "credits": 9999},
+            on_conflict="email",
+        )
+        if status not in (200, 201):
+            raise SystemExit(f"api_users failed ({status}): {body[:300].decode()}")
+        print("Dev user upserted")
+    else:
+        print("DEV_API_KEY not set; skipping dev user")
 
     # ── Scrape history ────────────────────────────────────────────────────────
     schedule_counts = dict(Counter(r["schedule"] for r in records))
